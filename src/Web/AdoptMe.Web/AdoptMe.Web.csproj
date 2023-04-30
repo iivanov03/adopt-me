@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <UserSecretsId>aspnet-AdoptMe-BBB373B5-EF3F-4DBB-B8AA-7152CEC275BF</UserSecretsId>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>..\..\Rules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+	<ItemGroup>
+		<AdditionalFiles Include="..\..\stylecop.json" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<InternalsVisibleTo Include="AdoptMe.Web.Tests" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.3" />
+    <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
+    <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.175" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.3" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.435" PrivateAssets="all">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\AdoptMe.Common\AdoptMe.Common.csproj" />
+    <ProjectReference Include="..\..\Data\AdoptMe.Data.Models\AdoptMe.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Data\AdoptMe.Data\AdoptMe.Data.csproj" />
+    <ProjectReference Include="..\..\Services\AdoptMe.Services.Data\AdoptMe.Services.Data.csproj" />
+    <ProjectReference Include="..\..\Services\AdoptMe.Services.Mapping\AdoptMe.Services.Mapping.csproj" />
+    <ProjectReference Include="..\..\Services\AdoptMe.Services.Messaging\AdoptMe.Services.Messaging.csproj" />
+    <ProjectReference Include="..\..\Services\AdoptMe.Services\AdoptMe.Services.csproj" />
+    <ProjectReference Include="..\AdoptMe.Web.Infrastructure\AdoptMe.Web.Infrastructure.csproj" />
+    <ProjectReference Include="..\AdoptMe.Web.ViewModels\AdoptMe.Web.ViewModels.csproj" />
+  </ItemGroup>
+</Project>
