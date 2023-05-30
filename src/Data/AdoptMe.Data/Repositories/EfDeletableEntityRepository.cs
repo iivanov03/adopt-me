@@ -2,10 +2,9 @@
 {
     using System;
     using System.Linq;
-
+    using System.Threading.Tasks;
     using AdoptMe.Data.Common.Models;
     using AdoptMe.Data.Common.Repositories;
-
     using Microsoft.EntityFrameworkCore;
 
     public class EfDeletableEntityRepository<TEntity> : EfRepository<TEntity>, IDeletableEntityRepository<TEntity>
@@ -23,6 +22,12 @@
         public IQueryable<TEntity> AllWithDeleted() => base.All().IgnoreQueryFilters();
 
         public IQueryable<TEntity> AllAsNoTrackingWithDeleted() => base.AllAsNoTracking().IgnoreQueryFilters();
+
+        public Task<TEntity> GetByIdWithDeletedAsync(params object[] id)
+        {
+            var getByIdPredicate = EfExpressionHelper.BuildByIdPredicate<TEntity>(this.Context, id);
+            return this.AllWithDeleted().FirstOrDefaultAsync(getByIdPredicate);
+        }
 
         public void HardDelete(TEntity entity) => base.Delete(entity);
 

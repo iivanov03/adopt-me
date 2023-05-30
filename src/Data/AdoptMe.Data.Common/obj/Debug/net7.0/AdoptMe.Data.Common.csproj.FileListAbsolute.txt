@@ -1,0 +1,12 @@
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/bin/Debug/net7.0/AdoptMe.Data.Common.deps.json
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/bin/Debug/net7.0/AdoptMe.Data.Common.dll
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/bin/Debug/net7.0/AdoptMe.Data.Common.pdb
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/obj/Debug/net7.0/AdoptMe.Data.Common.csproj.AssemblyReference.cache
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/obj/Debug/net7.0/AdoptMe.Data.Common.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/obj/Debug/net7.0/AdoptMe.Data.Common.AssemblyInfoInputs.cache
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/obj/Debug/net7.0/AdoptMe.Data.Common.AssemblyInfo.cs
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/obj/Debug/net7.0/AdoptMe.Data.Common.csproj.CoreCompileInputs.cache
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/obj/Debug/net7.0/AdoptMe.Data.Common.dll
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/obj/Debug/net7.0/refint/AdoptMe.Data.Common.dll
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/obj/Debug/net7.0/AdoptMe.Data.Common.pdb
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/obj/Debug/net7.0/ref/AdoptMe.Data.Common.dll

@@ -1,0 +1,15 @@
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/bin/Debug/net7.0/AdoptMe.Data.Models.deps.json
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/bin/Debug/net7.0/AdoptMe.Data.Models.dll
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/bin/Debug/net7.0/AdoptMe.Data.Models.pdb
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/bin/Debug/net7.0/AdoptMe.Data.Common.dll
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/bin/Debug/net7.0/AdoptMe.Data.Common.pdb
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/obj/Debug/net7.0/AdoptMe.Data.Models.csproj.AssemblyReference.cache
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/obj/Debug/net7.0/AdoptMe.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/obj/Debug/net7.0/AdoptMe.Data.Models.AssemblyInfoInputs.cache
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/obj/Debug/net7.0/AdoptMe.Data.Models.AssemblyInfo.cs
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/obj/Debug/net7.0/AdoptMe.Data.Models.csproj.CoreCompileInputs.cache
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/obj/Debug/net7.0/AdoptMe.Data.Models.csproj.CopyComplete
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/obj/Debug/net7.0/AdoptMe.Data.Models.dll
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/obj/Debug/net7.0/refint/AdoptMe.Data.Models.dll
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/obj/Debug/net7.0/AdoptMe.Data.Models.pdb
+/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/obj/Debug/net7.0/ref/AdoptMe.Data.Models.dll

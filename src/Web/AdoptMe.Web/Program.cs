@@ -1,6 +1,8 @@
 ﻿namespace AdoptMe.Web
 {
+    using System.Globalization;
     using System.Reflection;
+    using System.Resources;
 
     using AdoptMe.Data;
     using AdoptMe.Data.Common;
@@ -14,8 +16,11 @@
     using AdoptMe.Web.ViewModels;
 
     using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Http;
+    using Microsoft.AspNetCore.Localization;
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Mvc.Razor;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
@@ -53,9 +58,15 @@
                     options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
                 }).AddRazorRuntimeCompilation();
             services.AddRazorPages();
-            services.AddDatabaseDeveloperPageExceptionFilter();
+
+            // services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddSingleton(configuration);
+
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+            services.AddMvc()
+              .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+              .AddDataAnnotationsLocalization();
 
             // Data repositories
             services.AddScoped(typeof(IDeletableEntityRepository<>), typeof(EfDeletableEntityRepository<>));
@@ -65,10 +76,25 @@
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
             services.AddTransient<ISettingsService, SettingsService>();
+            services.AddTransient<IGetCountsService, GetCountService>();
         }
 
         private static void Configure(WebApplication app)
         {
+            AutoMapperConfig.RegisterMappings(typeof(ErrorViewModel).GetTypeInfo().Assembly);
+
+            var supportedCultures = new[]
+            {
+                new CultureInfo("en-US"),
+                new CultureInfo("bg-BG")
+            };
+            app.UseRequestLocalization(new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture("bg-BG"),
+                SupportedCultures = supportedCultures,
+                SupportedUICultures = supportedCultures
+            });
+
             // Seed data on application startup
             using (var serviceScope = app.Services.CreateScope())
             {
@@ -99,9 +125,13 @@
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.MapControllerRoute("areaRoute", "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+            app.UseEndpoints(
+                endpoints =>
+                {
+                    app.MapControllerRoute("areaRoute", "{area:exists}/{controller=Home}/{action=Index}/{id?}");
             app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
             app.MapRazorPages();
+                });
         }
     }
 }

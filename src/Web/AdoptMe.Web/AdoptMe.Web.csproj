@@ -22,11 +22,18 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.3" />
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
     <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.175" />
-    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.3" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.435" PrivateAssets="all">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.5" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,5 +46,11 @@
     <ProjectReference Include="..\..\Services\AdoptMe.Services\AdoptMe.Services.csproj" />
     <ProjectReference Include="..\AdoptMe.Web.Infrastructure\AdoptMe.Web.Infrastructure.csproj" />
     <ProjectReference Include="..\AdoptMe.Web.ViewModels\AdoptMe.Web.ViewModels.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Areas\Identity\Pages\Account\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\Identity\Pages\Account\" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,1257 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/css/site.min.css",
+      "PackagePath": "staticwebassets/css/site.min.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/.DS_Store",
+      "PackagePath": "staticwebassets/images/.DS_Store"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/_blank.png",
+      "PackagePath": "staticwebassets/images/_blank.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/about-1-570x481.png",
+      "PackagePath": "staticwebassets/images/about-1-570x481.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/about-2-946x628.jpg",
+      "PackagePath": "staticwebassets/images/about-2-946x628.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/about-3-370x320.jpg",
+      "PackagePath": "staticwebassets/images/about-3-370x320.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/about-4-370x320.jpg",
+      "PackagePath": "staticwebassets/images/about-4-370x320.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/about-5-370x320.jpg",
+      "PackagePath": "staticwebassets/images/about-5-370x320.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-cats-1-770x485.jpg",
+      "PackagePath": "staticwebassets/images/adopt-cats-1-770x485.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-cats-2-370x240.jpg",
+      "PackagePath": "staticwebassets/images/adopt-cats-2-370x240.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-cats-3-370x240.jpg",
+      "PackagePath": "staticwebassets/images/adopt-cats-3-370x240.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-cats-4-370x240.jpg",
+      "PackagePath": "staticwebassets/images/adopt-cats-4-370x240.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-cats-5-370x240.jpg",
+      "PackagePath": "staticwebassets/images/adopt-cats-5-370x240.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-dogs-1-370x254.jpg",
+      "PackagePath": "staticwebassets/images/adopt-dogs-1-370x254.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-dogs-2-370x254.jpg",
+      "PackagePath": "staticwebassets/images/adopt-dogs-2-370x254.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-dogs-3-370x254.jpg",
+      "PackagePath": "staticwebassets/images/adopt-dogs-3-370x254.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-dogs-4-370x254.jpg",
+      "PackagePath": "staticwebassets/images/adopt-dogs-4-370x254.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-small-pets-1-370x240.jpg",
+      "PackagePath": "staticwebassets/images/adopt-small-pets-1-370x240.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-small-pets-2-96x107.jpg",
+      "PackagePath": "staticwebassets/images/adopt-small-pets-2-96x107.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-small-pets-3-96x107.jpg",
+      "PackagePath": "staticwebassets/images/adopt-small-pets-3-96x107.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-small-pets-4-96x107.jpg",
+      "PackagePath": "staticwebassets/images/adopt-small-pets-4-96x107.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-small-pets-5-96x107.jpg",
+      "PackagePath": "staticwebassets/images/adopt-small-pets-5-96x107.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-small-pets-6-96x107.jpg",
+      "PackagePath": "staticwebassets/images/adopt-small-pets-6-96x107.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-small-pets-7-96x107.jpg",
+      "PackagePath": "staticwebassets/images/adopt-small-pets-7-96x107.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-small-pets-8-96x107.jpg",
+      "PackagePath": "staticwebassets/images/adopt-small-pets-8-96x107.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/adopt-small-pets-9-96x107.jpg",
+      "PackagePath": "staticwebassets/images/adopt-small-pets-9-96x107.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/ajax-loader.gif",
+      "PackagePath": "staticwebassets/images/ajax-loader.gif"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/banner 370x518.jpg",
+      "PackagePath": "staticwebassets/images/banner 370x518.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/bg-image-1.jpg",
+      "PackagePath": "staticwebassets/images/bg-image-1.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/bg-image-10.jpg",
+      "PackagePath": "staticwebassets/images/bg-image-10.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/bg-image-11.jpg",
+      "PackagePath": "staticwebassets/images/bg-image-11.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/bg-image-2.jpg",
+      "PackagePath": "staticwebassets/images/bg-image-2.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/bg-image-3.jpg",
+      "PackagePath": "staticwebassets/images/bg-image-3.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/bg-image-4.jpg",
+      "PackagePath": "staticwebassets/images/bg-image-4.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/bg-image-5.jpg",
+      "PackagePath": "staticwebassets/images/bg-image-5.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/bg-image-6.jpg",
+      "PackagePath": "staticwebassets/images/bg-image-6.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/bg-image-7.jpg",
+      "PackagePath": "staticwebassets/images/bg-image-7.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/bg-image-8.jpg",
+      "PackagePath": "staticwebassets/images/bg-image-8.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/bg-image-9.jpg",
+      "PackagePath": "staticwebassets/images/bg-image-9.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/card-1-63x40.jpg",
+      "PackagePath": "staticwebassets/images/card-1-63x40.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/card-2-59x40.jpg",
+      "PackagePath": "staticwebassets/images/card-2-59x40.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/card-3-62x40.jpg",
+      "PackagePath": "staticwebassets/images/card-3-62x40.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/card-4-62x40.jpg",
+      "PackagePath": "staticwebassets/images/card-4-62x40.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/community-service-projects-1-580x333.jpg",
+      "PackagePath": "staticwebassets/images/community-service-projects-1-580x333.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/community-service-projects-2-580x333.jpg",
+      "PackagePath": "staticwebassets/images/community-service-projects-2-580x333.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/company-1-234x218.png",
+      "PackagePath": "staticwebassets/images/company-1-234x218.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/company-2-234x218.png",
+      "PackagePath": "staticwebassets/images/company-2-234x218.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/company-3-234x218.png",
+      "PackagePath": "staticwebassets/images/company-3-234x218.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/donate-a-vehicle-1-580x389.jpg",
+      "PackagePath": "staticwebassets/images/donate-a-vehicle-1-580x389.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/donate-a-vehicle-2-580x389.jpg",
+      "PackagePath": "staticwebassets/images/donate-a-vehicle-2-580x389.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/estate-and-planned-giving-1-570x389.jpg",
+      "PackagePath": "staticwebassets/images/estate-and-planned-giving-1-570x389.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/estate-and-planned-giving-2-348x260.jpg",
+      "PackagePath": "staticwebassets/images/estate-and-planned-giving-2-348x260.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/estate-and-planned-giving-3-348x260.jpg",
+      "PackagePath": "staticwebassets/images/estate-and-planned-giving-3-348x260.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/estate-and-planned-giving-4-348x260.jpg",
+      "PackagePath": "staticwebassets/images/estate-and-planned-giving-4-348x260.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/favicon.ico",
+      "PackagePath": "staticwebassets/images/favicon.ico"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/gift-online-1-370x272.jpg",
+      "PackagePath": "staticwebassets/images/gift-online-1-370x272.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/gmap_marker.png",
+      "PackagePath": "staticwebassets/images/gmap_marker.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/gmap_marker_active.png",
+      "PackagePath": "staticwebassets/images/gmap_marker_active.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-1-1200x800_original.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-1-1200x800_original.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-1-370x320.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-1-370x320.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-2-1200x960_original.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-2-1200x960_original.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-2-1200x961_original.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-2-1200x961_original.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-2-370x320.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-2-370x320.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-3-1200x800_original.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-3-1200x800_original.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-3-370x320.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-3-370x320.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-4-1200x800_original.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-4-1200x800_original.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-4-370x320.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-4-370x320.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-5-1200x900_original.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-5-1200x900_original.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-5-370x320.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-5-370x320.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-6-1200x863_original.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-6-1200x863_original.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-6-370x320.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-6-370x320.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-7-370x320.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-7-370x320.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-7-800x1200_original.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-7-800x1200_original.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-8-1200x803_original.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-8-1200x803_original.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-8-370x320.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-8-370x320.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-9-1200x803_original.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-9-1200x803_original.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/grid-gallery-9-370x320.jpg",
+      "PackagePath": "staticwebassets/images/grid-gallery-9-370x320.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home1-1-567x381.jpg",
+      "PackagePath": "staticwebassets/images/home1-1-567x381.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home1-10-572x333.jpg",
+      "PackagePath": "staticwebassets/images/home1-10-572x333.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home1-11-237x268.jpg",
+      "PackagePath": "staticwebassets/images/home1-11-237x268.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home1-12-237x268.jpg",
+      "PackagePath": "staticwebassets/images/home1-12-237x268.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home1-2-567x381.jpg",
+      "PackagePath": "staticwebassets/images/home1-2-567x381.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home1-3-567x381.jpg",
+      "PackagePath": "staticwebassets/images/home1-3-567x381.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home1-4-567x381.jpg",
+      "PackagePath": "staticwebassets/images/home1-4-567x381.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home1-5-922x657.jpg",
+      "PackagePath": "staticwebassets/images/home1-5-922x657.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home1-6-280x320.jpg",
+      "PackagePath": "staticwebassets/images/home1-6-280x320.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home1-7-280x320.jpg",
+      "PackagePath": "staticwebassets/images/home1-7-280x320.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home1-8-280x320.jpg",
+      "PackagePath": "staticwebassets/images/home1-8-280x320.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home1-9-280x320.jpg",
+      "PackagePath": "staticwebassets/images/home1-9-280x320.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home2-1-533x482.png",
+      "PackagePath": "staticwebassets/images/home2-1-533x482.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home2-2-269x408.jpg",
+      "PackagePath": "staticwebassets/images/home2-2-269x408.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home2-3-269x408.jpg",
+      "PackagePath": "staticwebassets/images/home2-3-269x408.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home2-4-269x408.jpg",
+      "PackagePath": "staticwebassets/images/home2-4-269x408.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home2-5-269x408.jpg",
+      "PackagePath": "staticwebassets/images/home2-5-269x408.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home2-6-568x268.jpg",
+      "PackagePath": "staticwebassets/images/home2-6-568x268.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home2-7-568x268.jpg",
+      "PackagePath": "staticwebassets/images/home2-7-568x268.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home3-1-422x260.jpg",
+      "PackagePath": "staticwebassets/images/home3-1-422x260.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home3-2-422x260.jpg",
+      "PackagePath": "staticwebassets/images/home3-2-422x260.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home3-3-422x260.jpg",
+      "PackagePath": "staticwebassets/images/home3-3-422x260.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home3-4-422x260.jpg",
+      "PackagePath": "staticwebassets/images/home3-4-422x260.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home3-5-568x266.jpg",
+      "PackagePath": "staticwebassets/images/home3-5-568x266.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home3-6-568x266.jpg",
+      "PackagePath": "staticwebassets/images/home3-6-568x266.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/home3-7-568x266.jpg",
+      "PackagePath": "staticwebassets/images/home3-7-568x266.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/host-your-own-fundraiser-1-770x485.jpg",
+      "PackagePath": "staticwebassets/images/host-your-own-fundraiser-1-770x485.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/ie8-panel/warning_bar_0000_us.jpg",
+      "PackagePath": "staticwebassets/images/ie8-panel/warning_bar_0000_us.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/isotope-loader.png",
+      "PackagePath": "staticwebassets/images/isotope-loader.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/landing-1-593x437.png",
+      "PackagePath": "staticwebassets/images/landing-1-593x437.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/landing-2-346x249.jpg",
+      "PackagePath": "staticwebassets/images/landing-2-346x249.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/landing-3-346x249.jpg",
+      "PackagePath": "staticwebassets/images/landing-3-346x249.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/landing-4-346x249.jpg",
+      "PackagePath": "staticwebassets/images/landing-4-346x249.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/landing-5-796x447.png",
+      "PackagePath": "staticwebassets/images/landing-5-796x447.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/landing-6-651x432.png",
+      "PackagePath": "staticwebassets/images/landing-6-651x432.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/lavender-570x389.jpg",
+      "PackagePath": "staticwebassets/images/lavender-570x389.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/layout-1-380x280.jpg",
+      "PackagePath": "staticwebassets/images/layout-1-380x280.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/layout-10-380x280.jpg",
+      "PackagePath": "staticwebassets/images/layout-10-380x280.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/layout-11-380x280.jpg",
+      "PackagePath": "staticwebassets/images/layout-11-380x280.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/layout-12-380x280.jpg",
+      "PackagePath": "staticwebassets/images/layout-12-380x280.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/layout-2-380x280.jpg",
+      "PackagePath": "staticwebassets/images/layout-2-380x280.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/layout-3-380x280.jpg",
+      "PackagePath": "staticwebassets/images/layout-3-380x280.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/layout-4-380x280.jpg",
+      "PackagePath": "staticwebassets/images/layout-4-380x280.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/layout-5-380x280.jpg",
+      "PackagePath": "staticwebassets/images/layout-5-380x280.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/layout-6-380x280.jpg",
+      "PackagePath": "staticwebassets/images/layout-6-380x280.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/layout-7-380x280.jpg",
+      "PackagePath": "staticwebassets/images/layout-7-380x280.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/layout-8-380x280.jpg",
+      "PackagePath": "staticwebassets/images/layout-8-380x280.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/layout-9-380x280.jpg",
+      "PackagePath": "staticwebassets/images/layout-9-380x280.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/logo-default-153x40.png",
+      "PackagePath": "staticwebassets/images/logo-default-153x40.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/logo-default-176x45.png",
+      "PackagePath": "staticwebassets/images/logo-default-176x45.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/logo-inverse-153x40.png",
+      "PackagePath": "staticwebassets/images/logo-inverse-153x40.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/news-1-103x60.jpg",
+      "PackagePath": "staticwebassets/images/news-1-103x60.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/news-1-570x333.jpg",
+      "PackagePath": "staticwebassets/images/news-1-570x333.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/news-2-103x60.jpg",
+      "PackagePath": "staticwebassets/images/news-2-103x60.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/news-2-570x333.jpg",
+      "PackagePath": "staticwebassets/images/news-2-570x333.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/news-3-103x60.jpg",
+      "PackagePath": "staticwebassets/images/news-3-103x60.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/news-3-570x333.jpg",
+      "PackagePath": "staticwebassets/images/news-3-570x333.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/news-4-570x333.jpg",
+      "PackagePath": "staticwebassets/images/news-4-570x333.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/photoswipe-controls.png",
+      "PackagePath": "staticwebassets/images/photoswipe-controls.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/photoswipe-controls.svg",
+      "PackagePath": "staticwebassets/images/photoswipe-controls.svg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/post-single-1-570x389.jpg",
+      "PackagePath": "staticwebassets/images/post-single-1-570x389.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/preloader.gif",
+      "PackagePath": "staticwebassets/images/preloader.gif"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/preloader.png",
+      "PackagePath": "staticwebassets/images/preloader.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/ronald-austin-80x80.jpg",
+      "PackagePath": "staticwebassets/images/ronald-austin-80x80.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/services-407x449.png",
+      "PackagePath": "staticwebassets/images/services-407x449.png"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/slider-1-slide-1-1920x850.jpg",
+      "PackagePath": "staticwebassets/images/slider-1-slide-1-1920x850.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/slider-1-slide-2-1920x850.jpg",
+      "PackagePath": "staticwebassets/images/slider-1-slide-2-1920x850.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/slider-1-slide-3-1920x850.jpg",
+      "PackagePath": "staticwebassets/images/slider-1-slide-3-1920x850.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/slider-2-slide-1-1920x850.jpg",
+      "PackagePath": "staticwebassets/images/slider-2-slide-1-1920x850.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/slider-2-slide-2-1920x850.jpg",
+      "PackagePath": "staticwebassets/images/slider-2-slide-2-1920x850.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/slider-2-slide-3-1920x850.jpg",
+      "PackagePath": "staticwebassets/images/slider-2-slide-3-1920x850.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/slider-3-slide-1-1920x850.jpg",
+      "PackagePath": "staticwebassets/images/slider-3-slide-1-1920x850.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/slider-3-slide-2-1920x850.jpg",
+      "PackagePath": "staticwebassets/images/slider-3-slide-2-1920x850.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/slider-3-slide-3-1920x850.jpg",
+      "PackagePath": "staticwebassets/images/slider-3-slide-3-1920x850.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/slider-slide-1-1920x850.jpg",
+      "PackagePath": "staticwebassets/images/slider-slide-1-1920x850.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/slider-slide-2-1920x850.jpg",
+      "PackagePath": "staticwebassets/images/slider-slide-2-1920x850.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/slider-slide-3-1920x850.jpg",
+      "PackagePath": "staticwebassets/images/slider-slide-3-1920x850.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/sustaining-gift-1-570x389.jpg",
+      "PackagePath": "staticwebassets/images/sustaining-gift-1-570x389.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/sustaining-gift-2-370x240.jpg",
+      "PackagePath": "staticwebassets/images/sustaining-gift-2-370x240.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/sustaining-gift-3-370x240.jpg",
+      "PackagePath": "staticwebassets/images/sustaining-gift-3-370x240.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/sustaining-gift-4-370x240.jpg",
+      "PackagePath": "staticwebassets/images/sustaining-gift-4-370x240.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/theresa-lane-80x80.jpg",
+      "PackagePath": "staticwebassets/images/theresa-lane-80x80.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/typography-1-770x485.jpg",
+      "PackagePath": "staticwebassets/images/typography-1-770x485.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/typography-2-350x220.jpg",
+      "PackagePath": "staticwebassets/images/typography-2-350x220.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/video-preview.jpg",
+      "PackagePath": "staticwebassets/images/video-preview.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/js/site.min.js",
+      "PackagePath": "staticwebassets/js/site.min.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap.css",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/twitter-bootstrap/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/twitter-bootstrap/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/twitter-bootstrap/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/twitter-bootstrap/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/js/bootstrap.js",
+      "PackagePath": "staticwebassets/twitter-bootstrap/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/twitter-bootstrap/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/twitter-bootstrap/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_accordion.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_accordion.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_alert.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_alert.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_badge.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_badge.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_breadcrumb.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_breadcrumb.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_button-group.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_button-group.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_buttons.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_buttons.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_card.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_card.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_carousel.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_carousel.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_close.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_close.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_containers.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_containers.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_dropdown.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_dropdown.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_forms.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_forms.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_functions.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_functions.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_grid.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_grid.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_helpers.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_helpers.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_images.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_images.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_list-group.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_list-group.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_maps.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_maps.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_mixins.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_mixins.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_modal.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_modal.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_nav.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_nav.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_navbar.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_navbar.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_offcanvas.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_offcanvas.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_pagination.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_pagination.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_placeholders.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_placeholders.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_popover.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_popover.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_progress.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_progress.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_reboot.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_reboot.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_root.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_root.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_spinners.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_spinners.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_tables.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_tables.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_toasts.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_toasts.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_tooltip.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_tooltip.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_transitions.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_transitions.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_type.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_type.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_utilities.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_utilities.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/_variables.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/_variables.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/bootstrap-grid.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/bootstrap-grid.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/bootstrap-reboot.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/bootstrap-utilities.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/bootstrap-utilities.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/bootstrap.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/bootstrap.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/forms/_floating-labels.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/forms/_floating-labels.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/forms/_form-check.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/forms/_form-check.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/forms/_form-control.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/forms/_form-control.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/forms/_form-range.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/forms/_form-range.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/forms/_form-select.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/forms/_form-select.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/forms/_form-text.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/forms/_form-text.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/forms/_input-group.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/forms/_input-group.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/forms/_labels.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/forms/_labels.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/forms/_validation.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/forms/_validation.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/helpers/_clearfix.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/helpers/_clearfix.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/helpers/_color-bg.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/helpers/_color-bg.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/helpers/_colored-links.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/helpers/_colored-links.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/helpers/_position.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/helpers/_position.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/helpers/_ratio.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/helpers/_ratio.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/helpers/_stacks.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/helpers/_stacks.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/helpers/_stretched-link.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/helpers/_stretched-link.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/helpers/_text-truncation.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/helpers/_text-truncation.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/helpers/_visually-hidden.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/helpers/_visually-hidden.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/helpers/_vr.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/helpers/_vr.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_alert.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_alert.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_backdrop.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_backdrop.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_banner.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_banner.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_border-radius.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_border-radius.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_box-shadow.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_box-shadow.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_breakpoints.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_breakpoints.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_buttons.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_buttons.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_caret.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_caret.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_clearfix.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_clearfix.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_color-scheme.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_color-scheme.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_container.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_container.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_deprecate.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_deprecate.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_forms.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_forms.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_gradients.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_gradients.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_grid.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_grid.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_image.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_image.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_list-group.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_list-group.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_lists.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_lists.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_pagination.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_pagination.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_reset-text.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_reset-text.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_resize.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_resize.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_table-variants.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_table-variants.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_text-truncate.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_text-truncate.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_transition.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_transition.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_utilities.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_utilities.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_visually-hidden.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_visually-hidden.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/utilities/_api.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/utilities/_api.scss"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/vendor/_rfs.scss",
+      "PackagePath": "staticwebassets/twitter-bootstrap/scss/vendor/_rfs.scss"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.AdoptMe.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.AdoptMe.Web.props",
+      "PackagePath": "build\\AdoptMe.Web.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.AdoptMe.Web.props",
+      "PackagePath": "buildMultiTargeting\\AdoptMe.Web.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.AdoptMe.Web.props",
+      "PackagePath": "buildTransitive\\AdoptMe.Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

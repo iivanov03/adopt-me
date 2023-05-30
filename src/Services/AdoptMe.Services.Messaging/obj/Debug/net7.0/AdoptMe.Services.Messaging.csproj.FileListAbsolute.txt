@@ -1,0 +1,12 @@
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Messaging/bin/Debug/net7.0/AdoptMe.Services.Messaging.deps.json
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Messaging/bin/Debug/net7.0/AdoptMe.Services.Messaging.dll
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Messaging/bin/Debug/net7.0/AdoptMe.Services.Messaging.pdb
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Messaging/obj/Debug/net7.0/AdoptMe.Services.Messaging.csproj.AssemblyReference.cache
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Messaging/obj/Debug/net7.0/AdoptMe.Services.Messaging.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Messaging/obj/Debug/net7.0/AdoptMe.Services.Messaging.AssemblyInfoInputs.cache
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Messaging/obj/Debug/net7.0/AdoptMe.Services.Messaging.AssemblyInfo.cs
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Messaging/obj/Debug/net7.0/AdoptMe.Services.Messaging.csproj.CoreCompileInputs.cache
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Messaging/obj/Debug/net7.0/AdoptMe.Services.Messaging.dll
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Messaging/obj/Debug/net7.0/refint/AdoptMe.Services.Messaging.dll
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Messaging/obj/Debug/net7.0/AdoptMe.Services.Messaging.pdb
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Messaging/obj/Debug/net7.0/ref/AdoptMe.Services.Messaging.dll

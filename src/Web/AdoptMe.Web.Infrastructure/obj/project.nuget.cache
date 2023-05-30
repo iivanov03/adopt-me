@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "0ddS35Kx0opaJty9c5zrA2JSv1JTzca/1KIMxCtscinlfwNyZt95DN90hc/+g8J7WGlZQ6EeiFyRlz8S5qVVEA==",
+  "success": true,
+  "projectFilePath": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/AdoptMe.Web.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "/Users/ivanov/.nuget/packages/stylecop.analyzers/1.2.0-beta.435/stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
+    "/Users/ivanov/.nuget/packages/stylecop.analyzers.unstable/1.2.0.435/stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
+  ],
+  "logs": []
+}

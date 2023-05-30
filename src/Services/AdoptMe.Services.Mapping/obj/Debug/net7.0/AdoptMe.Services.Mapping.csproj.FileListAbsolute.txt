@@ -1,0 +1,12 @@
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/bin/Debug/net7.0/AdoptMe.Services.Mapping.deps.json
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/bin/Debug/net7.0/AdoptMe.Services.Mapping.dll
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/bin/Debug/net7.0/AdoptMe.Services.Mapping.pdb
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/obj/Debug/net7.0/AdoptMe.Services.Mapping.csproj.AssemblyReference.cache
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/obj/Debug/net7.0/AdoptMe.Services.Mapping.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/obj/Debug/net7.0/AdoptMe.Services.Mapping.AssemblyInfoInputs.cache
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/obj/Debug/net7.0/AdoptMe.Services.Mapping.AssemblyInfo.cs
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/obj/Debug/net7.0/AdoptMe.Services.Mapping.csproj.CoreCompileInputs.cache
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/obj/Debug/net7.0/AdoptMe.Services.Mapping.dll
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/obj/Debug/net7.0/refint/AdoptMe.Services.Mapping.dll
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/obj/Debug/net7.0/AdoptMe.Services.Mapping.pdb
+/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/obj/Debug/net7.0/ref/AdoptMe.Services.Mapping.dll

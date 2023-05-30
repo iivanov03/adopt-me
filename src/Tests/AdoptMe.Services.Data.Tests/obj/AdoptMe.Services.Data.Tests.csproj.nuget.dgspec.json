@@ -1,0 +1,595 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ivanov/Work/adopt-me/src/Tests/AdoptMe.Services.Data.Tests/AdoptMe.Services.Data.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/ivanov/Work/adopt-me/src/AdoptMe.Common/AdoptMe.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ivanov/Work/adopt-me/src/AdoptMe.Common/AdoptMe.Common.csproj",
+        "projectName": "AdoptMe.Common",
+        "projectPath": "/Users/ivanov/Work/adopt-me/src/AdoptMe.Common/AdoptMe.Common.csproj",
+        "packagesPath": "/Users/ivanov/.nuget/packages/",
+        "outputPath": "/Users/ivanov/Work/adopt-me/src/AdoptMe.Common/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ivanov/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/AdoptMe.Data.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/AdoptMe.Data.Common.csproj",
+        "projectName": "AdoptMe.Data.Common",
+        "projectPath": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/AdoptMe.Data.Common.csproj",
+        "packagesPath": "/Users/ivanov/.nuget/packages/",
+        "outputPath": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ivanov/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/AdoptMe.Data.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/AdoptMe.Data.Models.csproj",
+        "projectName": "AdoptMe.Data.Models",
+        "projectPath": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/AdoptMe.Data.Models.csproj",
+        "packagesPath": "/Users/ivanov/.nuget/packages/",
+        "outputPath": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ivanov/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/AdoptMe.Data.Common.csproj": {
+                "projectPath": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/AdoptMe.Data.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data/AdoptMe.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data/AdoptMe.Data.csproj",
+        "projectName": "AdoptMe.Data",
+        "projectPath": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data/AdoptMe.Data.csproj",
+        "packagesPath": "/Users/ivanov/.nuget/packages/",
+        "outputPath": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ivanov/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/ivanov/Work/adopt-me/src/AdoptMe.Common/AdoptMe.Common.csproj": {
+                "projectPath": "/Users/ivanov/Work/adopt-me/src/AdoptMe.Common/AdoptMe.Common.csproj"
+              },
+              "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/AdoptMe.Data.Common.csproj": {
+                "projectPath": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/AdoptMe.Data.Common.csproj"
+              },
+              "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/AdoptMe.Data.Models.csproj": {
+                "projectPath": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/AdoptMe.Data.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration.UserSecrets": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Data/AdoptMe.Services.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Data/AdoptMe.Services.Data.csproj",
+        "projectName": "AdoptMe.Services.Data",
+        "projectPath": "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Data/AdoptMe.Services.Data.csproj",
+        "packagesPath": "/Users/ivanov/.nuget/packages/",
+        "outputPath": "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ivanov/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/AdoptMe.Data.Common.csproj": {
+                "projectPath": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/AdoptMe.Data.Common.csproj"
+              },
+              "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/AdoptMe.Data.Models.csproj": {
+                "projectPath": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/AdoptMe.Data.Models.csproj"
+              },
+              "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/AdoptMe.Services.Mapping.csproj": {
+                "projectPath": "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/AdoptMe.Services.Mapping.csproj"
+              },
+              "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.ViewModels/AdoptMe.Web.ViewModels.csproj": {
+                "projectPath": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.ViewModels/AdoptMe.Web.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/AdoptMe.Services.Mapping.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/AdoptMe.Services.Mapping.csproj",
+        "projectName": "AdoptMe.Services.Mapping",
+        "projectPath": "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/AdoptMe.Services.Mapping.csproj",
+        "packagesPath": "/Users/ivanov/.nuget/packages/",
+        "outputPath": "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ivanov/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ivanov/Work/adopt-me/src/Tests/AdoptMe.Services.Data.Tests/AdoptMe.Services.Data.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ivanov/Work/adopt-me/src/Tests/AdoptMe.Services.Data.Tests/AdoptMe.Services.Data.Tests.csproj",
+        "projectName": "AdoptMe.Services.Data.Tests",
+        "projectPath": "/Users/ivanov/Work/adopt-me/src/Tests/AdoptMe.Services.Data.Tests/AdoptMe.Services.Data.Tests.csproj",
+        "packagesPath": "/Users/ivanov/.nuget/packages/",
+        "outputPath": "/Users/ivanov/Work/adopt-me/src/Tests/AdoptMe.Services.Data.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ivanov/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data/AdoptMe.Data.csproj": {
+                "projectPath": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data/AdoptMe.Data.csproj"
+              },
+              "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Data/AdoptMe.Services.Data.csproj": {
+                "projectPath": "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Data/AdoptMe.Services.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.4, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.ViewModels/AdoptMe.Web.ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.ViewModels/AdoptMe.Web.ViewModels.csproj",
+        "projectName": "AdoptMe.Web.ViewModels",
+        "projectPath": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.ViewModels/AdoptMe.Web.ViewModels.csproj",
+        "packagesPath": "/Users/ivanov/.nuget/packages/",
+        "outputPath": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.ViewModels/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ivanov/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/AdoptMe.Data.Models.csproj": {
+                "projectPath": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/AdoptMe.Data.Models.csproj"
+              },
+              "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/AdoptMe.Services.Mapping.csproj": {
+                "projectPath": "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/AdoptMe.Services.Mapping.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

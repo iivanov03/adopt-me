@@ -1,0 +1,12 @@
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/bin/Debug/net7.0/AdoptMe.Web.Infrastructure.deps.json
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/bin/Debug/net7.0/AdoptMe.Web.Infrastructure.dll
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/bin/Debug/net7.0/AdoptMe.Web.Infrastructure.pdb
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/obj/Debug/net7.0/AdoptMe.Web.Infrastructure.csproj.AssemblyReference.cache
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/obj/Debug/net7.0/AdoptMe.Web.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/obj/Debug/net7.0/AdoptMe.Web.Infrastructure.AssemblyInfoInputs.cache
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/obj/Debug/net7.0/AdoptMe.Web.Infrastructure.AssemblyInfo.cs
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/obj/Debug/net7.0/AdoptMe.Web.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/obj/Debug/net7.0/AdoptMe.Web.Infrastructure.dll
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/obj/Debug/net7.0/refint/AdoptMe.Web.Infrastructure.dll
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/obj/Debug/net7.0/AdoptMe.Web.Infrastructure.pdb
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/obj/Debug/net7.0/ref/AdoptMe.Web.Infrastructure.dll

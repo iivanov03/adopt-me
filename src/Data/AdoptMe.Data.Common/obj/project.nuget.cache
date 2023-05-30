@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "b75g1ny+sGYbHCPkveG5/OtZAKWUiAsmLgtroO07h2z66zbDyIup6oraGaZk2w0M1U8BWLMlKPTBaFp/WhyNRg==",
+  "success": true,
+  "projectFilePath": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/AdoptMe.Data.Common.csproj",
+  "expectedPackageFiles": [
+    "/Users/ivanov/.nuget/packages/stylecop.analyzers/1.2.0-beta.435/stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
+    "/Users/ivanov/.nuget/packages/stylecop.analyzers.unstable/1.2.0.435/stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512",
+    "/Users/ivanov/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,161 @@
+﻿<Properties StartupConfiguration="{B90D1067-FE4C-400E-BA78-5413E30AB9ED}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/AdoptMe.Services.Data/GetCountService.cs">
+    <Files>
+      <File FileName="Web/AdoptMe.Web.ViewModels/Home/IndexViewModel.cs" Line="1" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Views/Shared/_LayoutMainPage.cshtml" Line="1" Column="15" />
+      <File FileName="Services/AdoptMe.Services.Data/GetCountService.cs" Line="37" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AdoptMe" expanded="True">
+            <Node name="Data" expanded="True">
+              <Node name="AdoptMe.Data" expanded="True">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="FrameworkReferences" expanded="True" />
+                  <Node name="PackageDependencies" expanded="True" />
+                  <Node name="ProjectDependencies" expanded="True" />
+                </Node>
+                <Node name="Configurations" expanded="True" />
+                <Node name="Migrations" expanded="True" />
+                <Node name="Repositories" expanded="True" />
+              </Node>
+              <Node name="AdoptMe.Data.Common" expanded="True">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="FrameworkReferences" expanded="True" />
+                  <Node name="PackageDependencies" expanded="True" />
+                </Node>
+                <Node name="Models" expanded="True" />
+                <Node name="Repositories" expanded="True" />
+              </Node>
+              <Node name="AdoptMe.Data.Models" expanded="True">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="FrameworkReferences" expanded="True" />
+                  <Node name="PackageDependencies" expanded="True" />
+                  <Node name="ProjectDependencies" expanded="True" />
+                </Node>
+                <Node name="Enums" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Services" expanded="True">
+              <Node name="AdoptMe.Services" expanded="True">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="FrameworkReferences" expanded="True" />
+                  <Node name="PackageDependencies" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="AdoptMe.Services.Data" expanded="True">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="FrameworkReferences" expanded="True" />
+                  <Node name="PackageDependencies" expanded="True" />
+                  <Node name="ProjectDependencies" expanded="True" />
+                </Node>
+                <Node name="GetCountService.cs" selected="True" />
+              </Node>
+              <Node name="AdoptMe.Services.Mapping" expanded="True">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="FrameworkReferences" expanded="True" />
+                  <Node name="PackageDependencies" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="AdoptMe.Services.Messaging" expanded="True">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="FrameworkReferences" expanded="True" />
+                  <Node name="PackageDependencies" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Tests" expanded="True">
+              <Node name="AdoptMe.Services.Data.Tests" expanded="True" />
+              <Node name="AdoptMe.Web.Tests" expanded="True">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="FrameworkReferences" expanded="True" />
+                  <Node name="PackageDependencies" expanded="True" />
+                  <Node name="ProjectDependencies" expanded="True" />
+                </Node>
+                <Node name="Properties" expanded="True" />
+              </Node>
+              <Node name="Sandbox" expanded="True" />
+            </Node>
+            <Node name="Web" expanded="True">
+              <Node name="AdoptMe.Web" expanded="True">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="FrameworkReferences" expanded="True" />
+                  <Node name="PackageDependencies" expanded="True" />
+                  <Node name="ProjectDependencies" expanded="True" />
+                </Node>
+                <Node name="Areas" expanded="True">
+                  <Node name="Administration" expanded="True">
+                    <Node name="Controllers" expanded="True" />
+                    <Node name="Views" expanded="True">
+                      <Node name="Dashboard" expanded="True" />
+                    </Node>
+                  </Node>
+                  <Node name="Identity" expanded="True">
+                    <Node name="Pages" expanded="True">
+                      <Node name="Account" expanded="True">
+                        <Node name="Login.cshtml" expanded="True" />
+                        <Node name="Register.cshtml" expanded="True" />
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+                <Node name="Controllers" expanded="True" />
+                <Node name="Properties" expanded="True" />
+                <Node name="Resources" expanded="True">
+                  <Node name="Views" expanded="True">
+                    <Node name="Shared" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="Views" expanded="True">
+                  <Node name="Home" expanded="True" />
+                  <Node name="Settings" expanded="True" />
+                  <Node name="Shared" expanded="True" />
+                </Node>
+                <Node name="wwwroot" expanded="True">
+                  <Node name="lib" expanded="True">
+                    <Node name="bootstrap" expanded="True" />
+                    <Node name="jquery" expanded="True" />
+                    <Node name="jquery-validation" expanded="True" />
+                    <Node name="jquery-validation-unobtrusive" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="appsettings.json" expanded="True" />
+              </Node>
+              <Node name="AdoptMe.Web.Infrastructure" expanded="True">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="FrameworkReferences" expanded="True" />
+                  <Node name="PackageDependencies" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="AdoptMe.Web.ViewModels" expanded="True">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="FrameworkReferences" expanded="True" />
+                  <Node name="PackageDependencies" expanded="True" />
+                  <Node name="ProjectDependencies" expanded="True" />
+                </Node>
+                <Node name="Administration" expanded="True">
+                  <Node name="Dashboard" expanded="True" />
+                </Node>
+                <Node name="Home" expanded="True" />
+                <Node name="Settings" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="AdoptMe.Common" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Web.AdoptMe.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+</Properties>

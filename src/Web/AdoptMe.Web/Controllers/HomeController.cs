@@ -2,15 +2,24 @@
 {
     using System.Diagnostics;
 
+    using AdoptMe.Services.Data;
     using AdoptMe.Web.ViewModels;
 
     using Microsoft.AspNetCore.Mvc;
 
     public class HomeController : BaseController
     {
+        private readonly IGetCountsService getCountService;
+
+        public HomeController(IGetCountsService getCountService)
+        {
+            this.getCountService = getCountService;
+        }
+
         public IActionResult Index()
         {
-            return this.View();
+            var viewModel = this.getCountService.GetIndexCounts();
+            return this.View(viewModel);
         }
 
         public IActionResult Privacy()
