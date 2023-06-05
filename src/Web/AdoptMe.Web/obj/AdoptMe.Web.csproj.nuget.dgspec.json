@@ -593,11 +593,19 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
             "StyleCop.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
               "suppressParent": "All",
               "target": "Package",
               "version": "[1.2.0-beta.435, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -647,6 +655,9 @@
               },
               "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/AdoptMe.Services.Mapping.csproj": {
                 "projectPath": "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/AdoptMe.Services.Mapping.csproj"
+              },
+              "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/AdoptMe.Web.Infrastructure.csproj": {
+                "projectPath": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/AdoptMe.Web.Infrastructure.csproj"
               }
             }
           }

@@ -1221,18 +1221,6 @@
       "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_transition.scss"
     },
     {
-      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_utilities.scss",
-      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_utilities.scss"
-    },
-    {
-      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/mixins/_visually-hidden.scss",
-      "PackagePath": "staticwebassets/twitter-bootstrap/scss/mixins/_visually-hidden.scss"
-    },
-    {
-      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/utilities/_api.scss",
-      "PackagePath": "staticwebassets/twitter-bootstrap/scss/utilities/_api.scss"
-    },
-    {
       "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/twitter-bootstrap/scss/vendor/_rfs.scss",
       "PackagePath": "staticwebassets/twitter-bootstrap/scss/vendor/_rfs.scss"
     },

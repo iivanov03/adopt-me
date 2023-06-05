@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\AdoptMe.Data.Models\AdoptMe.Data.Models.csproj" />
     <ProjectReference Include="..\..\Services\AdoptMe.Services.Mapping\AdoptMe.Services.Mapping.csproj" />
+    <ProjectReference Include="..\AdoptMe.Web.Infrastructure\AdoptMe.Web.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

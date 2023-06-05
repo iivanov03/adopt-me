@@ -1,14 +1,10 @@
 ﻿<Properties StartupConfiguration="{B90D1067-FE4C-400E-BA78-5413E30AB9ED}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Services/AdoptMe.Services.Data/GetCountService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Web/AdoptMe.Web/Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="Web/AdoptMe.Web.ViewModels/Home/IndexViewModel.cs" Line="1" Column="1" />
-      <File FileName="Web/AdoptMe.Web/Views/Shared/_LayoutMainPage.cshtml" Line="1" Column="15" />
-      <File FileName="Services/AdoptMe.Services.Data/GetCountService.cs" Line="37" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Views/Shared/_LayoutMainPage.cshtml" Line="238" Column="18" />
+      <File FileName="Web/AdoptMe.Web/Views/Shared/_Layout.cshtml" Line="218" Column="23" />
+      <File FileName="Web/AdoptMe.Web/AdoptMe.Web.csproj" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -55,7 +51,6 @@
                   <Node name="PackageDependencies" expanded="True" />
                   <Node name="ProjectDependencies" expanded="True" />
                 </Node>
-                <Node name="GetCountService.cs" selected="True" />
               </Node>
               <Node name="AdoptMe.Services.Mapping" expanded="True">
                 <Node name="Dependencies" expanded="True">
@@ -70,18 +65,6 @@
                 </Node>
               </Node>
             </Node>
-            <Node name="Tests" expanded="True">
-              <Node name="AdoptMe.Services.Data.Tests" expanded="True" />
-              <Node name="AdoptMe.Web.Tests" expanded="True">
-                <Node name="Dependencies" expanded="True">
-                  <Node name="FrameworkReferences" expanded="True" />
-                  <Node name="PackageDependencies" expanded="True" />
-                  <Node name="ProjectDependencies" expanded="True" />
-                </Node>
-                <Node name="Properties" expanded="True" />
-              </Node>
-              <Node name="Sandbox" expanded="True" />
-            </Node>
             <Node name="Web" expanded="True">
               <Node name="AdoptMe.Web" expanded="True">
                 <Node name="Dependencies" expanded="True">
@@ -89,33 +72,12 @@
                   <Node name="PackageDependencies" expanded="True" />
                   <Node name="ProjectDependencies" expanded="True" />
                 </Node>
-                <Node name="Areas" expanded="True">
-                  <Node name="Administration" expanded="True">
-                    <Node name="Controllers" expanded="True" />
-                    <Node name="Views" expanded="True">
-                      <Node name="Dashboard" expanded="True" />
-                    </Node>
-                  </Node>
-                  <Node name="Identity" expanded="True">
-                    <Node name="Pages" expanded="True">
-                      <Node name="Account" expanded="True">
-                        <Node name="Login.cshtml" expanded="True" />
-                        <Node name="Register.cshtml" expanded="True" />
-                      </Node>
-                    </Node>
-                  </Node>
-                </Node>
-                <Node name="Controllers" expanded="True" />
-                <Node name="Properties" expanded="True" />
-                <Node name="Resources" expanded="True">
-                  <Node name="Views" expanded="True">
-                    <Node name="Shared" expanded="True" />
-                  </Node>
-                </Node>
                 <Node name="Views" expanded="True">
+                  <Node name="Adopt" expanded="True" />
                   <Node name="Home" expanded="True" />
-                  <Node name="Settings" expanded="True" />
-                  <Node name="Shared" expanded="True" />
+                  <Node name="Shared" expanded="True">
+                    <Node name="_Layout.cshtml" selected="True" />
+                  </Node>
                 </Node>
                 <Node name="wwwroot" expanded="True">
                   <Node name="lib" expanded="True">
@@ -132,6 +94,7 @@
                   <Node name="FrameworkReferences" expanded="True" />
                   <Node name="PackageDependencies" expanded="True" />
                 </Node>
+                <Node name="ValidationAttributes" expanded="True" />
               </Node>
               <Node name="AdoptMe.Web.ViewModels" expanded="True">
                 <Node name="Dependencies" expanded="True">
@@ -142,6 +105,7 @@
                 <Node name="Administration" expanded="True">
                   <Node name="Dashboard" expanded="True" />
                 </Node>
+                <Node name="Adopt" expanded="True" />
                 <Node name="Home" expanded="True" />
                 <Node name="Settings" expanded="True" />
               </Node>
@@ -156,6 +120,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Web.AdoptMe.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Web.AdoptMe.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
