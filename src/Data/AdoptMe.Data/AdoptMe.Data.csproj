@@ -44,4 +44,10 @@
     <ProjectReference Include="..\AdoptMe.Data.Models\AdoptMe.Data.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Migrations\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
 </Project>

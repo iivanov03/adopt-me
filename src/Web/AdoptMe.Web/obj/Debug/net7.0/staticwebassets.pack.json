@@ -5,6 +5,94 @@
       "PackagePath": "staticwebassets/.DS_Store"
     },
     {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/ReCaptcha/ReCaptcha.php",
+      "PackagePath": "staticwebassets/bat/ReCaptcha/ReCaptcha.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/ReCaptcha/RequestMethod.php",
+      "PackagePath": "staticwebassets/bat/ReCaptcha/RequestMethod.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/ReCaptcha/RequestMethod/Curl.php",
+      "PackagePath": "staticwebassets/bat/ReCaptcha/RequestMethod/Curl.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/ReCaptcha/RequestMethod/CurlPost.php",
+      "PackagePath": "staticwebassets/bat/ReCaptcha/RequestMethod/CurlPost.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/ReCaptcha/RequestMethod/Post.php",
+      "PackagePath": "staticwebassets/bat/ReCaptcha/RequestMethod/Post.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/ReCaptcha/RequestMethod/Socket.php",
+      "PackagePath": "staticwebassets/bat/ReCaptcha/RequestMethod/Socket.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/ReCaptcha/RequestMethod/SocketPost.php",
+      "PackagePath": "staticwebassets/bat/ReCaptcha/RequestMethod/SocketPost.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/ReCaptcha/RequestParameters.php",
+      "PackagePath": "staticwebassets/bat/ReCaptcha/RequestParameters.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/ReCaptcha/Response.php",
+      "PackagePath": "staticwebassets/bat/ReCaptcha/Response.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/ReCaptcha/autoload.php",
+      "PackagePath": "staticwebassets/bat/ReCaptcha/autoload.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/phpmailer/PHPMailerAutoload.php",
+      "PackagePath": "staticwebassets/bat/phpmailer/PHPMailerAutoload.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/phpmailer/class.phpmailer.php",
+      "PackagePath": "staticwebassets/bat/phpmailer/class.phpmailer.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/phpmailer/class.pop3.php",
+      "PackagePath": "staticwebassets/bat/phpmailer/class.pop3.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/phpmailer/class.smtp.php",
+      "PackagePath": "staticwebassets/bat/phpmailer/class.smtp.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/rd-mailform.php",
+      "PackagePath": "staticwebassets/bat/rd-mailform.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/rd-mailform.tpl",
+      "PackagePath": "staticwebassets/bat/rd-mailform.tpl"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/rd-search.php",
+      "PackagePath": "staticwebassets/bat/rd-search.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/reCaptcha.php",
+      "PackagePath": "staticwebassets/bat/reCaptcha.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/twitter_api/config.php",
+      "PackagePath": "staticwebassets/bat/twitter_api/config.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/twitter_api/tweet.php",
+      "PackagePath": "staticwebassets/bat/twitter_api/tweet.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/twitter_api/twitteroauth/OAuth.php",
+      "PackagePath": "staticwebassets/bat/twitter_api/twitteroauth/OAuth.php"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/bat/twitter_api/twitteroauth/twitteroauth.php",
+      "PackagePath": "staticwebassets/bat/twitter_api/twitteroauth/twitteroauth.php"
+    },
+    {
       "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
@@ -13,8 +101,112 @@
       "PackagePath": "staticwebassets/css/site.min.css"
     },
     {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
       "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/FontAwesome.otf",
+      "PackagePath": "staticwebassets/fonts/FontAwesome.otf"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/MaterialIcons-Regular.eot",
+      "PackagePath": "staticwebassets/fonts/MaterialIcons-Regular.eot"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/MaterialIcons-Regular.ijmap",
+      "PackagePath": "staticwebassets/fonts/MaterialIcons-Regular.ijmap"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/MaterialIcons-Regular.ttf",
+      "PackagePath": "staticwebassets/fonts/MaterialIcons-Regular.ttf"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/MaterialIcons-Regular.woff",
+      "PackagePath": "staticwebassets/fonts/MaterialIcons-Regular.woff"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/MaterialIcons-Regular.woff2",
+      "PackagePath": "staticwebassets/fonts/MaterialIcons-Regular.woff2"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/fl-bigmug-line.eot",
+      "PackagePath": "staticwebassets/fonts/fl-bigmug-line.eot"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/fl-bigmug-line.svg",
+      "PackagePath": "staticwebassets/fonts/fl-bigmug-line.svg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/fl-bigmug-line.ttf",
+      "PackagePath": "staticwebassets/fonts/fl-bigmug-line.ttf"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/fl-bigmug-line.woff",
+      "PackagePath": "staticwebassets/fonts/fl-bigmug-line.woff"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.eot"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.svg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.woff"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets/fonts/fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets/fonts/glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets/fonts/glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets/fonts/glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets/fonts/glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets/fonts/glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/materialdesignicons-webfont.eot",
+      "PackagePath": "staticwebassets/fonts/materialdesignicons-webfont.eot"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/materialdesignicons-webfont.svg",
+      "PackagePath": "staticwebassets/fonts/materialdesignicons-webfont.svg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/materialdesignicons-webfont.ttf",
+      "PackagePath": "staticwebassets/fonts/materialdesignicons-webfont.ttf"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/materialdesignicons-webfont.woff",
+      "PackagePath": "staticwebassets/fonts/materialdesignicons-webfont.woff"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/fonts/materialdesignicons-webfont.woff2",
+      "PackagePath": "staticwebassets/fonts/materialdesignicons-webfont.woff2"
     },
     {
       "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/.DS_Store",
@@ -659,6 +851,10 @@
     {
       "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/images/video-preview.jpg",
       "PackagePath": "staticwebassets/images/video-preview.jpg"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/js/script.js",
+      "PackagePath": "staticwebassets/js/script.js"
     },
     {
       "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/js/site.js",
