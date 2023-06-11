@@ -49,6 +49,7 @@
                             </div>
                         </div>
                     </div>
+                    <partial name="_CookieConsentPartial" />
                     <div class="rd-navbar-inner">
                         <!-- RD Navbar Panel-->
                         <div class="rd-navbar-panel">
@@ -78,9 +79,12 @@
                                         <li>
                                             <a href="Adopt/Index/#adopt-other">@Localizer["AdoptOther"]</a>
                                         </li>
-                                        <li>
-                                            <a asp-area="" asp-controller="Adopt" asp-action="Create">Създай пост за осиновяване</a>
-                                        </li>
+                                        @if (this.User.Identity.IsAuthenticated)
+                                        {
+                                            <li>
+                                                <a asp-area="" asp-controller="Adopt" asp-action="Create">Създай пост за осиновяване</a>
+                                            </li>
+                                        }
                                     </ul>
                                 </li>
                                 <li>
@@ -121,7 +125,7 @@
                 </nav>
             </div>
         </header>
-        <partial name="_CookieConsentPartial" />
+
         @this.RenderBody()
         <!-- Page Footer-->
         <section class="pre-footer-default text-center text-sm-left">
@@ -194,7 +198,7 @@
                     </div>
                     <div class="cell-sm-9 cell-md-4 text-sm-center text-md-left">
                         <h5 class="pre-footer-header text-uppercase">Newsletter</h5>
-                        <p>Enter your e-mail to get the latest news of Animal Shelter.</p>
+                        <p>Enter your e-mail to get the latest news of Adopt Me.</p>
                         <!-- RD Mailform-->
                         <form class="rd-mailform form-bordered form-centered" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
                             <div class="form-group">
@@ -222,7 +226,7 @@
                     </div>
                     <div class="cell-md-4 cell-lg-3 text-md-right">
                         <p class="rights">
-                            Animal Shelter&nbsp;&copy;&nbsp;<span id="copyright-year"></span>.&nbsp;<br class="veil-sm"><a class="link-underline" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy Policy</a>
+                            Adopt Me&nbsp;&copy;&nbsp;<span id="copyright-year"></span>.&nbsp;<br class="veil-sm"><a class="link-underline" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy Policy</a>
                             <!-- {%FOOTER_LINK}-->
                         </p>
                     </div>

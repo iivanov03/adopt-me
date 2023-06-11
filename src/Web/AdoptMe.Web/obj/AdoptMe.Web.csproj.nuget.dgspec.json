@@ -341,6 +341,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
             "StyleCop.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
               "suppressParent": "All",
@@ -596,6 +600,10 @@
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
               "version": "[5.0.17, )"
+            },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[2.1.4, )"
             },
             "StyleCop.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",

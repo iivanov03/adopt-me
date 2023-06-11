@@ -3067,6 +3067,23 @@
           }
         }
       },
+      "SixLabors.ImageSharp/2.1.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Text.Encoding.CodePages": "5.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "starkbank-ecdsa/1.3.3": {
         "type": "package",
         "compile": {
@@ -4880,7 +4897,8 @@
           "AdoptMe.Data.Common": "1.0.0",
           "AdoptMe.Data.Models": "1.0.0",
           "AdoptMe.Services.Mapping": "1.0.0",
-          "AdoptMe.Web.ViewModels": "1.0.0"
+          "AdoptMe.Web.ViewModels": "1.0.0",
+          "SixLabors.ImageSharp": "2.1.4"
         },
         "compile": {
           "bin/placeholder/AdoptMe.Services.Data.dll": {}
@@ -4953,6 +4971,7 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
+          "SixLabors.ImageSharp": "2.1.4",
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "compile": {
@@ -9165,6 +9184,28 @@
         "lib/netstandard2.0/SendGrid.xml",
         "sendgrid.9.28.1.nupkg.sha512",
         "sendgrid.nuspec"
+      ]
+    },
+    "SixLabors.ImageSharp/2.1.4": {
+      "sha512": "K6F39YCm/MaOYT0iw9lMa8tBcz2eF8JaNMneo0EnRrml6k+8EQNSKXqb8yJTq2HHkWLlRHZl6UKMn02YmR/G3g==",
+      "type": "package",
+      "path": "sixlabors.imagesharp/2.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/SixLabors.ImageSharp.dll",
+        "lib/net472/SixLabors.ImageSharp.xml",
+        "lib/netcoreapp2.1/SixLabors.ImageSharp.dll",
+        "lib/netcoreapp2.1/SixLabors.ImageSharp.xml",
+        "lib/netcoreapp3.1/SixLabors.ImageSharp.dll",
+        "lib/netcoreapp3.1/SixLabors.ImageSharp.xml",
+        "lib/netstandard2.0/SixLabors.ImageSharp.dll",
+        "lib/netstandard2.0/SixLabors.ImageSharp.xml",
+        "lib/netstandard2.1/SixLabors.ImageSharp.dll",
+        "lib/netstandard2.1/SixLabors.ImageSharp.xml",
+        "sixlabors.imagesharp.128.png",
+        "sixlabors.imagesharp.2.1.4.nupkg.sha512",
+        "sixlabors.imagesharp.nuspec"
       ]
     },
     "starkbank-ecdsa/1.3.3": {

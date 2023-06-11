@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6KfcQ5LsQAoVtS+2qEpxQaid5fqFqSeOAKWfXDC5KPqWyBr85vHGKB1ElefGI4c6rOuwOxgGSvwtm8GpuSfZQQ==",
+  "dgSpecHash": "xkN7omHEMDQmdSLkTTsFGzaIYoJpNqOZju4XIXjjWjH82Mfd2N1e3ji1hXEAy3V7DvIB6rBjjyud5fXOUbm6pA==",
   "success": true,
   "projectFilePath": "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Data/AdoptMe.Services.Data.csproj",
   "expectedPackageFiles": [
@@ -25,10 +25,14 @@
     "/Users/ivanov/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "/Users/ivanov/.nuget/packages/microsoft.extensions.options/7.0.1/microsoft.extensions.options.7.0.1.nupkg.sha512",
     "/Users/ivanov/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/ivanov/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "/Users/ivanov/.nuget/packages/sixlabors.imagesharp/2.1.4/sixlabors.imagesharp.2.1.4.nupkg.sha512",
     "/Users/ivanov/.nuget/packages/stylecop.analyzers/1.2.0-beta.435/stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
     "/Users/ivanov/.nuget/packages/stylecop.analyzers.unstable/1.2.0.435/stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512",
     "/Users/ivanov/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "/Users/ivanov/.nuget/packages/system.io.pipelines/5.0.2/system.io.pipelines.5.0.2.nupkg.sha512"
+    "/Users/ivanov/.nuget/packages/system.io.pipelines/5.0.2/system.io.pipelines.5.0.2.nupkg.sha512",
+    "/Users/ivanov/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "/Users/ivanov/.nuget/packages/system.text.encoding.codepages/5.0.0/system.text.encoding.codepages.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

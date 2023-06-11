@@ -1,15 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "4b9o+sPqb1FaKCzbwMNIUtYjveOmZ445Cv1WwCmA9/dvdSzZURLEzrr3XiqGpzYJ4WDwSo1F15bG4KFuf0GAhw==",
+  "dgSpecHash": "gJ4EQjhYrZ+dsBz72s/lwFFvqGLwaLAoF8jH9lK5NNVJFWFwJrHCvwNttffjuW0mc9pEbBP8czSmn9k2a9LzDA==",
   "success": true,
   "projectFilePath": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/AdoptMe.Web.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/ivanov/.nuget/packages/microsoft.aspnetcore.http.features/5.0.17/microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "/Users/ivanov/.nuget/packages/microsoft.extensions.primitives/5.0.1/microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "/Users/ivanov/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "/Users/ivanov/.nuget/packages/sixlabors.imagesharp/2.1.4/sixlabors.imagesharp.2.1.4.nupkg.sha512",
     "/Users/ivanov/.nuget/packages/stylecop.analyzers/1.2.0-beta.435/stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
     "/Users/ivanov/.nuget/packages/stylecop.analyzers.unstable/1.2.0.435/stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512",
     "/Users/ivanov/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "/Users/ivanov/.nuget/packages/system.io.pipelines/5.0.2/system.io.pipelines.5.0.2.nupkg.sha512"
+    "/Users/ivanov/.nuget/packages/system.io.pipelines/5.0.2/system.io.pipelines.5.0.2.nupkg.sha512",
+    "/Users/ivanov/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "/Users/ivanov/.nuget/packages/system.text.encoding.codepages/5.0.0/system.text.encoding.codepages.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

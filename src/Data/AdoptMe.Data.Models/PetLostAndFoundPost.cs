@@ -32,9 +32,9 @@ namespace AdoptMe.Data.Models
 
         public int Likes { get; set; }
 
-        public bool IsFound { get; set; }
+        public bool IsFound { get; set; } = false;
 
-        public bool IsApproved { get; set; }
+        public bool IsApproved { get; set; } = true;
 
         public virtual ICollection<Picture> PostPictures { get; set; }
 

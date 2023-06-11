@@ -76,7 +76,8 @@
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
             services.AddTransient<ISettingsService, SettingsService>();
-            services.AddTransient<IGetCountsService, GetCountService>();
+            services.AddTransient<IGetCountService, GetCountService>();
+            services.AddTransient<IAdoptService, AdoptService>();
         }
 
         private static void Configure(WebApplication app)
@@ -86,13 +87,13 @@
             var supportedCultures = new[]
             {
                 new CultureInfo("en-US"),
-                new CultureInfo("bg-BG")
+                new CultureInfo("bg-BG"),
             };
             app.UseRequestLocalization(new RequestLocalizationOptions
             {
                 DefaultRequestCulture = new RequestCulture("bg-BG"),
                 SupportedCultures = supportedCultures,
-                SupportedUICultures = supportedCultures
+                SupportedUICultures = supportedCultures,
             });
 
             // Seed data on application startup

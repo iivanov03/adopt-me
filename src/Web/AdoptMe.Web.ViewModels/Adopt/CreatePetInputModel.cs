@@ -1,14 +1,12 @@
-﻿using System;
+﻿using AdoptMe.Data.Models;
+using AdoptMe.Data.Models.Enums;
+using AdoptMe.Web.Infrastructure.ValidationAttributes;
+using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
-
-using Microsoft.AspNetCore.Http;
-
-using AdoptMe.Data.Models;
-using AdoptMe.Data.Models.Enums;
-using AdoptMe.Web.Infrastructure.ValidationAttributes;
 
 namespace AdoptMe.Web.ViewModels.Adopt
 {
@@ -33,7 +31,7 @@ namespace AdoptMe.Web.ViewModels.Adopt
         public TypePet Type { get; set; }
 
         [Required]
-        [MaxFileSizeAttribute(15)]
+        [ImageValidationAttribute(15 * 1024 * 1024)]
         public IEnumerable<IFormFile> Images { get; set; }
     }
 }

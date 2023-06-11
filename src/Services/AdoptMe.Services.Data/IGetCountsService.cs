@@ -1,11 +1,12 @@
-﻿using System;
+﻿using AdoptMe.Web.ViewModels.Home;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using AdoptMe.Web.ViewModels.Home;
+using System.Threading.Tasks;
 
 namespace AdoptMe.Services.Data
 {
-    public interface IGetCountsService
+    public interface IGetCountService
     {
         IndexViewModel GetIndexCounts();
     }

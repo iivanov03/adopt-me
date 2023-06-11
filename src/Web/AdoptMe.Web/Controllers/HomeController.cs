@@ -1,17 +1,18 @@
 ﻿namespace AdoptMe.Web.Controllers
 {
     using System.Diagnostics;
-
+    using System.Threading.Tasks;
     using AdoptMe.Services.Data;
+    using AdoptMe.Web.Controllers;
     using AdoptMe.Web.ViewModels;
 
     using Microsoft.AspNetCore.Mvc;
 
     public class HomeController : BaseController
     {
-        private readonly IGetCountsService getCountService;
+        private readonly IGetCountService getCountService;
 
-        public HomeController(IGetCountsService getCountService)
+        public HomeController(IGetCountService getCountService)
         {
             this.getCountService = getCountService;
         }

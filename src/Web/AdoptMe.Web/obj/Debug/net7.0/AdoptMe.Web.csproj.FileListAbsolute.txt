@@ -616,3 +616,4 @@
 /Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
 /Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/bin/Debug/net7.0/Mono.TextTemplating.dll
 /Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/bin/Debug/net7.0/System.CodeDom.dll
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/bin/Debug/net7.0/SixLabors.ImageSharp.dll

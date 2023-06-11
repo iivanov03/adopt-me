@@ -1,44 +1,50 @@
 ﻿<Properties StartupConfiguration="{B90D1067-FE4C-400E-BA78-5413E30AB9ED}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Web/AdoptMe.Web/Views/Shared/_LoginPartial.cshtml">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Web/AdoptMe.Web/Properties/launchSettings.json">
     <Files>
-      <File FileName="Web/AdoptMe.Web/Views/Shared/_LayoutMainPage.cshtml" Line="1" Column="15" />
-      <File FileName="Web/AdoptMe.Web/Views/Shared/_Layout.cshtml" Line="1" Column="15" />
+      <File FileName="Web/AdoptMe.Web/Views/Shared/_LayoutMainPage.cshtml" />
+      <File FileName="Web/AdoptMe.Web/Views/Shared/_Layout.cshtml" />
       <File FileName="Web/AdoptMe.Web/AdoptMe.Web.csproj" />
-      <File FileName="Web/AdoptMe.Web/libman.json" Line="18" Column="38" />
-      <File FileName="stylecop.json" Line="1" Column="1" />
-      <File FileName="Web/AdoptMe.Web.ViewModels/Settings/SettingsListViewModel.cs" Line="1" Column="1" />
-      <File FileName="Web/AdoptMe.Web.ViewModels/Home/IndexViewModel.cs" Line="1" Column="1" />
-      <File FileName="Web/AdoptMe.Web.Infrastructure/ValidationAttributes/MaxFileSizeAttribute.cs" Line="5" Column="19" />
-      <File FileName="Web/AdoptMe.Web.ViewModels/ErrorViewModel.cs" Line="1" Column="1" />
-      <File FileName="Web/AdoptMe.Web.ViewModels/Settings/SettingViewModel.cs" Line="1" Column="1" />
-      <File FileName="Web/AdoptMe.Web.ViewModels/Home/HappyEndingStoriesViewModel.cs" Line="18" Column="23" />
-      <File FileName="Web/AdoptMe.Web/Views/Shared/Error.cshtml" Line="1" Column="1" />
+      <File FileName="Web/AdoptMe.Web/libman.json" />
+      <File FileName="stylecop.json" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/Settings/SettingsListViewModel.cs" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/Home/IndexViewModel.cs" />
+      <File FileName="Web/AdoptMe.Web.Infrastructure/ValidationAttributes/MaxFileSizeAttribute.cs" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/ErrorViewModel.cs" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/Settings/SettingViewModel.cs" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/Home/HappyEndingStoriesViewModel.cs" />
+      <File FileName="Web/AdoptMe.Web/Views/Shared/Error.cshtml" />
       <File FileName="Web/AdoptMe.Web/Views/Shared/_LoginPartial.cshtml" Line="13" Column="31" />
-      <File FileName="Web/AdoptMe.Web.ViewModels/Administration/Dashboard/IndexViewModel.cs" Line="1" Column="1" />
-      <File FileName="Web/AdoptMe.Web/Areas/Administration/Views/Dashboard/Index.cshtml" Line="1" Column="1" />
-      <File FileName="Web/AdoptMe.Web/Areas/Administration/Views/_ViewImports.cshtml" Line="1" Column="1" />
-      <File FileName="Web/AdoptMe.Web/Areas/Administration/Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="Web/AdoptMe.Web/Areas/Administration/Controllers/DashboardController.cs" Line="1" Column="1" />
-      <File FileName="Web/AdoptMe.Web/Areas/Administration/Controllers/AdministrationController.cs" Line="15" Column="1" />
-      <File FileName="Data/AdoptMe.Data.Models/Enums/City.cs" Line="25" Column="19" />
-      <File FileName="Data/AdoptMe.Data.Models/PetAdoptionPost.cs" Line="34" Column="45" />
-      <File FileName="Data/AdoptMe.Data.Models/PetLostAndFoundPost.cs" Line="29" Column="42" />
-      <File FileName="Web/AdoptMe.Web.ViewModels/Adopt/CreatePetInputModel.cs" Line="1" Column="1" />
-      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/Login.cshtml" Line="55" Column="21" />
-      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/Register.cshtml" Line="53" Column="19" />
-      <File FileName="Web/AdoptMe.Web/Controllers/AdoptController.cs" Line="42" Column="2" />
-      <File FileName="Web/AdoptMe.Web/Views/Adopt/Create.cshtml" Line="5" Column="15" />
-      <File FileName="Web/AdoptMe.Web/Views/Home/Index.cshtml" Line="7" Column="15" />
-      <File FileName="AdoptMe.Common/GlobalConstants.cs" Line="9" Column="61" />
-      <File FileName="Data/AdoptMe.Data.Models/ApplicationUser.cs" Line="36" Column="28" />
-      <File FileName="Web/AdoptMe.Web/Program.cs" Line="1" Column="1" />
-      <File FileName="Web/AdoptMe.Web/Views/Home/Privacy.cshtml" Line="1" Column="15" />
-      <File FileName="Data/AdoptMe.Data/Migrations/ApplicationDbContextModelSnapshot.cs" Line="1" Column="1" />
-      <File FileName="Data/AdoptMe.Data/Migrations/20230605103120_Initial.Designer.cs" Line="1" Column="1" />
-      <File FileName="Data/AdoptMe.Data/Migrations/20230605103120_Initial.cs" Line="626" Column="1" />
-      <File FileName="Data/AdoptMe.Data/appsettings.json" Line="4" Column="4" />
-      <File FileName="Web/AdoptMe.Web/appsettings.json" Line="3" Column="186" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/Administration/Dashboard/IndexViewModel.cs" />
+      <File FileName="Web/AdoptMe.Web/Areas/Administration/Views/Dashboard/Index.cshtml" />
+      <File FileName="Web/AdoptMe.Web/Areas/Administration/Views/_ViewImports.cshtml" />
+      <File FileName="Web/AdoptMe.Web/Areas/Administration/Views/_ViewStart.cshtml" />
+      <File FileName="Web/AdoptMe.Web/Areas/Administration/Controllers/DashboardController.cs" />
+      <File FileName="Web/AdoptMe.Web/Areas/Administration/Controllers/AdministrationController.cs" />
+      <File FileName="Data/AdoptMe.Data.Models/Enums/City.cs" />
+      <File FileName="Data/AdoptMe.Data.Models/PetAdoptionPost.cs" />
+      <File FileName="Data/AdoptMe.Data.Models/PetLostAndFoundPost.cs" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/Adopt/CreatePetInputModel.cs" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/Login.cshtml" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/Register.cshtml" />
+      <File FileName="Web/AdoptMe.Web/Controllers/AdoptController.cs" />
+      <File FileName="Web/AdoptMe.Web/Views/Adopt/Create.cshtml" />
+      <File FileName="Web/AdoptMe.Web/Views/Home/Index.cshtml" />
+      <File FileName="AdoptMe.Common/GlobalConstants.cs" />
+      <File FileName="Data/AdoptMe.Data.Models/ApplicationUser.cs" />
+      <File FileName="Web/AdoptMe.Web/Program.cs" Line="102" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Views/Home/Privacy.cshtml" />
+      <File FileName="Data/AdoptMe.Data/appsettings.json" />
+      <File FileName="Web/AdoptMe.Web/appsettings.json" Line="13" Column="1" />
+      <File FileName="Data/AdoptMe.Data/Migrations/20230606142039_NewDatabaseEntities.cs" Line="1" Column="1" />
+      <File FileName="Data/AdoptMe.Data/Migrations/20230606142039_NewDatabaseEntities.Designer.cs" Line="1" Column="1" />
+      <File FileName="Data/AdoptMe.Data/Migrations/ApplicationDbContextModelSnapshot.cs" Line="500" Column="33" />
+      <File FileName="Web/AdoptMe.Web/Properties/launchSettings.json" Line="7" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -49,7 +55,6 @@
                 <Node name="Dependencies" expanded="True">
                   <Node name="FrameworkReferences" expanded="True" />
                   <Node name="PackageDependencies" expanded="True" />
-                  <Node name="ProjectDependencies" expanded="True" />
                 </Node>
                 <Node name="Configurations" expanded="True" />
                 <Node name="Migrations" expanded="True" />
@@ -120,12 +125,11 @@
                   </Node>
                 </Node>
                 <Node name="Controllers" expanded="True" />
+                <Node name="Properties" expanded="True" />
                 <Node name="Views" expanded="True">
                   <Node name="Adopt" expanded="True" />
                   <Node name="Home" expanded="True" />
-                  <Node name="Shared" expanded="True">
-                    <Node name="_LoginPartial.cshtml" selected="True" />
-                  </Node>
+                  <Node name="Shared" expanded="True" />
                 </Node>
                 <Node name="wwwroot" expanded="True" />
               </Node>
@@ -160,10 +164,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Web.AdoptMe.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

@@ -12,6 +12,7 @@
           "AdoptMe.Data.Models": "1.0.0",
           "AdoptMe.Services.Mapping": "1.0.0",
           "AdoptMe.Web.ViewModels": "1.0.0",
+          "SixLabors.ImageSharp": "2.1.4",
           "StyleCop.Analyzers": "1.2.0-beta.435"
         },
         "runtime": {
@@ -233,6 +234,19 @@
           }
         }
       },
+      "Microsoft.NETCore.Platforms/5.0.0": {},
+      "SixLabors.ImageSharp/2.1.4": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Text.Encoding.CodePages": "5.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.4.0"
+          }
+        }
+      },
       "StyleCop.Analyzers/1.2.0-beta.435": {
         "dependencies": {
           "StyleCop.Analyzers.Unstable": "1.2.0.435"
@@ -246,6 +260,12 @@
             "assemblyVersion": "5.0.0.1",
             "fileVersion": "5.0.1522.11506"
           }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {},
+      "System.Text.Encoding.CodePages/5.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0"
         }
       },
       "AdoptMe.Data.Common/1.0.0": {
@@ -276,6 +296,7 @@
       "AdoptMe.Web.Infrastructure/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
+          "SixLabors.ImageSharp": "2.1.4",
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "runtime": {
@@ -447,6 +468,20 @@
       "path": "microsoft.extensions.primitives/7.0.0",
       "hashPath": "microsoft.extensions.primitives.7.0.0.nupkg.sha512"
     },
+    "Microsoft.NETCore.Platforms/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+      "path": "microsoft.netcore.platforms/5.0.0",
+      "hashPath": "microsoft.netcore.platforms.5.0.0.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp/2.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-K6F39YCm/MaOYT0iw9lMa8tBcz2eF8JaNMneo0EnRrml6k+8EQNSKXqb8yJTq2HHkWLlRHZl6UKMn02YmR/G3g==",
+      "path": "sixlabors.imagesharp/2.1.4",
+      "hashPath": "sixlabors.imagesharp.2.1.4.nupkg.sha512"
+    },
     "StyleCop.Analyzers/1.2.0-beta.435": {
       "type": "package",
       "serviceable": true,
@@ -474,6 +509,20 @@
       "sha512": "sha512-Iew+dfa6FFiyvWBdRmXApixRY1db+beyutpIck4SOSe0NLM8FD/7AD54MscqVLhvfSMLHO7KadjTRT7fqxOGTA==",
       "path": "system.io.pipelines/5.0.2",
       "hashPath": "system.io.pipelines.5.0.2.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
+      "path": "system.runtime.compilerservices.unsafe/5.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NyscU59xX6Uo91qvhOs2Ccho3AR2TnZPomo1Z0K6YpyztBPM/A5VbkzOO19sy3A3i1TtEnTxA7bCe3Us+r5MWg==",
+      "path": "system.text.encoding.codepages/5.0.0",
+      "hashPath": "system.text.encoding.codepages.5.0.0.nupkg.sha512"
     },
     "AdoptMe.Data.Common/1.0.0": {
       "type": "project",
