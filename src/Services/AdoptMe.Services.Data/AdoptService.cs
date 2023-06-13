@@ -1,27 +1,22 @@
-﻿using AdoptMe.Data.Common.Repositories;
-using AdoptMe.Data.Models;
-using AdoptMe.Web.ViewModels.Adopt;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using System.Threading.Tasks;
-using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.Formats.Png;
-using SixLabors.ImageSharp.Processing;
-using SixLabors.ImageSharp.PixelFormats;
-using SixLabors.ImageSharp.Formats;
-using Microsoft.AspNetCore.Http;
-
-namespace AdoptMe.Services.Data
+﻿namespace AdoptMe.Services.Data
 {
+    using System.IO;
+    using System.Threading.Tasks;
+
+    using AdoptMe.Data.Common.Repositories;
+    using AdoptMe.Data.Models;
+    using AdoptMe.Web.Infrastructure;
+    using AdoptMe.Web.ViewModels.Adopt;
+
     public class AdoptService : IAdoptService
     {
         private readonly IDeletableEntityRepository<PetAdoptionPost> adoptionPostsRepository;
+        private ImageBuilder imageBuilder;
 
         public AdoptService(IDeletableEntityRepository<PetAdoptionPost> adoptionPostsRepository)
         {
             this.adoptionPostsRepository = adoptionPostsRepository;
+            this.imageBuilder = new ImageBuilder();
         }
 
         public async Task CreateAdoptionPost(CreatePetInputModel input, ApplicationUser user, string webRoot)
@@ -42,16 +37,11 @@ namespace AdoptMe.Services.Data
             foreach (var image in input.Images)
             {
                 var picture = new Picture() { Path = directory, UserId = user.Id };
+
+                string extension = await this.imageBuilder.SaveImage(image, directory, picture.Id);
+
+                picture.Extension = extension;
                 newAdoptPost.PostPictures.Add(picture);
-
-                using (var stream = image.OpenReadStream())
-
-                using (var pic = Image.Load(stream, out IImageFormat format))
-
-                using (FileStream fs = new FileStream(directory + picture.Id + $".{format.Name.ToLower()}", FileMode.Create))
-                {
-                    await image.CopyToAsync(fs);
-                }
             }
 
             await this.adoptionPostsRepository.AddAsync(newAdoptPost);

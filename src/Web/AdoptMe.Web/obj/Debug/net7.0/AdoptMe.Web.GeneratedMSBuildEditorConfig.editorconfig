@@ -184,12 +184,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/Views/Adopt/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRvcHQvQ3JlYXRlLmNzaHRtbA==
+[/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/Views/Adopt/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRvcHQvQWxsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/Views/Adopt/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRvcHQvSW5kZXguY3NodG1s
+[/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/Views/Adopt/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRvcHQvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/Views/Adopt/SearchResults.cshtml]
@@ -204,8 +204,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/Views/Pet/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV0L0luZGV4LmNzaHRtbA==
+[/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/Views/Pet/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGV0L1Byb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/Views/Settings/Index.cshtml]

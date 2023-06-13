@@ -1,19 +1,15 @@
-﻿using AdoptMe.Data.Models;
-using AdoptMe.Services.Data;
-using AdoptMe.Web.Controllers;
-using AdoptMe.Web.ViewModels.Adopt;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace AdoptMe.Web.Controllers
+﻿namespace AdoptMe.Web.Controllers
 {
+    using System.Threading.Tasks;
+
+    using AdoptMe.Data.Models;
+    using AdoptMe.Services.Data;
+    using AdoptMe.Web.ViewModels.Adopt;
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.AspNetCore.Mvc;
+
     public class AdoptController : BaseController
     {
         private readonly IAdoptService adoptService;
@@ -30,7 +26,7 @@ namespace AdoptMe.Web.Controllers
             this.webHostEnvironment = webHostEnvironment;
         }
 
-        public IActionResult Index()
+        public IActionResult All()
         {
             return this.View();
         }
@@ -61,7 +57,7 @@ namespace AdoptMe.Web.Controllers
 
             await this.adoptService.CreateAdoptionPost(input, user, webRoot);
 
-            return this.RedirectToAction(nameof(Index));
+            return this.RedirectToAction(nameof(All));
         }
     }
 }

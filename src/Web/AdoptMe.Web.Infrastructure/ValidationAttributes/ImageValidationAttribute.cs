@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
-using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.Formats;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
-
-namespace AdoptMe.Web.Infrastructure.ValidationAttributes
+﻿namespace AdoptMe.Web.Infrastructure.ValidationAttributes
 {
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+
+    using Microsoft.AspNetCore.Http;
+    using SixLabors.ImageSharp;
+    using SixLabors.ImageSharp.Formats;
+
     public class ImageValidationAttribute : ValidationAttribute
     {
         private const string DefaultFileTooBigMessage =
@@ -52,7 +52,7 @@ namespace AdoptMe.Web.Infrastructure.ValidationAttributes
                 {
                     using (var stream = file.OpenReadStream())
 
-                    using (var pic = Image.Load(stream, out IImageFormat format));
+                    using (var pic = Image.Load(stream, out IImageFormat format)) ;
                 }
                 catch (Exception)
                 {
