@@ -1,6 +1,7 @@
 ﻿using AdoptMe.Data.Common.Repositories;
 using AdoptMe.Data.Models;
 using AdoptMe.Data.Models.Enums;
+using AdoptMe.Services.Data;
 using AdoptMe.Web.ViewModels.Home;
 using System;
 using System.Collections.Generic;
@@ -57,18 +58,54 @@ namespace AdoptMe.Services.Data
 
                 Volunteers = this.users.AllAsNoTracking().Count(),
 
-                HappyStories = this.successStoriesRepository.AllAsNoTracking().Select(x => new HappyEndingsIndexViewModel()
-                {
-                    Description = x.Description,
-                    Avatar = x.PostPictures.FirstOrDefault(x => x.IsCoverPicture),
-                    Likes = x.Likes,
-                    PersonName = x.PersonName,
-                    PetName = x.PetName,
-                    CreatedOn = x.CreatedOn.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture),
-                }).ToList(),
+                HappyStories = this.successStoriesRepository.AllAsNoTracking().Where(x => x.IsApproved == true)
+                                .Select(x => new HappyEndingsIndexViewModel()
+                                {
+                                    Description = x.Description,
+                                    Avatar = x.PostPictures.FirstOrDefault(x => x.IsCoverPicture),
+                                    Likes = x.Likes,
+                                    PersonName = x.PersonName,
+                                    PetName = x.PetName,
+                                    CreatedOn = x.CreatedOn.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture),
+                                }).ToList(),
             };
 
             return data;
+        }
+
+        public int GetAdoptDogCount()
+        {
+            var dogCount = 0;
+
+            dogCount = this.adoptionPostsRepository.AllAsNoTracking()
+                           .Where(x => x.IsAdopted == false && x.Type == TypePet.Dog && x.IsApproved == true).Count() +
+                           this.lostAndFoundRepository.AllAsNoTracking()
+                           .Where(x => x.IsFound == false && x.Type == TypePet.Dog && x.PetStatus == PetStatus.Found && x.IsApproved == true).Count();
+
+            return dogCount;
+        }
+
+        public int GetAdoptCatCount()
+        {
+            var catCount = 0;
+            catCount = this.adoptionPostsRepository.AllAsNoTracking()
+                           .Where(x => x.IsAdopted == false && x.Type == TypePet.Cat && x.IsApproved == true).Count() +
+                           this.lostAndFoundRepository.AllAsNoTracking()
+                           .Where(x => x.IsFound == false && x.Type == TypePet.Cat && x.PetStatus == PetStatus.Found && x.IsApproved == true).Count();
+
+            return catCount;
+
+        }
+
+        public int GetAdoptOtherCount()
+        {
+            var catCount = 0;
+            catCount = this.adoptionPostsRepository.AllAsNoTracking()
+                           .Where(x => x.IsAdopted == false && x.Type == TypePet.Other && x.IsApproved == true).Count() +
+                           this.lostAndFoundRepository.AllAsNoTracking()
+                           .Where(x => x.IsFound == false && x.Type == TypePet.Other && x.PetStatus == PetStatus.Found && x.IsApproved == true).Count();
+
+            return catCount;
         }
     }
 }

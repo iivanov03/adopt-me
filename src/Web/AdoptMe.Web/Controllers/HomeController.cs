@@ -2,6 +2,7 @@
 {
     using System.Diagnostics;
     using System.Threading.Tasks;
+
     using AdoptMe.Services.Data;
     using AdoptMe.Web.Controllers;
     using AdoptMe.Web.ViewModels;

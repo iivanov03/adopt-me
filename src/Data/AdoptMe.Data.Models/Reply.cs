@@ -1,11 +1,10 @@
-﻿using AdoptMe.Data.Common.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
-
-namespace AdoptMe.Data.Models
+﻿namespace AdoptMe.Data.Models
 {
+
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using AdoptMe.Data.Common.Models;
+
     public class Reply : BaseDeletableModel<int>
     {
         public Reply()
@@ -19,6 +18,14 @@ namespace AdoptMe.Data.Models
         public string UserId { get; set; }
 
         public ApplicationUser User { get; set; }
+
+        public int? PetAdoptionPostId { get; set; }
+
+        public PetAdoptionPost PetAdoptionPost { get; set; }
+
+        public int? PetLostAndFoundPostId { get; set; }
+
+        public PetLostAndFoundPost PetLostAndFound { get; set; }
 
         public virtual ICollection<Picture> ReplyPictures { get; set; }
     }

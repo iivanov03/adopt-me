@@ -1,11 +1,12 @@
-﻿using AdoptMe.Data.Common.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
-
-namespace AdoptMe.Data.Models
+﻿namespace AdoptMe.Data.Models
 {
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Text;
+
+    using AdoptMe.Data.Common.Models;
+
     public class SuccessStory : BaseDeletableModel<int>
     {
         public SuccessStory()
@@ -21,6 +22,8 @@ namespace AdoptMe.Data.Models
         public string PetName { get; set; }
 
         public int Likes { get; set; }
+
+        public bool IsApproved { get; set; } = true;
 
         [ForeignKey(nameof(User))]
         public string UserId { get; set; }

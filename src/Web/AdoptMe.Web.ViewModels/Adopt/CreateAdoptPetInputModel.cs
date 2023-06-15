@@ -1,16 +1,15 @@
-﻿using AdoptMe.Data.Models;
-using AdoptMe.Data.Models.Enums;
-using AdoptMe.Web.Infrastructure.ValidationAttributes;
-using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
-
-namespace AdoptMe.Web.ViewModels.Adopt
+﻿namespace AdoptMe.Web.ViewModels.Adopt
 {
-    public class CreatePetInputModel
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+
+    using AdoptMe.Data.Models;
+    using AdoptMe.Data.Models.Enums;
+    using AdoptMe.Services.Mapping;
+    using AdoptMe.Web.Infrastructure.ValidationAttributes;
+    using Microsoft.AspNetCore.Http;
+
+    public class CreateAdoptPetInputModel : IMapTo<PetAdoptionPost>
     {
         [Required]
         [Display(Name = "Description")]
@@ -19,7 +18,10 @@ namespace AdoptMe.Web.ViewModels.Adopt
         [MaxLength(3000)]
         public string Description { get; set; }
 
-        public string UserId { get; set; }
+        [Required]
+        [MinLength(2)]
+        [MaxLength(12)]
+        public string Name { get; set; }
 
         [Required]
         public City Location { get; set; }
@@ -33,5 +35,6 @@ namespace AdoptMe.Web.ViewModels.Adopt
         [Required]
         [ImageValidationAttribute(15 * 1024 * 1024)]
         public IEnumerable<IFormFile> Images { get; set; }
+
     }
 }

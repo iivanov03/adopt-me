@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace AdoptMe.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class NewDatabaseEntities : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -239,7 +239,8 @@ namespace AdoptMe.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     Likes = table.Column<int>(type: "int", nullable: false),
                     Location = table.Column<int>(type: "int", nullable: false),
@@ -302,6 +303,7 @@ namespace AdoptMe.Data.Migrations
                     PersonName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PetName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Likes = table.Column<int>(type: "int", nullable: false),
+                    IsApproved = table.Column<bool>(type: "bit", nullable: false),
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ModifiedOn = table.Column<DateTime>(type: "datetime2", nullable: true),
@@ -365,14 +367,15 @@ namespace AdoptMe.Data.Migrations
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Path = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    RemoteImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Extension = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     IsCoverPicture = table.Column<bool>(type: "bit", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     HomePetId = table.Column<int>(type: "int", nullable: true),
                     PetAdoptionPostId = table.Column<int>(type: "int", nullable: true),
                     PetLostAndFoundPostId = table.Column<int>(type: "int", nullable: true),
-                    ReplyId = table.Column<int>(type: "int", nullable: true),
                     SuccessStoryId = table.Column<int>(type: "int", nullable: true),
+                    ReplyId = table.Column<int>(type: "int", nullable: true),
                     CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ModifiedOn = table.Column<DateTime>(type: "datetime2", nullable: true),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),

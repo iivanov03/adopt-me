@@ -295,6 +295,7 @@
       },
       "AdoptMe.Web.Infrastructure/1.0.0": {
         "dependencies": {
+          "AdoptMe.Data.Models": "1.0.0",
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "SixLabors.ImageSharp": "2.1.4",
           "System.ComponentModel.Annotations": "5.0.0"

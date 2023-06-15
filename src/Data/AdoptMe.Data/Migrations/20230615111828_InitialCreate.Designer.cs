@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AdoptMe.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230606142039_NewDatabaseEntities")]
-    partial class NewDatabaseEntities
+    [Migration("20230615111828_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -258,6 +258,7 @@ namespace AdoptMe.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsAdopted")
@@ -277,6 +278,10 @@ namespace AdoptMe.Data.Migrations
 
                     b.Property<DateTime?>("ModifiedOn")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Sex")
                         .HasColumnType("int");
@@ -386,6 +391,9 @@ namespace AdoptMe.Data.Migrations
 
                     b.Property<int?>("PetLostAndFoundPostId")
                         .HasColumnType("int");
+
+                    b.Property<string>("RemoteImageUrl")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("ReplyId")
                         .HasColumnType("int");
@@ -514,6 +522,9 @@ namespace AdoptMe.Data.Migrations
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -677,15 +688,15 @@ namespace AdoptMe.Data.Migrations
 
             modelBuilder.Entity("AdoptMe.Data.Models.Picture", b =>
                 {
-                    b.HasOne("AdoptMe.Data.Models.HomePet", null)
+                    b.HasOne("AdoptMe.Data.Models.HomePet", "HomePet")
                         .WithMany("PetPictures")
                         .HasForeignKey("HomePetId");
 
-                    b.HasOne("AdoptMe.Data.Models.PetAdoptionPost", null)
+                    b.HasOne("AdoptMe.Data.Models.PetAdoptionPost", "PetAdoptionPost")
                         .WithMany("PostPictures")
                         .HasForeignKey("PetAdoptionPostId");
 
-                    b.HasOne("AdoptMe.Data.Models.PetLostAndFoundPost", null)
+                    b.HasOne("AdoptMe.Data.Models.PetLostAndFoundPost", "PetLostAndFoundPost")
                         .WithMany("PostPictures")
                         .HasForeignKey("PetLostAndFoundPostId");
 
@@ -693,7 +704,7 @@ namespace AdoptMe.Data.Migrations
                         .WithMany("ReplyPictures")
                         .HasForeignKey("ReplyId");
 
-                    b.HasOne("AdoptMe.Data.Models.SuccessStory", null)
+                    b.HasOne("AdoptMe.Data.Models.SuccessStory", "SuccessStory")
                         .WithMany("PostPictures")
                         .HasForeignKey("SuccessStoryId");
 
@@ -701,16 +712,24 @@ namespace AdoptMe.Data.Migrations
                         .WithMany("UserPictures")
                         .HasForeignKey("UserId");
 
+                    b.Navigation("HomePet");
+
+                    b.Navigation("PetAdoptionPost");
+
+                    b.Navigation("PetLostAndFoundPost");
+
+                    b.Navigation("SuccessStory");
+
                     b.Navigation("User");
                 });
 
             modelBuilder.Entity("AdoptMe.Data.Models.Reply", b =>
                 {
-                    b.HasOne("AdoptMe.Data.Models.PetAdoptionPost", null)
+                    b.HasOne("AdoptMe.Data.Models.PetAdoptionPost", "PetAdoptionPost")
                         .WithMany("Replies")
                         .HasForeignKey("PetAdoptionPostId");
 
-                    b.HasOne("AdoptMe.Data.Models.PetLostAndFoundPost", null)
+                    b.HasOne("AdoptMe.Data.Models.PetLostAndFoundPost", "PetLostAndFound")
                         .WithMany("Replies")
                         .HasForeignKey("PetLostAndFoundPostId");
 
@@ -721,6 +740,10 @@ namespace AdoptMe.Data.Migrations
                     b.HasOne("AdoptMe.Data.Models.ApplicationUser", "User")
                         .WithMany()
                         .HasForeignKey("UserId");
+
+                    b.Navigation("PetAdoptionPost");
+
+                    b.Navigation("PetLostAndFound");
 
                     b.Navigation("User");
                 });

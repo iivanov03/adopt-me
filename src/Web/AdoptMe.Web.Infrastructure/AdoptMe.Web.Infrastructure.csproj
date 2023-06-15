@@ -27,4 +27,7 @@
   <ItemGroup>
     <Folder Include="ValidationAttributes\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\AdoptMe.Data.Models\AdoptMe.Data.Models.csproj" />
+  </ItemGroup>
 </Project>

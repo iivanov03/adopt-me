@@ -498,6 +498,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "AdoptMe.Data.Models": "1.0.0",
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "SixLabors.ImageSharp": "2.1.4",
           "System.ComponentModel.Annotations": "5.0.0"
@@ -1453,7 +1454,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
       }
     }
   }

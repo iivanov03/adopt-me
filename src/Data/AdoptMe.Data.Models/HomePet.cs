@@ -1,12 +1,13 @@
-﻿using AdoptMe.Data.Common.Models;
-using AdoptMe.Data.Models.Enums;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
-
-namespace AdoptMe.Data.Models
+﻿namespace AdoptMe.Data.Models
 {
+
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+    using AdoptMe.Data.Common.Models;
+    using AdoptMe.Data.Models.Enums;
+
     public class HomePet : BaseDeletableModel<int>
     {
         public HomePet()

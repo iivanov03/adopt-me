@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "puTIE5TiIqN738CZ8pWCcVARyWqKO82X178h9gTw8cjft6Shbp+YVnq9vhOkt9MzW0EtOiVLtOwQb9dJUyLjAg==",
+  "dgSpecHash": "CwWdFjQMcTpMZtoB8+8pZajBbDAXHrC+CKBkZmks51DADfU2V/tIRQeQbGMK2jJWkwVuiv1LnDO5WSjFiR225w==",
   "success": true,
   "projectFilePath": "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/AdoptMe.Services.Mapping.csproj",
   "expectedPackageFiles": [

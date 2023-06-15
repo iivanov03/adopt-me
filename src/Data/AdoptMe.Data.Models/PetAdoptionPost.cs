@@ -1,8 +1,9 @@
 ﻿namespace AdoptMe.Data.Models
 {
-    using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+
     using AdoptMe.Data.Common.Models;
     using AdoptMe.Data.Models.Enums;
 
@@ -14,7 +15,11 @@
             this.Replies = new HashSet<Reply>();
         }
 
+        [Required]
         public string Description { get; set; }
+
+        [Required]
+        public string Name { get; set; }
 
         [ForeignKey(nameof(User))]
         public string UserId { get; set; }

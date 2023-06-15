@@ -10,3 +10,8 @@
 /Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/obj/Debug/net7.0/refint/AdoptMe.Web.Infrastructure.dll
 /Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/obj/Debug/net7.0/AdoptMe.Web.Infrastructure.pdb
 /Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/obj/Debug/net7.0/ref/AdoptMe.Web.Infrastructure.dll
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/bin/Debug/net7.0/AdoptMe.Data.Common.dll
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/bin/Debug/net7.0/AdoptMe.Data.Models.dll
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/bin/Debug/net7.0/AdoptMe.Data.Models.pdb
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/bin/Debug/net7.0/AdoptMe.Data.Common.pdb
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/obj/Debug/net7.0/AdoptMe.Web.Infrastructure.csproj.CopyComplete

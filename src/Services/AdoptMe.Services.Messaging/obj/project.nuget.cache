@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9qzaS1nQzc4oE08i6ySGZ+MBRkr/JupQzdnpsAISVpmHSNOvK0gQ9UtmClB82Ayn8aRPFlpJzFNrQtZ4PlAirQ==",
+  "dgSpecHash": "w4A5/ksv66BE7VXFGDbkBliBXzumou6jlvTJD5HGONSf4ESPcy1DxbOWbhedZeUQSb43FhF6CjqQ6h5GXgh+IA==",
   "success": true,
   "projectFilePath": "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Messaging/AdoptMe.Services.Messaging.csproj",
   "expectedPackageFiles": [

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8Dm5eR0lRVxRw2qQnMvGBzojnZrbupXppdVCxJwDvEuq2b17qAt9/In/XLKUQ4cNvdzgL2ExXNJroqOresi4yg==",
+  "dgSpecHash": "a9+7KchnyM/b4PX0SiWQe8MpCwtqFsDOgwMkPAwdUHiIe000iMz4n/doDgho8BVvads66N1ZCgk+hEYpDGziIw==",
   "success": true,
   "projectFilePath": "/Users/ivanov/Work/adopt-me/src/Tests/AdoptMe.Web.Tests/AdoptMe.Web.Tests.csproj",
   "expectedPackageFiles": [
