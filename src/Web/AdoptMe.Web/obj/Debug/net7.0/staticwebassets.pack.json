@@ -853,16 +853,20 @@
       "PackagePath": "staticwebassets/images/video-preview.jpg"
     },
     {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/js/.DS_Store",
+      "PackagePath": "staticwebassets/js/.DS_Store"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/js/allAdoptList.js",
+      "PackagePath": "staticwebassets/js/allAdoptList.js"
+    },
+    {
+      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/js/petProfile.js",
+      "PackagePath": "staticwebassets/js/petProfile.js"
+    },
+    {
       "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/js/script.js",
       "PackagePath": "staticwebassets/js/script.js"
-    },
-    {
-      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/js/site.js",
-      "PackagePath": "staticwebassets/js/site.js"
-    },
-    {
-      "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/js/site.min.js",
-      "PackagePath": "staticwebassets/js/site.min.js"
     },
     {
       "Id": "/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css",

@@ -58,8 +58,6 @@
                 }).AddRazorRuntimeCompilation();
             services.AddRazorPages();
 
-            // services.AddDatabaseDeveloperPageExceptionFilter();
-
             services.AddSingleton(configuration);
 
             services.AddLocalization(options => options.ResourcesPath = "Resources");

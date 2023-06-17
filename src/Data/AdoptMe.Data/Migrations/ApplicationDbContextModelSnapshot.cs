@@ -368,6 +368,9 @@ namespace AdoptMe.Data.Migrations
                     b.Property<string>("Extension")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Height")
+                        .HasColumnType("int");
+
                     b.Property<int?>("HomePetId")
                         .HasColumnType("int");
 
@@ -400,6 +403,9 @@ namespace AdoptMe.Data.Migrations
 
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("Width")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -548,6 +554,117 @@ namespace AdoptMe.Data.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("SuccessStories");
+                });
+
+            modelBuilder.Entity("AdoptMe.Data.Models.UserAdoptionPost", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("ModifiedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("PetAdoptionPostId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
+
+                    b.HasIndex("IsDeleted");
+
+                    b.HasIndex("PetAdoptionPostId");
+
+                    b.ToTable("UserAdoptionPosts");
+                });
+
+            modelBuilder.Entity("AdoptMe.Data.Models.UserLostFoundPost", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("LostFoundPostId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("ModifiedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IsDeleted");
+
+                    b.HasIndex("LostFoundPostId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserLostFoundPosts");
+                });
+
+            modelBuilder.Entity("AdoptMe.Data.Models.UserSuccessStoryPost", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("ModifiedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("SuccessStoryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IsDeleted");
+
+                    b.HasIndex("SuccessStoryId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserSuccessStoryPosts");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -754,6 +871,57 @@ namespace AdoptMe.Data.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("AdoptMe.Data.Models.UserAdoptionPost", b =>
+                {
+                    b.HasOne("AdoptMe.Data.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany("LikedAdoptionPosts")
+                        .HasForeignKey("ApplicationUserId");
+
+                    b.HasOne("AdoptMe.Data.Models.PetAdoptionPost", "PetAdoptionPost")
+                        .WithMany("UserLikes")
+                        .HasForeignKey("PetAdoptionPostId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("ApplicationUser");
+
+                    b.Navigation("PetAdoptionPost");
+                });
+
+            modelBuilder.Entity("AdoptMe.Data.Models.UserLostFoundPost", b =>
+                {
+                    b.HasOne("AdoptMe.Data.Models.PetLostAndFoundPost", "LostFoundPost")
+                        .WithMany("UserLikes")
+                        .HasForeignKey("LostFoundPostId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("AdoptMe.Data.Models.ApplicationUser", "User")
+                        .WithMany("LikedLostFoundPosts")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("LostFoundPost");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("AdoptMe.Data.Models.UserSuccessStoryPost", b =>
+                {
+                    b.HasOne("AdoptMe.Data.Models.SuccessStory", "SuccessStory")
+                        .WithMany("UserLikes")
+                        .HasForeignKey("SuccessStoryId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("AdoptMe.Data.Models.ApplicationUser", "User")
+                        .WithMany("LikedSuccessStoryPosts")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("SuccessStory");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("AdoptMe.Data.Models.ApplicationRole", null)
@@ -811,6 +979,12 @@ namespace AdoptMe.Data.Migrations
 
                     b.Navigation("HomePets");
 
+                    b.Navigation("LikedAdoptionPosts");
+
+                    b.Navigation("LikedLostFoundPosts");
+
+                    b.Navigation("LikedSuccessStoryPosts");
+
                     b.Navigation("Logins");
 
                     b.Navigation("PetAdoptionPosts");
@@ -834,6 +1008,8 @@ namespace AdoptMe.Data.Migrations
                     b.Navigation("PostPictures");
 
                     b.Navigation("Replies");
+
+                    b.Navigation("UserLikes");
                 });
 
             modelBuilder.Entity("AdoptMe.Data.Models.PetLostAndFoundPost", b =>
@@ -841,6 +1017,8 @@ namespace AdoptMe.Data.Migrations
                     b.Navigation("PostPictures");
 
                     b.Navigation("Replies");
+
+                    b.Navigation("UserLikes");
                 });
 
             modelBuilder.Entity("AdoptMe.Data.Models.Reply", b =>
@@ -853,6 +1031,8 @@ namespace AdoptMe.Data.Migrations
                     b.Navigation("PostPictures");
 
                     b.Navigation("Replies");
+
+                    b.Navigation("UserLikes");
                 });
 #pragma warning restore 612, 618
         }

@@ -34,20 +34,6 @@
             return this.View();
         }
 
-        public IActionResult AllDogs(int id = 1)
-        {
-            const int itemsPerPage = 2;
-            var viewModel = new PetListViewModel()
-            {
-                ItemsPerPage = itemsPerPage,
-                PageNumber = id,
-                DogCount = this.getCountService.GetAdoptDogCount(),
-                Dogs = this.adoptService.GetAllDogs<PetInListViewModel>(id, itemsPerPage),
-            };
-
-            return this.Json(viewModel);
-        }
-
         public IActionResult SearchResults()
         {
             return this.View();
@@ -72,7 +58,7 @@
 
             var webRoot = this.webHostEnvironment.WebRootPath;
 
-            await this.adoptService.CreateAdoptionPost(input, user, webRoot);
+            await this.adoptService.CreateAdoptionPostAsync(input, user, webRoot);
 
             return this.RedirectToAction(nameof(All));
         }

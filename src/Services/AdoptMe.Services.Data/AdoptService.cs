@@ -1,9 +1,12 @@
 ﻿namespace AdoptMe.Services.Data
 {
+    using System;
     using System.Collections.Generic;
     using System.Globalization;
     using System.IO;
     using System.Linq;
+    using System.Linq.Expressions;
+    using System.Reflection;
     using System.Threading.Tasks;
 
     using AdoptMe.Data.Common.Repositories;
@@ -24,7 +27,7 @@
             this.imageBuilder = new ImageBuilder();
         }
 
-        public async Task CreateAdoptionPost(CreateAdoptPetInputModel input, ApplicationUser user, string webRoot)
+        public async Task CreateAdoptionPostAsync(CreateAdoptPetInputModel input, ApplicationUser user, string webRoot)
         {
             var webRootPath = $"/UserImages/Adopt/{user.Nickname}/";
             var directory = webRoot + webRootPath;
@@ -41,58 +44,55 @@
                 Name = input.Name,
             };
 
-            var pictures = await this.imageBuilder.CreatePictures(input.Images, webRootPath, user.Id, directory);
+            //var newAdoptPost = input.To<PetAdoptionPost>();
+
+            var pictures = await this.imageBuilder.CreatePicturesAsync(input.Images, webRootPath, user.Id, directory);
             pictures.ForEach(x => { newAdoptPost.PostPictures.Add(x); });
 
             await this.adoptionPostsRepository.AddAsync(newAdoptPost);
             await this.adoptionPostsRepository.SaveChangesAsync();
         }
 
-        IEnumerable<T> IAdoptService.GetAll<T>(int pageNumber, int itemsPerPage)
+        public IEnumerable<T> GetAllAnimals<T>(int pageNumber, int itemsPerPage, string orderByProperty, string orderAscDesc)
         {
             var pets = this.adoptionPostsRepository.AllAsNoTracking()
-                .OrderByDescending(x => x.Id)
-                .Skip((pageNumber - 1) * itemsPerPage).Take(itemsPerPage)
+                .Where(x => x.IsAdopted == false && x.IsApproved == true);
+
+            var orderedByParameter = pets.OrderBy(orderByProperty, orderAscDesc);
+
+            return orderedByParameter
+                .Skip((pageNumber - 1) * itemsPerPage)
+                .Take(itemsPerPage)
                 .To<T>()
                 .ToList();
-
-            return pets;
         }
 
-        IEnumerable<T> IAdoptService.GetAllDogs<T>(int pageNumber, int itemsPerPage)
+        public IEnumerable<T> GetAllAdoptAnimalsByType<T>(int pageNumber, int itemsPerPage, string typeAnimal, string orderByProperty, string orderAscDesc)
         {
+            TypePet type = TypePet.Dog;
+
+            switch (typeAnimal)
+            {
+                case "cats":
+                    type = TypePet.Cat;
+                    break;
+                case "other":
+                    type = TypePet.Other;
+                    break;
+                default:
+                    break;
+            }
+
             var pets = this.adoptionPostsRepository.AllAsNoTracking()
-                .Where(x => x.Type == TypePet.Dog)
-                .OrderByDescending(x => x.Id)
-                .Skip((pageNumber - 1) * itemsPerPage).Take(itemsPerPage)
+                           .Where(x => x.Type == type && x.IsAdopted == false && x.IsApproved == true);
+
+            var orderedByParameter = pets.OrderBy(orderByProperty, orderAscDesc);
+
+            return orderedByParameter
+                .Skip((pageNumber - 1) * itemsPerPage)
+                .Take(itemsPerPage)
                 .To<T>()
                 .ToList();
-
-            return pets;
-        }
-
-        IEnumerable<T> IAdoptService.GetAllCats<T>(int pageNumber, int itemsPerPage)
-        {
-            var pets = this.adoptionPostsRepository.AllAsNoTracking()
-                .Where(x => x.Type == TypePet.Cat)
-                .OrderByDescending(x => x.Id)
-                .Skip((pageNumber - 1) * itemsPerPage).Take(itemsPerPage)
-                .To<T>()
-                .ToList();
-
-            return pets;
-        }
-
-        IEnumerable<T> IAdoptService.GetAllOther<T>(int pageNumber, int itemsPerPage)
-        {
-            var pets = this.adoptionPostsRepository.AllAsNoTracking()
-                .Where(x => x.Type == TypePet.Other)
-                .OrderByDescending(x => x.Id)
-                .Skip((pageNumber - 1) * itemsPerPage).Take(itemsPerPage)
-                .To<T>()
-                .ToList();
-
-            return pets;
         }
     }
 }

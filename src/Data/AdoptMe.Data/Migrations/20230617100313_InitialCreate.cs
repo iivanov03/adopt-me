@@ -321,6 +321,64 @@ namespace AdoptMe.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "UserAdoptionPosts",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ApplicationUserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    PetAdoptionPostId = table.Column<int>(type: "int", nullable: false),
+                    CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ModifiedOn = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    DeletedOn = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserAdoptionPosts", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_UserAdoptionPosts_AspNetUsers_ApplicationUserId",
+                        column: x => x.ApplicationUserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_UserAdoptionPosts_PetAdoptionPosts_PetAdoptionPostId",
+                        column: x => x.PetAdoptionPostId,
+                        principalTable: "PetAdoptionPosts",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "UserLostFoundPosts",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    LostFoundPostId = table.Column<int>(type: "int", nullable: false),
+                    CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ModifiedOn = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    DeletedOn = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserLostFoundPosts", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_UserLostFoundPosts_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_UserLostFoundPosts_PetLostAndFoundPosts_LostFoundPostId",
+                        column: x => x.LostFoundPostId,
+                        principalTable: "PetLostAndFoundPosts",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Replies",
                 columns: table => new
                 {
@@ -362,6 +420,35 @@ namespace AdoptMe.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "UserSuccessStoryPosts",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    SuccessStoryId = table.Column<int>(type: "int", nullable: false),
+                    CreatedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ModifiedOn = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    DeletedOn = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserSuccessStoryPosts", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_UserSuccessStoryPosts_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_UserSuccessStoryPosts_SuccessStories_SuccessStoryId",
+                        column: x => x.SuccessStoryId,
+                        principalTable: "SuccessStories",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Pictures",
                 columns: table => new
                 {
@@ -370,6 +457,8 @@ namespace AdoptMe.Data.Migrations
                     RemoteImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Extension = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsCoverPicture = table.Column<bool>(type: "bit", nullable: false),
+                    Width = table.Column<int>(type: "int", nullable: false),
+                    Height = table.Column<int>(type: "int", nullable: false),
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     HomePetId = table.Column<int>(type: "int", nullable: true),
                     PetAdoptionPostId = table.Column<int>(type: "int", nullable: true),
@@ -574,6 +663,51 @@ namespace AdoptMe.Data.Migrations
                 name: "IX_SuccessStories_UserId",
                 table: "SuccessStories",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserAdoptionPosts_ApplicationUserId",
+                table: "UserAdoptionPosts",
+                column: "ApplicationUserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserAdoptionPosts_IsDeleted",
+                table: "UserAdoptionPosts",
+                column: "IsDeleted");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserAdoptionPosts_PetAdoptionPostId",
+                table: "UserAdoptionPosts",
+                column: "PetAdoptionPostId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserLostFoundPosts_IsDeleted",
+                table: "UserLostFoundPosts",
+                column: "IsDeleted");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserLostFoundPosts_LostFoundPostId",
+                table: "UserLostFoundPosts",
+                column: "LostFoundPostId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserLostFoundPosts_UserId",
+                table: "UserLostFoundPosts",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserSuccessStoryPosts_IsDeleted",
+                table: "UserSuccessStoryPosts",
+                column: "IsDeleted");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserSuccessStoryPosts_SuccessStoryId",
+                table: "UserSuccessStoryPosts",
+                column: "SuccessStoryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserSuccessStoryPosts_UserId",
+                table: "UserSuccessStoryPosts",
+                column: "UserId");
         }
 
         /// <inheritdoc />
@@ -602,6 +736,15 @@ namespace AdoptMe.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Settings");
+
+            migrationBuilder.DropTable(
+                name: "UserAdoptionPosts");
+
+            migrationBuilder.DropTable(
+                name: "UserLostFoundPosts");
+
+            migrationBuilder.DropTable(
+                name: "UserSuccessStoryPosts");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

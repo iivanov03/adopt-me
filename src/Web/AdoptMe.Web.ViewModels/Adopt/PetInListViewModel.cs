@@ -10,21 +10,23 @@
 
     public class PetInListViewModel : IMapFrom<PetAdoptionPost>, IHaveCustomMappings
     {
+        public int Id { get; set; }
+
         public string Name { get; set; }
 
         public string Description { get; set; }
 
-        public string UserId { get; set; }
+        public string Location { get; set; }
 
-        public City Location { get; set; }
+        public string Sex { get; set; }
 
-        public Sex Sex { get; set; }
-
-        public TypePet Type { get; set; }
+        public string Type { get; set; }
 
         public string CreatedOn { get; set; }
 
         public string CoverPicturePath { get; set; }
+
+        public string Likes { get; set; }
 
         public void CreateMappings(IProfileExpression configuration)
         {

@@ -1,11 +1,10 @@
 ﻿namespace AdoptMe.Data.Models
 {
-    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Text;
 
     using AdoptMe.Data.Common.Models;
+    using AdoptMe.Data.Models;
 
     public class SuccessStory : BaseDeletableModel<int>
     {
@@ -13,6 +12,7 @@
         {
             this.PostPictures = new HashSet<Picture>();
             this.Replies = new HashSet<Reply>();
+            this.UserLikes = new HashSet<UserSuccessStoryPost>();
         }
 
         public string Description { get; set; }
@@ -33,5 +33,7 @@
         public virtual ICollection<Picture> PostPictures { get; set; }
 
         public virtual ICollection<Reply> Replies { get; set; }
+
+        public virtual ICollection<UserSuccessStoryPost> UserLikes { get; set; }
     }
 }
