@@ -10,8 +10,9 @@
     using AdoptMe.Data.Repositories;
     using AdoptMe.Data.Seeding;
     using AdoptMe.Services.Data;
+    using AdoptMe.Services.Data.AdministrationServices;
     using AdoptMe.Services.Mapping;
-    using AdoptMe.Services.Messaging;
+    using AdoptMe.Web.Infrastructure.EmailSender;
     using AdoptMe.Web.ViewModels;
 
     using Microsoft.AspNetCore.Builder;
@@ -44,6 +45,14 @@
             services.AddDefaultIdentity<ApplicationUser>(IdentityOptionsProvider.GetIdentityOptions)
                 .AddRoles<ApplicationRole>().AddEntityFrameworkStores<ApplicationDbContext>();
 
+            services.Configure<SmtpSettings>(configuration.GetSection("Smtp"));
+
+            //services.AddAuthentication().AddFacebook(facebookOptions =>
+            //{
+            //    facebookOptions.AppId = configuration["Authentication:Facebook:AppId"];
+            //    facebookOptions.AppSecret = configuration["Authentication:Facebook:AppSecret"];
+            //});
+
             services.Configure<CookiePolicyOptions>(
                 options =>
                 {
@@ -52,10 +61,17 @@
                 });
 
             services.AddControllersWithViews(
-                options =>
-                {
-                    options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
-                }).AddRazorRuntimeCompilation();
+            options =>
+            {
+                options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+            }).AddRazorRuntimeCompilation();
+
+            services.AddAntiforgery(options =>
+            {
+                // Set Cookie properties using CookieBuilder properties†.
+                options.HeaderName = "X-CSRF-TOKEN";
+            });
+
             services.AddRazorPages();
 
             services.AddSingleton(configuration);
@@ -71,10 +87,16 @@
             services.AddScoped<IDbQueryRunner, DbQueryRunner>();
 
             // Application services
-            services.AddTransient<IEmailSender, NullMessageSender>();
+            services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<ISettingsService, SettingsService>();
             services.AddTransient<IGetCountService, GetCountService>();
-            services.AddTransient<IAdoptService, AdoptService>();
+            services.AddTransient<IPostService, PostService>();
+            services.AddTransient<IPetProfileService, PetProfileService>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<ISearchService, SearchService>();
+            services.AddTransient<IDonateService, DonateService>();
+            services.AddTransient<ICommentsService, CommentsService>();
+            services.AddTransient<IViewRenderService, ViewRenderService>();
         }
 
         private static void Configure(WebApplication app)
@@ -110,7 +132,8 @@
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Home/StatusCodeError?errorCode={0}");
+                app.UseStatusCodePagesWithRedirects("/Home/StatusCodeError?errorCode={0}"); app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
 

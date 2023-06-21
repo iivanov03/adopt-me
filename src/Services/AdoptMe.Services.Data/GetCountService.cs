@@ -6,91 +6,121 @@
     using AdoptMe.Data.Common.Repositories;
     using AdoptMe.Data.Models;
     using AdoptMe.Data.Models.Enums;
-    using AdoptMe.Services.Data;
+    using AdoptMe.Services.Mapping;
+    using AdoptMe.Web.Infrastructure;
     using AdoptMe.Web.ViewModels.Home;
 
     public class GetCountService : IGetCountService
     {
-        private readonly IDeletableEntityRepository<PetAdoptionPost> adoptionPostsRepository;
-        private readonly IDeletableEntityRepository<PetLostAndFoundPost> lostAndFoundRepository;
-        private readonly IDeletableEntityRepository<Picture> pictureRepository;
+        private readonly IDeletableEntityRepository<PetPost> petPostsRepository;
         private readonly IDeletableEntityRepository<SuccessStory> successStoriesRepository;
         private readonly IDeletableEntityRepository<ApplicationUser> users;
+        private readonly IDeletableEntityRepository<Reply> replyRepository;
 
         public GetCountService(
-        IDeletableEntityRepository<PetAdoptionPost> adoptionPostsRepository,
-        IDeletableEntityRepository<PetLostAndFoundPost> lostAndFoundRepository,
-        IDeletableEntityRepository<Picture> pictureRepository,
+        IDeletableEntityRepository<PetPost> petPostsRepository,
         IDeletableEntityRepository<SuccessStory> successStoriesRepository,
-        IDeletableEntityRepository<ApplicationUser> users)
+        IDeletableEntityRepository<ApplicationUser> users,
+        IDeletableEntityRepository<Reply> replyRepository)
         {
-            this.adoptionPostsRepository = adoptionPostsRepository;
-            this.lostAndFoundRepository = lostAndFoundRepository;
-            this.pictureRepository = pictureRepository;
+            this.petPostsRepository = petPostsRepository;
             this.successStoriesRepository = successStoriesRepository;
             this.users = users;
+            this.replyRepository = replyRepository;
         }
 
         public IndexViewModel GetIndexCounts()
         {
             var data = new IndexViewModel()
             {
-                DogsCount = this.adoptionPostsRepository.AllAsNoTracking()
-                            .Where(x => x.IsAdopted == false && x.Type == TypePet.Dog && x.IsApproved == true).Count(),
+                DogsCount = this.petPostsRepository.AllAsNoTracking()
+                            .Where(x => x.PetStatus == PetStatus.ForAdoption && x.Type == TypePet.Dog && x.IsApproved == true).Count(),
 
-                CatCount = this.adoptionPostsRepository.AllAsNoTracking()
-                            .Where(x => x.IsAdopted == false && x.Type == TypePet.Cat && x.IsApproved == true).Count(),
+                CatCount = this.petPostsRepository.AllAsNoTracking()
+                            .Where(x => x.PetStatus == PetStatus.ForAdoption && x.Type == TypePet.Cat && x.IsApproved == true).Count(),
 
-                OtherAnimalsCount = this.adoptionPostsRepository.AllAsNoTracking()
-                            .Where(x => x.IsAdopted == false && x.Type == TypePet.Other && x.IsApproved == true).Count(),
+                OtherAnimalsCount = this.petPostsRepository.AllAsNoTracking()
+                            .Where(x => x.PetStatus == PetStatus.ForAdoption && x.Type == TypePet.Other && x.IsApproved == true).Count(),
 
-                AdoptedAnimals = this.adoptionPostsRepository.AllAsNoTracking().Where(x => x.IsAdopted == true).Count(),
+                AdoptedAnimals = this.petPostsRepository.AllAsNoTracking().Where(x => x.PetStatus == PetStatus.Adopted).Count(),
 
                 Volunteers = this.users.AllAsNoTracking().Count(),
 
-                HappyStories = this.successStoriesRepository.AllAsNoTracking().Where(x => x.IsApproved == true)
-                                .Select(x => new HappyEndingsIndexViewModel()
-                                {
-                                    Description = x.Description,
-                                    Avatar = x.PostPictures.FirstOrDefault(x => x.IsCoverPicture),
-                                    Likes = x.Likes,
-                                    PersonName = x.PersonName,
-                                    PetName = x.PetName,
-                                    CreatedOn = x.CreatedOn.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture),
-                                }).ToList(),
+                HappyStories = this.successStoriesRepository.AllAsNoTracking().Where(x => x.IsApproved)
+                .To<HappyEndingsIndexViewModel>().ToList(),
             };
 
             return data;
         }
 
-        public int GetAllAdoptAnimalsByTypeCount(string type)
+        public int GetAllAnimalsByCriteriaCount(string typeAnimal, string sex, string location, string category)
         {
-            TypePet typeAnimal = TypePet.Dog;
+            var animalType = EnumHelper<TypePet>.GetValueFromName(typeAnimal);
+            var animalSex = EnumHelper<Sex>.GetValueFromName(sex);
+            var animalLocation = EnumHelper<City>.GetValueFromName(location);
+            var animalCategory = EnumHelper<PetStatus>.GetValueFromName(category);
 
-            switch (type)
+            var petsCount = this.petPostsRepository.AllAsNoTracking()
+                           .Where(x => (animalCategory == 0 || x.PetStatus == animalCategory)
+                           && (animalLocation == 0 || x.Location == animalLocation)
+                           && (animalSex == 0 || x.Sex == animalSex)
+                           && (animalType == 0 || x.Type == animalType)
+                           && x.IsApproved == true).ToList().Count();
+
+            return petsCount;
+        }
+
+        public int GetCurrentPostPhotosCount(int id)
+        {
+            var picCount = this.petPostsRepository.AllAsNoTracking()
+                           .Where(x => x.Id == id)
+                           .Select(x => x.PostPictures.Count())
+                           .FirstOrDefault();
+
+            return picCount;
+        }
+
+        public int GetCurrentUserPhotosCount(string id)
+        {
+            var picCount = this.users.AllAsNoTracking()
+                            .Where(x => x.Id == id)
+                            .Select(x => x.UserPictures.Count())
+                            .FirstOrDefault();
+
+            return picCount;
+        }
+
+        public int GetAllUserAnimalsCountByCategory(string category, string nickName)
+        {
+            var postsCount = 0;
+
+            if (category == "MyPosts")
             {
-                case "cats":
-                    typeAnimal = TypePet.Cat;
-                    break;
-                case "other":
-                    typeAnimal = TypePet.Other;
-                    break;
-                default:
-                    break;
+                postsCount = this.petPostsRepository.AllAsNoTracking()
+                           .Where(x => x.User.Nickname == nickName).Count();
+            }
+            else
+            {
+                postsCount = this.petPostsRepository.AllAsNoTracking()
+                         .Where(x => x.UserLikes.Any(x => x.ApplicationUser.Nickname == nickName)).Count();
             }
 
-            var count = this.adoptionPostsRepository.AllAsNoTracking()
-                           .Where(x => x.IsAdopted == false && x.Type == typeAnimal && x.IsApproved == true).Count();
+            return postsCount;
+        }
+
+        public int GetAllStoriesCount()
+        {
+            int count = this.successStoriesRepository.AllAsNoTracking().Where(x => x.IsApproved).Count();
 
             return count;
         }
 
-        public int GetAllAdoptAnimalsCount()
+        public int GetNotificationsCount(string userId)
         {
-            var count = this.adoptionPostsRepository.AllAsNoTracking()
-                           .Where(x => x.IsAdopted == false && x.IsApproved == true).Count();
-
-            return count;
+            var notificationsCount = this.replyRepository.AllAsNoTracking()
+                                                   .Where(x => x.PostCreatorId == userId || x.RepliedToUserId == userId)
+                                                   .ToList().Count();
+            return notificationsCount;
         }
     }
 }

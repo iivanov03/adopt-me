@@ -3,6 +3,7 @@ namespace AdoptMe.Data.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     using AdoptMe.Data.Common.Models;
     using AdoptMe.Data.Models.Enums;
@@ -16,14 +17,13 @@ namespace AdoptMe.Data.Models
             this.Roles = new HashSet<IdentityUserRole<string>>();
             this.Claims = new HashSet<IdentityUserClaim<string>>();
             this.Logins = new HashSet<IdentityUserLogin<string>>();
-            this.PetAdoptionPosts = new HashSet<PetAdoptionPost>();
-            this.PetLostAndFoundPosts = new HashSet<PetLostAndFoundPost>();
+            this.PetPosts = new HashSet<PetPost>();
             this.SuccessStories = new HashSet<SuccessStory>();
-            this.HomePets = new HashSet<HomePet>();
             this.UserPictures = new HashSet<Picture>();
-            this.LikedLostFoundPosts = new HashSet<UserLostFoundPost>();
-            this.LikedAdoptionPosts = new HashSet<UserAdoptionPost>();
-            this.LikedSuccessStoryPosts = new HashSet<UserSuccessStoryPost>();
+            this.PostPictures = new HashSet<Picture>();
+            this.LikedPosts = new HashSet<UserPetPostLikes>();
+            this.LikedSuccessStoryPosts = new HashSet<UserSuccessStoryLikes>();
+            this.Replies = new HashSet<Reply>();
         }
 
         // Audit info
@@ -42,9 +42,13 @@ namespace AdoptMe.Data.Models
 
         public string Living { get; set; }
 
-        public Sex Sex { get; set; }
+        public string Description { get; set; }
+
+        public UserSex Sex { get; set; }
 
         public DateTime DateOfBirth { get; set; }
+
+        public int AnswerCounter { get; set; }
 
         public virtual ICollection<IdentityUserRole<string>> Roles { get; set; }
 
@@ -52,20 +56,20 @@ namespace AdoptMe.Data.Models
 
         public virtual ICollection<IdentityUserLogin<string>> Logins { get; set; }
 
-        public virtual ICollection<PetAdoptionPost> PetAdoptionPosts { get; set; }
-
-        public virtual ICollection<PetLostAndFoundPost> PetLostAndFoundPosts { get; set; }
+        public virtual ICollection<PetPost> PetPosts { get; set; }
 
         public virtual ICollection<SuccessStory> SuccessStories { get; set; }
 
-        public virtual ICollection<HomePet> HomePets { get; set; }
-
+        [InverseProperty("UserPicture")]
         public virtual ICollection<Picture> UserPictures { get; set; }
 
-        public virtual ICollection<UserAdoptionPost> LikedAdoptionPosts { get; set; }
+        [InverseProperty("PostPicture")]
+        public virtual ICollection<Picture> PostPictures { get; set; }
 
-        public virtual ICollection<UserLostFoundPost> LikedLostFoundPosts { get; set; }
+        public virtual ICollection<UserPetPostLikes> LikedPosts { get; set; }
 
-        public virtual ICollection<UserSuccessStoryPost> LikedSuccessStoryPosts { get; set; }
+        public virtual ICollection<UserSuccessStoryLikes> LikedSuccessStoryPosts { get; set; }
+
+        public virtual ICollection<Reply> Replies { get; set; }
     }
 }

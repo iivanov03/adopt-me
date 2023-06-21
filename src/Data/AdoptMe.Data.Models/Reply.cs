@@ -1,32 +1,27 @@
 ﻿namespace AdoptMe.Data.Models
 {
-
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations.Schema;
     using AdoptMe.Data.Common.Models;
 
     public class Reply : BaseDeletableModel<int>
     {
-        public Reply()
-        {
-            this.ReplyPictures = new HashSet<Picture>();
-        }
-
         public string Text { get; set; }
 
-        [ForeignKey(nameof(User))]
+        public int? ParentId { get; set; }
+
+        public virtual Reply Parent { get; set; }
+
         public string UserId { get; set; }
 
-        public ApplicationUser User { get; set; }
+        public virtual ApplicationUser User { get; set; }
 
-        public int? PetAdoptionPostId { get; set; }
+        public string PostCreatorId { get; set; }
 
-        public PetAdoptionPost PetAdoptionPost { get; set; }
+        public string RepliedToUserId { get; set; }
 
-        public int? PetLostAndFoundPostId { get; set; }
+        public int PostId { get; set; }
 
-        public PetLostAndFoundPost PetLostAndFound { get; set; }
+        public virtual PetPost Post { get; set; }
 
-        public virtual ICollection<Picture> ReplyPictures { get; set; }
+        public bool IsReplyToComment { get; set; }
     }
 }

@@ -26,13 +26,11 @@
 
         public DbSet<Setting> Settings { get; set; }
 
-        public DbSet<BankAccount> BankAccounts { get; set; }
+        public DbSet<DonateOrganisation> DonateOrganisations { get; set; }
 
-        public DbSet<HomePet> HomePets { get; set; }
+        public DbSet<OrganisationLink> OrganisationLinks { get; set; }
 
-        public DbSet<PetAdoptionPost> PetAdoptionPosts { get; set; }
-
-        public DbSet<PetLostAndFoundPost> PetLostAndFoundPosts { get; set; }
+        public DbSet<PetPost> PetPosts { get; set; }
 
         public DbSet<Picture> Pictures { get; set; }
 
@@ -40,11 +38,9 @@
 
         public DbSet<SuccessStory> SuccessStories { get; set; }
 
-        public DbSet<UserAdoptionPost> UserAdoptionPosts { get; set; }
+        public DbSet<UserPetPostLikes> UserPetPostLikes { get; set; }
 
-        public DbSet<UserLostFoundPost> UserLostFoundPosts { get; set; }
-
-        public DbSet<UserSuccessStoryPost> UserSuccessStoryPosts { get; set; }
+        public DbSet<UserSuccessStoryLikes> UserSuccessStoryLikes { get; set; }
 
         public override int SaveChanges() => this.SaveChanges(true);
 

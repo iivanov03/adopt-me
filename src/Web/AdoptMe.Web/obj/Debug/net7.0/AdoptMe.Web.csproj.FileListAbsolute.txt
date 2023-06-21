@@ -617,3 +617,7 @@
 /Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/bin/Debug/net7.0/Mono.TextTemplating.dll
 /Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/bin/Debug/net7.0/System.CodeDom.dll
 /Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/bin/Debug/net7.0/SixLabors.ImageSharp.dll
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/bin/Debug/net7.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/bin/Debug/net7.0/Newtonsoft.Json.Bson.dll
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/obj/Debug/net7.0/AdoptMe.Web.Resources.Views.Shared._Layout.bg.resources
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web/obj/Debug/net7.0/AdoptMe.Web.Resources.Views.Shared._Layout.en.resources

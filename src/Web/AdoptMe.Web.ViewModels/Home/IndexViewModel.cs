@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AdoptMe.Web.ViewModels.Home
+﻿namespace AdoptMe.Web.ViewModels.Home
 {
+    using System.Collections.Generic;
+
     public class IndexViewModel
     {
         public IndexViewModel()
@@ -23,6 +21,6 @@ namespace AdoptMe.Web.ViewModels.Home
 
         public int Volunteers { get; set; }
 
-        public ICollection<HappyEndingsIndexViewModel> HappyStories { get; set; }
+        public List<HappyEndingsIndexViewModel> HappyStories { get; set; }
     }
 }

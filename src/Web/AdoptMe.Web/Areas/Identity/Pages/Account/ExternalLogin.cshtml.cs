@@ -9,11 +9,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using AdoptMe.Data.Models;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using AdoptMe.Web.Infrastructure.EmailSender;
+using AdoptMe.Services.Data;
 
 namespace AdoptMe.Web.Areas.Identity.Pages.Account
 {
@@ -23,18 +24,21 @@ namespace AdoptMe.Web.Areas.Identity.Pages.Account
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IEmailSender _emailSender;
+        private readonly IUserService userService;
         private readonly ILogger<ExternalLoginModel> _logger;
 
         public ExternalLoginModel(
             SignInManager<ApplicationUser> signInManager,
             UserManager<ApplicationUser> userManager,
             ILogger<ExternalLoginModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            IUserService userService)
         {
             _signInManager = signInManager;
             _userManager = userManager;
             _logger = logger;
             _emailSender = emailSender;
+            this.userService = userService;
         }
 
         [BindProperty]
@@ -52,6 +56,12 @@ namespace AdoptMe.Web.Areas.Identity.Pages.Account
             [Required]
             [EmailAddress]
             public string Email { get; set; }
+
+            [Required(ErrorMessage = "Името е задължително поле")]
+            [StringLength(20, MinimumLength = 2, ErrorMessage = "Името трябва да е от 2 до 20 символа")]
+            [Display(Name = "Username")]
+            [RegularExpression(@"^\S*$", ErrorMessage = "Името не трябва да съдържа празни полета")]
+            public string NickName { get; set; }
         }
 
         public IActionResult OnGetAsync()
@@ -73,7 +83,7 @@ namespace AdoptMe.Web.Areas.Identity.Pages.Account
             if (remoteError != null)
             {
                 ErrorMessage = $"Error from external provider: {remoteError}";
-                return RedirectToPage("./Login", new {ReturnUrl = returnUrl });
+                return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
             }
             var info = await _signInManager.GetExternalLoginInfoAsync();
             if (info == null)
@@ -83,7 +93,7 @@ namespace AdoptMe.Web.Areas.Identity.Pages.Account
             }
 
             // Sign in the user with this external login provider if the user already has a login.
-            var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false, bypassTwoFactor : true);
+            var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false, bypassTwoFactor: true);
             if (result.Succeeded)
             {
                 _logger.LogInformation("{Name} logged in with {LoginProvider} provider.", info.Principal.Identity.Name, info.LoginProvider);
@@ -120,9 +130,14 @@ namespace AdoptMe.Web.Areas.Identity.Pages.Account
                 return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
             }
 
+            if (this.userService.IsUsernameTaken(Input.NickName))
+            {
+                this.ModelState.AddModelError("NickName", "Потребителското име вече е заето");
+            }
+
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email };
+                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email, Nickname = Input.NickName };
 
                 var result = await _userManager.CreateAsync(user);
                 if (result.Succeeded)

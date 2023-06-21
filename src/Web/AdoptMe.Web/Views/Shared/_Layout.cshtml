@@ -12,6 +12,8 @@
     <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,700,400italic%7CPoppins:300,400,500,700">
     <link rel="stylesheet" href="~/css/style.css">
+    <link href="~/css/notification.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0ad7996bae.js" crossorigin="anonymous"></script>
     <!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"></script>
@@ -60,60 +62,67 @@
                             <div class="rd-navbar-nav-wrap-bg"></div>
                             <ul class="rd-navbar-nav">
                                 <li class="active">
-                                    <a asp-area="" asp-controller="Home" asp-action="Index">Начало</a>
+                                    <a asp-area="" asp-controller="Home" asp-action="Index">@Localizer["Home"]</a>
                                 </li>
                                 <li>
-                                    <a asp-area="" asp-controller="Pet" asp-action="Profile" asp-route-id="13">За нас</a>
+                                    <a asp-area="" asp-controller="Home" asp-action="Index" asp-route-id="13">@Localizer["AboutUs"]</a>
                                 </li>
                                 <li>
-                                    <a asp-area="" asp-controller="Adopt" asp-action="All">Осинови</a>
+                                    <a href="/Adopt/All/#adopt-cats">@Localizer["Adopt"]</a>
                                     <ul class="rd-navbar-dropdown tabs-nav">
                                         <li>
-                                            <a href="Adopt/All/#adopt-cats">Осинови Котка</a>
+                                            <a href="/Adopt/All/#adopt-cats">@Localizer["AdoptCat"]</a>
                                         </li>
                                         <li>
-                                            <a href="Adopt/All/#adopt-dogs">Осинови Куче</a>
+                                            <a href="/Adopt/All/#adopt-dogs">@Localizer["AdoptDog"]</a>
                                         </li>
                                         <li>
-                                            <a href="Adopt/All/#adopt-other">Осинови Други</a>
+                                            <a href="/Adopt/All/#adopt-other">@Localizer["AdoptOther"]</a>
                                         </li>
-                                        <li>
-                                            <a asp-area="" asp-controller="Adopt" asp-action="Create">Създай пост за осиновяване</a>
-                                        </li>
+                                        @if (this.User.Identity.IsAuthenticated)
+                                        {
+                                            <li>
+                                                <a asp-area="" asp-controller="Adopt" asp-action="Create">@Localizer["CreateAdoptionPost"]</a>
+                                            </li>
+                                        }
                                     </ul>
                                 </li>
                                 <li>
-                                    <a asp-area="" asp-controller="Home" asp-action="Index">Изгубени &amp; Намерени</a>
+                                    <a href="/LostFound/All/#lost">@Localizer["LostFound"]</a>
                                     <ul class="rd-navbar-dropdown tabs-nav">
                                         <li>
-                                            <a asp-area="" asp-controller="Home" asp-action="Index">Изгубени</a>
+                                            <a href="/LostFound/All/#lost">@Localizer["LostHomeAnimals"]</a>
                                         </li>
                                         <li>
-                                            <a asp-area="" asp-controller="Home" asp-action="Index">Намерени</a>
+                                            <a href="/LostFound/All/#found">@Localizer["FoundHomeAnimals"]</a>
                                         </li>
+                                        @if (this.User.Identity.IsAuthenticated)
+                                        {
+                                            <li>
+                                                <a asp-area="" asp-controller="LostFound" asp-action="Create">@Localizer["CreateLostAndFoundPost"]</a>
+                                            </li>
+                                        }
                                     </ul>
                                 </li>
                                 <li>
-                                    <a asp-area="" asp-controller="Home" asp-action="Index">Страници</a>
+                                    <a>@Localizer["Pages"]</a>
                                     <ul class="rd-navbar-dropdown tabs-nav">
                                         <li>
-                                            <a asp-area="" asp-controller="Home" asp-action="Index">Нашите истории</a>
+                                            <a asp-area="" asp-controller="HappyStories" asp-action="All">@Localizer["OurStories"]</a>
                                         </li>
                                         <li>
-                                            <a asp-area="" asp-controller="Home" asp-action="Index">Новини</a>
+                                            <a asp-area="" asp-controller="Donate" asp-action="All">@Localizer["MakeDonation"]</a>
                                         </li>
                                         <li>
-                                            <a asp-area="" asp-controller="Home" asp-action="Index">Направи дарение</a>
-                                        </li>
-                                        <li>
-                                            <a asp-area="" asp-controller="Home" asp-action="Index">Блог</a>
-                                        </li>
-                                        <li>
-                                            <a asp-area="" asp-controller="Home" asp-action="Index">Контакти</a>
+                                            <a asp-area="" asp-controller="Contact" asp-action="SendEmailToUs">@Localizer["Contacts"]</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <partial name="_LoginPartial" />
+                                @if (this.User.Identity.IsAuthenticated)
+                                {
+                                    <vc:notifications></vc:notifications>
+                                }
                             </ul>
                         </div>
                     </div>
@@ -137,19 +146,23 @@
                             <h4>Quick Links</h4>
                             <div class="group-md-1">
                                 <ul class="list-nav-marked">
-                                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                                    <li><a asp-area="" asp-controller="Home" asp-action="Index">About us</a></li>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Index">@Localizer["Home"]</a></li>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Index">@Localizer["AboutUs"]</a></li>
                                 </ul>
                                 <ul class="list-nav-marked">
-                                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Lost & Found</a></li>
-                                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Pet Services</a></li>
+                                    <li><a href="/Adopt/All/#adopt-cats">@Localizer["Adopt"]</a></li>
+                                    <li><a href="/LostFound/All/#lost">@Localizer["LostFound"]</a></li>
                                 </ul>
                                 <ul class="list-nav-marked">
-                                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Adopt a Pet</a></li>
-                                    <li><a asp-area="" asp-controller="Home" asp-action="Index">News & Events</a></li>
+                                    <li><a asp-area="" asp-controller="HappyStories" asp-action="All">@Localizer["OurStories"]</a></li>
+                                    <li><a asp-area="" asp-controller="Donate" asp-action="All">@Localizer["MakeDonation"]</a></li>
+                                </ul>
+                                <ul class="list-nav-marked">
+                                    <li><a asp-area="" asp-controller="Contact" asp-action="SendEmailToUs">@Localizer["Contacts"]</a></li>
                                 </ul>
                             </div>
                         </div>
+                        <vc:last-posts></vc:last-posts>
                     </div>
                 </div>
             </div>
@@ -160,7 +173,7 @@
         <footer class="page-footer-minimal">
             <div class="shell">
                 <p class="rights">
-                    Animal Shelter&nbsp;&copy;&nbsp;<span id="copyright-year"></span>.&nbsp;<br class="veil-sm"><a class="link-underline" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy Policy</a>
+                    Adopt Me&nbsp;&copy;&nbsp;<span id="copyright-year"></span>.&nbsp;<br class="veil-sm"><a class="link-underline" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy Policy</a>
                 </p>
             </div>
         </footer>
@@ -207,9 +220,10 @@
     <script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
     <script src="~/lib/jquery-validation/dist/jquery.validate.min.js" asp-append-version="true"></script>
     <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js" asp-append-version="true"></script>
-    @await this.RenderSectionAsync("Scripts", required: false)
+    <script src="~/lib/moment/min/moment-with-locales.min.js" asp-append-version="true"></script>
     <script src="~/js/core.min.js"></script>
     <script src="~/js/script.js"></script>
+    @await this.RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
 

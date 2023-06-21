@@ -1,8 +1,12 @@
 ﻿namespace AdoptMe.Data.Models.Enums
 {
+    using System.ComponentModel.DataAnnotations;
+
     public enum Sex
     {
-        Male = 1,
-        Female = 2
+        [Display(Name = "Мъжко")]
+        Male = 2,
+        [Display(Name = "Женско")]
+        Female = 3,
     }
 }

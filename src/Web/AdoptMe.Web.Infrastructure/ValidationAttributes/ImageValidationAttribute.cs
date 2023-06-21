@@ -10,20 +10,23 @@
 
     public class ImageValidationAttribute : ValidationAttribute
     {
-        private const string DefaultFileTooBigMessage =
-        "Sorry but the maximum size of a single image is 15mb";
-
-        private const string DefaultFilesTooManyMessage =
-        "Sorry but you can upload maximum of 20 images";
-
         private const string DefaultFileNotImageMessage =
-        "Uploaded files must be images";
+        "Качените файлове трябва да са снимки";
+
+        private readonly string defaultFilesTooManyMessage;
+
+        private readonly string defaultFileTooBigMessage;
 
         private readonly int maxFileSize;
 
-        public ImageValidationAttribute(int maxFileSize)
+        private readonly int maxNumberPhotos;
+
+        public ImageValidationAttribute(int maxFileSize, int maxNumberPhotos)
         {
             this.maxFileSize = maxFileSize;
+            this.maxNumberPhotos = maxNumberPhotos;
+            this.defaultFilesTooManyMessage = $"Можете да качите максимум {maxNumberPhotos} снимки";
+            this.defaultFileTooBigMessage = $"Максималният размер за една снимка е {Math.Round(maxFileSize * 0.000001)}мб";
         }
 
         public string FileTooBigMessage { get; set; }
@@ -34,29 +37,32 @@
 
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
-            var files = (List<IFormFile>)value;
-
-            if (files.Count > 20)
+            if (value != null)
             {
-                return new ValidationResult(this.FilesTooManyMessage ?? DefaultFilesTooManyMessage);
-            }
+                var files = (List<IFormFile>)value;
 
-            foreach (var file in files)
-            {
-                if (file.Length > this.maxFileSize)
+                if (files.Count > this.maxNumberPhotos)
                 {
-                    return new ValidationResult(this.FileTooBigMessage ?? DefaultFileTooBigMessage);
+                    return new ValidationResult(this.FilesTooManyMessage ?? this.defaultFilesTooManyMessage);
                 }
 
-                try
+                foreach (var file in files)
                 {
-                    using (var stream = file.OpenReadStream())
+                    if (file.Length > this.maxFileSize)
+                    {
+                        return new ValidationResult(this.FileTooBigMessage ?? this.defaultFileTooBigMessage);
+                    }
 
-                    using (var pic = Image.Load(stream, out IImageFormat format)) ;
-                }
-                catch (Exception)
-                {
-                    return new ValidationResult(this.FileNotImageMessage ?? DefaultFileNotImageMessage);
+                    try
+                    {
+                        using (var stream = file.OpenReadStream())
+
+                        using (var pic = Image.Load(stream, out IImageFormat format)) ;
+                    }
+                    catch (Exception)
+                    {
+                        return new ValidationResult(this.FileNotImageMessage ?? DefaultFileNotImageMessage);
+                    }
                 }
             }
 

@@ -15,3 +15,7 @@
 /Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/bin/Debug/net7.0/AdoptMe.Data.Models.pdb
 /Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/bin/Debug/net7.0/AdoptMe.Data.Common.pdb
 /Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/obj/Debug/net7.0/AdoptMe.Web.Infrastructure.csproj.CopyComplete
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/bin/Debug/net7.0/AdoptMe.Common.dll
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/bin/Debug/net7.0/AdoptMe.Services.Mapping.dll
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/bin/Debug/net7.0/AdoptMe.Common.pdb
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.Infrastructure/bin/Debug/net7.0/AdoptMe.Services.Mapping.pdb

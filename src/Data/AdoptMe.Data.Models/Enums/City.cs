@@ -1,17 +1,15 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Xml.Linq;
-
-namespace AdoptMe.Data.Models.Enums
+﻿namespace AdoptMe.Data.Models.Enums
 {
+    using System.ComponentModel.DataAnnotations;
+
     public enum City
     {
-        [Display(Name = "София-град")] СофияГрад = 1,
-        Бургас = 2,
-        Варна = 3,
-        [Display(Name = "Велико Търново")] ВеликоТърново = 4,
-        Видин = 5,
-        Враца = 6,
-        Габрово = 7,
+        [Display(Name = "София-град")] СофияГрад = 2,
+        Бургас = 3,
+        Варна = 4,
+        [Display(Name = "Велико Търново")] ВеликоТърново = 5,
+        Видин = 6,
+        Враца = 7,
         Добрич = 8,
         Кърджали = 9,
         Кюстендил = 10,
@@ -33,5 +31,7 @@ namespace AdoptMe.Data.Models.Enums
         Хасково = 26,
         Шумен = 27,
         Ямбол = 28,
+        Габрово = 29,
+
     }
 }

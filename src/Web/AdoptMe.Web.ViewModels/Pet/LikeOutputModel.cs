@@ -5,5 +5,7 @@
         public int Likes { get; set; }
 
         public bool IsLiked { get; set; }
+
+        public string ToLike { get; set; }
     }
 }

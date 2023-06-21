@@ -4,28 +4,71 @@
 
     using AdoptMe.Data.Models;
     using AdoptMe.Services.Data;
-    using AdoptMe.Web.Controllers;
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
 
     public class PetController : BaseController
     {
-        private readonly IPetService petService;
+        private readonly IPetProfileService petService;
+        private readonly IUserService userService;
+        private readonly IPostService postService;
         private readonly UserManager<ApplicationUser> userManager;
 
-        public PetController(IPetService petService, UserManager<ApplicationUser> userManager)
+        public PetController(
+            IPetProfileService petService,
+            IUserService userService,
+            IPostService postService,
+            UserManager<ApplicationUser> userManager)
         {
             this.petService = petService;
+            this.userService = userService;
+            this.postService = postService;
             this.userManager = userManager;
         }
 
-        public async Task<IActionResult> Profile(int id)
+        public async Task<IActionResult> PetProfile(int id)
         {
-            var postId = id;
             var user = await this.userManager.GetUserAsync(this.User);
-            var viewModel = this.petService.GetPetProfile(postId, user);
+            var viewModel = this.petService.GetPetProfile(id, user);
 
             return this.View(viewModel);
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> ChangeStatus(int id)
+        {
+            var user = await this.userManager.GetUserAsync(this.User);
+
+            if (await this.userService.IsUserPostAuthorized(id, user))
+            {
+                await this.postService.ChangeStatusAsync(id);
+
+                return this.Redirect($"/Search/SearchResults");
+            }
+            else
+            {
+                return this.StatusCode(401);
+            }
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var user = await this.userManager.GetUserAsync(this.User);
+
+            if (await this.userService.IsUserPostAuthorized(id, user))
+            {
+                await this.postService.DeletePostAsync(id);
+
+                return this.Redirect($"/Search/SearchResults");
+            }
+            else
+            {
+                return this.StatusCode(401);
+            }
         }
     }
 }

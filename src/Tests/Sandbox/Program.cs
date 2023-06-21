@@ -113,6 +113,7 @@
             services.AddTransient<IGetCountService, GetCountService>();
             services.AddTransient<IAdoptService, AdoptService>();
             services.AddTransient<IPetService, PetService>();
+            services.AddTransient<IHappyStoriesService, HappyStoriesService>();
         }
 
         private static void Configure(IApplicationBuilder app, IWebHostEnvironment env)

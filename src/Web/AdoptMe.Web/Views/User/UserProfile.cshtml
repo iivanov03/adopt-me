@@ -1,0 +1,206 @@
+﻿@using AdoptMe.Common
+@{
+    this.ViewData["Title"] = "User Profile";
+}
+@using AdoptMe.Data.Models.Enums
+@using AdoptMe.Common
+@using AdoptMe.Web.Infrastructure
+@model AdoptMe.Web.ViewModels.User.UserViewModel
+<!-- Breadcrumbs & Page title-->
+<div class="page-title">
+    <div class="page-title-text">Личен Профил на <span id="nickName">@Model.Nickname</span></div>
+    <ul class="breadcrumbs-custom">
+        <li><a href="index.html">Начало</a></li>
+        <li class="active">Личен Профил</li>
+    </ul>
+</div>
+<div class="group-xl group-middle">
+    <div class="cell-xs-10 cell-sm-6 cell-md-8">
+        <a href="##" onClick="history.go(-1); return false;" class="btn btn-blue-marguerite btn-effect-anis wow fadeInUpSmall" data-wow-delay="0.2s" data-wow-duration=".75s">Назад</a>
+    </div>
+</div>
+<section class="section-md section-md-alternate bg-white text-center">
+    <div class="shell">
+        <h3>Твоят Профил</h3>
+        <ul class="post-meta">
+            <li>
+                <span class="icon icon-xs icon-tan-hide material-icons-access_time"></span>
+                <time datetime="">@Model.CreatedOn</time>
+            </li>
+            <li><span class="icon icon-xs icon-tan-hide mdi mdi-gender-male-female"></span><span>@(Model.Sex==0?"Не е въведен пол": EnumHelper<UserSex>.GetDisplayValue(Model.Sex))</span></li>
+            <li><span class="icon icon-xs icon-tan-hide material-icons-place"></span><span>@Model.Living</span></li>
+            <li><span class="icon icon-xs icon-tan-hide material-icons-hourglass_empty"></span><span>@(Model.Age==0?"Не са въведени години": Model.Age.ToString())</span></li>
+        </ul>
+        <div class="range range-sm-center">
+            <div class="cell-sm-9 cell-md-12">
+                <article class="post-single">
+                    <div class="post-single-left">
+                        @if (Model.UserPictures.Any())
+                        {
+                            @if (Model.CoverPicturePath != null)
+                            {
+                                <img class="mr-3 img-responsive" src="@Model.CoverPicturePath" alt="" width="570" height="389" />
+                            }
+                            <section class="section-md bg-gray-light text-center" style="padding:15px;">
+                                <div class="shell">
+                                    <div class="range">
+                                        <div class="cell-xs-12 wow fadeIn" data-wow-duration=".8s" data-wow-offset="150">
+                                            <!-- Owl Carousel-->
+                                            <div class="owl-carousel-centered">
+                                                <div data-photo-swipe-gallery="gallery" class="owl-carousel" style="padding:10px;" data-items="1" data-sm-items="3" data-stage-padding="0" data-loop="true" data-margin="10" data-lg-margin="30" data-mouse-drag="false" data-center="true" data-numbering="#owl-numbering-1" data-nav="true">
+                                                    @foreach (var picture in Model.UserPictures)
+                                                    {
+                                                        <a class="mr-3 img-responsive" href=@picture.Path data-photo-swipe-item="" data-size=@picture.DataSize>
+                                                            <figure>
+                                                                <img class="mr-3 img-responsive" src=@picture.Path alt="" width="346" height="249" />
+                                                            </figure>
+                                                        </a>
+                                                    }
+                                                </div>
+                                                <div class="owl-numbering owl-numbering-default" style="margin-top: 0px;" id="owl-numbering-1">
+                                                    <div class="numbering-current"></div>
+                                                    <div class="numbering-separator"></div>
+                                                    <div class="numbering-count"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="shell range spacing-55 range range-sm-center">
+                                <div class="group-xl group-middle">
+                                    <div class="cell-xs-10 cell-sm-6 cell-md-8">
+                                        <a class="btn btn-blue-marguerite btn-effect-anis wow fadeInUpSmall" asp-area="" asp-controller="User" asp-action="ChangeProfilePic" data-wow-delay="0.2s" data-wow-duration=".75s" style="margin-top:0">Избери профилна снимка/изтрий снимки</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="panel-group panel-group-custom panel-group-corporate" id="accordion1" role="tablist">
+                        <div class="panel panel-custom panel-corporate">
+                            <div class="panel-heading" id="accordion1Heading1" role="tab">
+                                <div class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1Collapse1" aria-controls="accordion1Collapse1" aria-expanded="true">
+                                        Информация за потребителя
+                                        <div class="panel-arrow"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel-collapse collapse in" id="accordion1Collapse1" role="tabpanel" aria-labelledby="accordion1Heading1">
+                                <div class="panel-body">
+                                    <form method="post" id="userInfo">
+                                        <div class="range range-sm-bottom spacing-20">
+                                            <div class="cell-sm-6">
+                                                <div class="form-group">
+                                                    <input class="form-control" asp-for="Nickname"></input>
+                                                    <label class="form-label" asp-for="Nickname"></label>
+                                                </div>
+                                            </div>
+                                            <div class="cell-xs-6">
+                                                <div class="form-group">
+                                                    <select class="form-control" asp-for="Sex" asp-items="@Html.GetEnumSelectList<UserSex>()"></select>
+                                                    <label class="form-label" asp-for="Sex"></label>
+                                                </div>
+                                            </div>
+                                            <div class="cell-sm-6">
+                                                <div class="form-group">
+                                                    <input class="form-control" asp-for="Age"></input>
+                                                    <label class="form-label" asp-for="Age"></label>
+                                                </div>
+                                            </div>
+                                            <div class="cell-sm-6">
+                                                <div class="form-group">
+                                                    <input class="form-control" asp-for="Living"></input>
+                                                    <label class="form-label" asp-for="Living"></label>
+                                                </div>
+                                            </div>
+                                            <div class="cell-sm-12">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" maxlength=@(GlobalConstants.MaxCharactersInUserDescription-2) asp-for="Description"></textarea>
+                                                    <label class="form-label" asp-for="Description"></label>
+                                                    <span id="charsLeft"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <a onclick="uploadInfo()" class="btn btn-tan-hide btn-block">Обнови</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-custom panel-corporate">
+                            <div class="panel-heading" id="accordion1Heading2" role="tab">
+                                <div class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1Collapse2" aria-controls="accordion1Collapse2">
+                                        Качи снимки
+                                        <div class="panel-arrow"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel-collapse collapse" id="accordion1Collapse2" role="tabpanel" aria-labelledby="accordion1Heading2">
+                                <div class="panel-body">
+                                    <form method="post" id="uploadPhotos" enctype="multipart/form-data">
+                                        <div class="range range-sm-bottom spacing-20">
+                                            <div class="cell-sm-12">
+                                                <div class="form-group">
+                                                    <label for="Images" class="btn btn-tan-hide btn-block">Избери снимки</label>
+                                                    <div id="numberPhotos"></div>
+                                                    <input class="form-control" style="visibility:hidden;" type="file" multiple id="Images" name="Images"></input>
+                                                </div>
+                                            </div>
+                                            <div class="shell range spacing-55 range range-sm-center">
+                                                <div class="group-xl group-middle">
+                                                    <div class="form-group">
+                                                        <button type="submit" onclick="uploadPhotos(event)" class="btn btn-success">Качи снимки</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="shell">
+    <hr>
+</div>
+
+<section class="section-md bg-white text-center">
+    <div class="cell-sm-10">
+        <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
+            <!-- Nav tabs-->
+            <ul class="nav nav-tabs">
+                <li onclick="loadAnimals(1, 'MyPosts');" class="active"><a href="#MyPosts" data-toggle="tab">Моите постове</a></li>
+                <li onclick="loadAnimals(1, 'LikedPosts');"><a href="#LikedPosts" data-toggle="tab">Харесани постове</a></li>
+            </ul>
+            <!-- Tab panes-->
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="MyPosts">
+                </div>
+                <div class="tab-pane fade" id="LikedPosts">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@section Scripts{
+    <script src="~/js/pagesManipulation/userProfileList.js"></script>
+    <script src="~/js/pagesManipulation/listPostCreatorHorizontal.js"></script>
+    <script src="~/js/pagesManipulation/descriptionCharactersCounter.js"></script>
+    <script src="~/js/pagesManipulation/uploadSpinner.js"></script>
+}
+
+
+
+
+
+

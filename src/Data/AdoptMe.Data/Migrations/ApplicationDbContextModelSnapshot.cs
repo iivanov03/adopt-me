@@ -74,6 +74,9 @@ namespace AdoptMe.Data.Migrations
                     b.Property<int>("Age")
                         .HasColumnType("int");
 
+                    b.Property<int>("AnswerCounter")
+                        .HasColumnType("int");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -86,6 +89,9 @@ namespace AdoptMe.Data.Migrations
 
                     b.Property<DateTime?>("DeletedOn")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .HasMaxLength(256)
@@ -157,7 +163,7 @@ namespace AdoptMe.Data.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("AdoptMe.Data.Models.BankAccount", b =>
+            modelBuilder.Entity("AdoptMe.Data.Models.DonateOrganisation", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -165,17 +171,14 @@ namespace AdoptMe.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("BankAccountNumber")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime>("CreatedOn")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("DeletedOn")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -183,50 +186,8 @@ namespace AdoptMe.Data.Migrations
                     b.Property<DateTime?>("ModifiedOn")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("VetClinic")
+                    b.Property<string>("Organisation")
                         .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IsDeleted");
-
-                    b.ToTable("BankAccounts");
-                });
-
-            modelBuilder.Entity("AdoptMe.Data.Models.HomePet", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Breed")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreatedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DateOfBirth")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("ModifiedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Sex")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Type")
-                        .HasColumnType("int");
 
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
@@ -237,10 +198,48 @@ namespace AdoptMe.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("HomePets");
+                    b.ToTable("DonateOrganisations");
                 });
 
-            modelBuilder.Entity("AdoptMe.Data.Models.PetAdoptionPost", b =>
+            modelBuilder.Entity("AdoptMe.Data.Models.OrganisationLink", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("DonateOrganisationId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("LinkHref")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LinkName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ModifiedOn")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DonateOrganisationId");
+
+                    b.HasIndex("IsDeleted");
+
+                    b.ToTable("OrganisationLinks");
+                });
+
+            modelBuilder.Entity("AdoptMe.Data.Models.PetPost", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -257,9 +256,6 @@ namespace AdoptMe.Data.Migrations
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsAdopted")
-                        .HasColumnType("bit");
 
                     b.Property<bool>("IsApproved")
                         .HasColumnType("bit");
@@ -279,59 +275,6 @@ namespace AdoptMe.Data.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Sex")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Type")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IsDeleted");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("PetAdoptionPosts");
-                });
-
-            modelBuilder.Entity("AdoptMe.Data.Models.PetLostAndFoundPost", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("CreatedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsApproved")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsFound")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("Likes")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Location")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("ModifiedOn")
-                        .HasColumnType("datetime2");
 
                     b.Property<int>("PetStatus")
                         .HasColumnType("int");
@@ -351,7 +294,7 @@ namespace AdoptMe.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("PetLostAndFoundPosts");
+                    b.ToTable("PetPosts");
                 });
 
             modelBuilder.Entity("AdoptMe.Data.Models.Picture", b =>
@@ -371,9 +314,6 @@ namespace AdoptMe.Data.Migrations
                     b.Property<int>("Height")
                         .HasColumnType("int");
 
-                    b.Property<int?>("HomePetId")
-                        .HasColumnType("int");
-
                     b.Property<bool>("IsCoverPicture")
                         .HasColumnType("bit");
 
@@ -386,22 +326,19 @@ namespace AdoptMe.Data.Migrations
                     b.Property<string>("Path")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("PetAdoptionPostId")
+                    b.Property<int?>("PetPostId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PetLostAndFoundPostId")
-                        .HasColumnType("int");
+                    b.Property<string>("PostPictureId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("RemoteImageUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ReplyId")
-                        .HasColumnType("int");
-
                     b.Property<int?>("SuccessStoryId")
                         .HasColumnType("int");
 
-                    b.Property<string>("UserId")
+                    b.Property<string>("UserPictureId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("Width")
@@ -409,19 +346,15 @@ namespace AdoptMe.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("HomePetId");
-
                     b.HasIndex("IsDeleted");
 
-                    b.HasIndex("PetAdoptionPostId");
+                    b.HasIndex("PetPostId");
 
-                    b.HasIndex("PetLostAndFoundPostId");
-
-                    b.HasIndex("ReplyId");
+                    b.HasIndex("PostPictureId");
 
                     b.HasIndex("SuccessStoryId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserPictureId");
 
                     b.ToTable("Pictures");
                 });
@@ -443,17 +376,23 @@ namespace AdoptMe.Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsReplyToComment")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime?>("ModifiedOn")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("PetAdoptionPostId")
+                    b.Property<int?>("ParentId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PetLostAndFoundPostId")
+                    b.Property<string>("PostCreatorId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PostId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("SuccessStoryId")
-                        .HasColumnType("int");
+                    b.Property<string>("RepliedToUserId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Text")
                         .HasColumnType("nvarchar(max)");
@@ -465,11 +404,9 @@ namespace AdoptMe.Data.Migrations
 
                     b.HasIndex("IsDeleted");
 
-                    b.HasIndex("PetAdoptionPostId");
+                    b.HasIndex("ParentId");
 
-                    b.HasIndex("PetLostAndFoundPostId");
-
-                    b.HasIndex("SuccessStoryId");
+                    b.HasIndex("PostId");
 
                     b.HasIndex("UserId");
 
@@ -556,7 +493,7 @@ namespace AdoptMe.Data.Migrations
                     b.ToTable("SuccessStories");
                 });
 
-            modelBuilder.Entity("AdoptMe.Data.Models.UserAdoptionPost", b =>
+            modelBuilder.Entity("AdoptMe.Data.Models.UserPetPostLikes", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -579,7 +516,7 @@ namespace AdoptMe.Data.Migrations
                     b.Property<DateTime?>("ModifiedOn")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("PetAdoptionPostId")
+                    b.Property<int>("PetPostId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -588,12 +525,12 @@ namespace AdoptMe.Data.Migrations
 
                     b.HasIndex("IsDeleted");
 
-                    b.HasIndex("PetAdoptionPostId");
+                    b.HasIndex("PetPostId");
 
-                    b.ToTable("UserAdoptionPosts");
+                    b.ToTable("UserPetPostLikes");
                 });
 
-            modelBuilder.Entity("AdoptMe.Data.Models.UserLostFoundPost", b =>
+            modelBuilder.Entity("AdoptMe.Data.Models.UserSuccessStoryLikes", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -601,42 +538,8 @@ namespace AdoptMe.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("CreatedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DeletedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("LostFoundPostId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("ModifiedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("UserId")
+                    b.Property<string>("ApplicationUserId")
                         .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IsDeleted");
-
-                    b.HasIndex("LostFoundPostId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("UserLostFoundPosts");
-                });
-
-            modelBuilder.Entity("AdoptMe.Data.Models.UserSuccessStoryPost", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("CreatedOn")
                         .HasColumnType("datetime2");
@@ -653,18 +556,15 @@ namespace AdoptMe.Data.Migrations
                     b.Property<int>("SuccessStoryId")
                         .HasColumnType("int");
 
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
 
                     b.HasIndex("IsDeleted");
 
                     b.HasIndex("SuccessStoryId");
 
-                    b.HasIndex("UserId");
-
-                    b.ToTable("UserSuccessStoryPosts");
+                    b.ToTable("UserSuccessStoryLikes");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -773,28 +673,30 @@ namespace AdoptMe.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("AdoptMe.Data.Models.HomePet", b =>
+            modelBuilder.Entity("AdoptMe.Data.Models.DonateOrganisation", b =>
                 {
                     b.HasOne("AdoptMe.Data.Models.ApplicationUser", "User")
-                        .WithMany("HomePets")
+                        .WithMany()
                         .HasForeignKey("UserId");
 
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("AdoptMe.Data.Models.PetAdoptionPost", b =>
+            modelBuilder.Entity("AdoptMe.Data.Models.OrganisationLink", b =>
                 {
-                    b.HasOne("AdoptMe.Data.Models.ApplicationUser", "User")
-                        .WithMany("PetAdoptionPosts")
-                        .HasForeignKey("UserId");
+                    b.HasOne("AdoptMe.Data.Models.DonateOrganisation", "DonateOrganisation")
+                        .WithMany("OrganisationLinks")
+                        .HasForeignKey("DonateOrganisationId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
-                    b.Navigation("User");
+                    b.Navigation("DonateOrganisation");
                 });
 
-            modelBuilder.Entity("AdoptMe.Data.Models.PetLostAndFoundPost", b =>
+            modelBuilder.Entity("AdoptMe.Data.Models.PetPost", b =>
                 {
                     b.HasOne("AdoptMe.Data.Models.ApplicationUser", "User")
-                        .WithMany("PetLostAndFoundPosts")
+                        .WithMany("PetPosts")
                         .HasForeignKey("UserId");
 
                     b.Navigation("User");
@@ -802,62 +704,50 @@ namespace AdoptMe.Data.Migrations
 
             modelBuilder.Entity("AdoptMe.Data.Models.Picture", b =>
                 {
-                    b.HasOne("AdoptMe.Data.Models.HomePet", "HomePet")
-                        .WithMany("PetPictures")
-                        .HasForeignKey("HomePetId");
-
-                    b.HasOne("AdoptMe.Data.Models.PetAdoptionPost", "PetAdoptionPost")
+                    b.HasOne("AdoptMe.Data.Models.PetPost", "PetPost")
                         .WithMany("PostPictures")
-                        .HasForeignKey("PetAdoptionPostId");
+                        .HasForeignKey("PetPostId");
 
-                    b.HasOne("AdoptMe.Data.Models.PetLostAndFoundPost", "PetLostAndFoundPost")
+                    b.HasOne("AdoptMe.Data.Models.ApplicationUser", "PostPicture")
                         .WithMany("PostPictures")
-                        .HasForeignKey("PetLostAndFoundPostId");
-
-                    b.HasOne("AdoptMe.Data.Models.Reply", null)
-                        .WithMany("ReplyPictures")
-                        .HasForeignKey("ReplyId");
+                        .HasForeignKey("PostPictureId");
 
                     b.HasOne("AdoptMe.Data.Models.SuccessStory", "SuccessStory")
                         .WithMany("PostPictures")
                         .HasForeignKey("SuccessStoryId");
 
-                    b.HasOne("AdoptMe.Data.Models.ApplicationUser", "User")
+                    b.HasOne("AdoptMe.Data.Models.ApplicationUser", "UserPicture")
                         .WithMany("UserPictures")
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("UserPictureId");
 
-                    b.Navigation("HomePet");
+                    b.Navigation("PetPost");
 
-                    b.Navigation("PetAdoptionPost");
-
-                    b.Navigation("PetLostAndFoundPost");
+                    b.Navigation("PostPicture");
 
                     b.Navigation("SuccessStory");
 
-                    b.Navigation("User");
+                    b.Navigation("UserPicture");
                 });
 
             modelBuilder.Entity("AdoptMe.Data.Models.Reply", b =>
                 {
-                    b.HasOne("AdoptMe.Data.Models.PetAdoptionPost", "PetAdoptionPost")
-                        .WithMany("Replies")
-                        .HasForeignKey("PetAdoptionPostId");
+                    b.HasOne("AdoptMe.Data.Models.Reply", "Parent")
+                        .WithMany()
+                        .HasForeignKey("ParentId");
 
-                    b.HasOne("AdoptMe.Data.Models.PetLostAndFoundPost", "PetLostAndFound")
+                    b.HasOne("AdoptMe.Data.Models.PetPost", "Post")
                         .WithMany("Replies")
-                        .HasForeignKey("PetLostAndFoundPostId");
-
-                    b.HasOne("AdoptMe.Data.Models.SuccessStory", null)
-                        .WithMany("Replies")
-                        .HasForeignKey("SuccessStoryId");
+                        .HasForeignKey("PostId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.HasOne("AdoptMe.Data.Models.ApplicationUser", "User")
-                        .WithMany()
+                        .WithMany("Replies")
                         .HasForeignKey("UserId");
 
-                    b.Navigation("PetAdoptionPost");
+                    b.Navigation("Parent");
 
-                    b.Navigation("PetLostAndFound");
+                    b.Navigation("Post");
 
                     b.Navigation("User");
                 });
@@ -871,55 +761,38 @@ namespace AdoptMe.Data.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("AdoptMe.Data.Models.UserAdoptionPost", b =>
+            modelBuilder.Entity("AdoptMe.Data.Models.UserPetPostLikes", b =>
                 {
                     b.HasOne("AdoptMe.Data.Models.ApplicationUser", "ApplicationUser")
-                        .WithMany("LikedAdoptionPosts")
+                        .WithMany("LikedPosts")
                         .HasForeignKey("ApplicationUserId");
 
-                    b.HasOne("AdoptMe.Data.Models.PetAdoptionPost", "PetAdoptionPost")
+                    b.HasOne("AdoptMe.Data.Models.PetPost", "PetPost")
                         .WithMany("UserLikes")
-                        .HasForeignKey("PetAdoptionPostId")
+                        .HasForeignKey("PetPostId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("ApplicationUser");
 
-                    b.Navigation("PetAdoptionPost");
+                    b.Navigation("PetPost");
                 });
 
-            modelBuilder.Entity("AdoptMe.Data.Models.UserLostFoundPost", b =>
+            modelBuilder.Entity("AdoptMe.Data.Models.UserSuccessStoryLikes", b =>
                 {
-                    b.HasOne("AdoptMe.Data.Models.PetLostAndFoundPost", "LostFoundPost")
-                        .WithMany("UserLikes")
-                        .HasForeignKey("LostFoundPostId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                    b.HasOne("AdoptMe.Data.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany("LikedSuccessStoryPosts")
+                        .HasForeignKey("ApplicationUserId");
 
-                    b.HasOne("AdoptMe.Data.Models.ApplicationUser", "User")
-                        .WithMany("LikedLostFoundPosts")
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("LostFoundPost");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("AdoptMe.Data.Models.UserSuccessStoryPost", b =>
-                {
                     b.HasOne("AdoptMe.Data.Models.SuccessStory", "SuccessStory")
                         .WithMany("UserLikes")
                         .HasForeignKey("SuccessStoryId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("AdoptMe.Data.Models.ApplicationUser", "User")
-                        .WithMany("LikedSuccessStoryPosts")
-                        .HasForeignKey("UserId");
+                    b.Navigation("ApplicationUser");
 
                     b.Navigation("SuccessStory");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -977,19 +850,17 @@ namespace AdoptMe.Data.Migrations
                 {
                     b.Navigation("Claims");
 
-                    b.Navigation("HomePets");
-
-                    b.Navigation("LikedAdoptionPosts");
-
-                    b.Navigation("LikedLostFoundPosts");
+                    b.Navigation("LikedPosts");
 
                     b.Navigation("LikedSuccessStoryPosts");
 
                     b.Navigation("Logins");
 
-                    b.Navigation("PetAdoptionPosts");
+                    b.Navigation("PetPosts");
 
-                    b.Navigation("PetLostAndFoundPosts");
+                    b.Navigation("PostPictures");
+
+                    b.Navigation("Replies");
 
                     b.Navigation("Roles");
 
@@ -998,39 +869,23 @@ namespace AdoptMe.Data.Migrations
                     b.Navigation("UserPictures");
                 });
 
-            modelBuilder.Entity("AdoptMe.Data.Models.HomePet", b =>
+            modelBuilder.Entity("AdoptMe.Data.Models.DonateOrganisation", b =>
                 {
-                    b.Navigation("PetPictures");
+                    b.Navigation("OrganisationLinks");
                 });
 
-            modelBuilder.Entity("AdoptMe.Data.Models.PetAdoptionPost", b =>
+            modelBuilder.Entity("AdoptMe.Data.Models.PetPost", b =>
                 {
                     b.Navigation("PostPictures");
 
                     b.Navigation("Replies");
 
                     b.Navigation("UserLikes");
-                });
-
-            modelBuilder.Entity("AdoptMe.Data.Models.PetLostAndFoundPost", b =>
-                {
-                    b.Navigation("PostPictures");
-
-                    b.Navigation("Replies");
-
-                    b.Navigation("UserLikes");
-                });
-
-            modelBuilder.Entity("AdoptMe.Data.Models.Reply", b =>
-                {
-                    b.Navigation("ReplyPictures");
                 });
 
             modelBuilder.Entity("AdoptMe.Data.Models.SuccessStory", b =>
                 {
                     b.Navigation("PostPictures");
-
-                    b.Navigation("Replies");
 
                     b.Navigation("UserLikes");
                 });

@@ -1,5 +1,6 @@
 ﻿namespace AdoptMe.Web.Infrastructure
 {
+    using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Threading.Tasks;
@@ -8,6 +9,8 @@
     using Microsoft.AspNetCore.Http;
     using SixLabors.ImageSharp;
     using SixLabors.ImageSharp.Formats;
+    using SixLabors.ImageSharp.Formats.Png;
+    using SixLabors.ImageSharp.Processing;
 
     public class ImageBuilder
     {
@@ -15,27 +18,40 @@
 
         private int Width { get; set; }
 
-        private string Extention { get; set; }
-
         private string Directory { get; set; }
 
-        public async Task<List<Picture>> CreatePicturesAsync(IEnumerable<IFormFile> images, string webRootPath, string userId, string directory)
+        public async Task<List<Picture>> CreatePicturesAsync(IEnumerable<IFormFile> images, string webRootPath, string userId, string directory, string categoryName, bool makeCoverPhoto = false)
         {
             this.Directory = directory;
             List<Picture> pictures = new List<Picture>();
 
-            int counter = 0;
+            int counter = 1;
+            if (makeCoverPhoto)
+            {
+                counter = 0;
+            }
+
             foreach (var image in images)
             {
-                var picture = new Picture() { Path = webRootPath, UserId = userId };
+                var picture = new Picture();
+                picture.Path = webRootPath;
+
+                if (categoryName == "Users")
+                {
+                    picture.UserPictureId = userId;
+                }
+                else
+                {
+                    picture.PostPictureId = userId;
+                }
 
                 await this.SaveImageAsync(image, picture.Id);
 
-                picture.Extension = this.Extention;
                 picture.Width = this.Width;
                 picture.Height = this.Height;
+                picture.Extension = ".png";
 
-                picture.Path += picture.Id + "." + picture.Extension;
+                picture.Path += picture.Id + picture.Extension;
 
                 if (counter == 0)
                 {
@@ -51,17 +67,38 @@
 
         private async Task SaveImageAsync(IFormFile image, string pictureId)
         {
-            using (var stream = image.OpenReadStream())
+            using (var imageStream = image.OpenReadStream())
 
-            using (var pic = Image.Load(stream, out IImageFormat format))
-
-            using (FileStream fs = new FileStream(this.Directory + pictureId + $".{format.Name.ToLower()}", FileMode.Create))
+            using (var pic = Image.Load(imageStream, out IImageFormat format))
             {
-                await image.CopyToAsync(fs);
+                pic.Mutate(
+                              x => x.Resize(
+                                  new ResizeOptions
+                                  {
+                                      Mode = ResizeMode.Min,
+                                      Size = new Size(730, 0),
+                                      Position = AnchorPositionMode.Center,
+                                  }));
 
                 this.Height = pic.Height;
                 this.Width = pic.Width;
-                this.Extention = format.Name.ToLower();
+
+                var tempPath = this.Directory + Path.GetRandomFileName() + ".png";
+                await using (var stream = File.OpenWrite(tempPath))
+                {
+                    pic.SaveAsPng(
+                        stream,
+                        new PngEncoder
+                        {
+                            FilterMethod = PngFilterMethod.Adaptive,
+                            CompressionLevel = PngCompressionLevel.BestCompression,
+                            ColorType = PngColorType.Palette,
+                        });
+                }
+
+                var filePath = this.Directory + pictureId + ".png";
+                File.Delete(filePath);
+                File.Move(tempPath, filePath);
             }
         }
     }

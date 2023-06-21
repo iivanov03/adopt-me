@@ -1,14 +1,122 @@
 ﻿<Properties StartupConfiguration="{B90D1067-FE4C-400E-BA78-5413E30AB9ED}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Web.AdoptMe.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Web.AdoptMe.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Services/AdoptMe.Services.Data/GetCountService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Web/AdoptMe.Web/Views/Shared/Components/Notifications/Default.cshtml">
     <Files>
-      <File FileName="Services/AdoptMe.Services.Data/GetCountService.cs" Line="39" Column="1" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/Pet/PetProfileViewModel.cs" Line="48" Column="67" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/SearchResults/PetInListViewModel.cs" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/SearchResults/SearchResultsInputModel.cs" />
+      <File FileName="Web/AdoptMe.Web/Controllers/AdoptController.cs" Line="14" Column="36" />
+      <File FileName="Web/AdoptMe.Web/Controllers/ApiControllers/PetProfileController.cs" />
+      <File FileName="Web/AdoptMe.Web/Controllers/ApiControllers/SearchListController.cs" />
+      <File FileName="Web/AdoptMe.Web/Controllers/HomeController.cs" />
+      <File FileName="Web/AdoptMe.Web/Controllers/PetController.cs" />
+      <File FileName="Web/AdoptMe.Web/Controllers/SearchController.cs" />
+      <File FileName="Web/AdoptMe.Web/Program.cs" Line="16" Column="34" />
+      <File FileName="Web/AdoptMe.Web/Views/Adopt/All.cshtml" Line="18" Column="7" />
+      <File FileName="Web/AdoptMe.Web/Views/Adopt/Create.cshtml" />
+      <File FileName="Web/AdoptMe.Web/Views/Pet/PetProfile.cshtml" Line="280" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Views/Search/SearchResults.cshtml" Line="23" Column="49" />
+      <File FileName="Web/AdoptMe.Web/Views/Shared/_Layout.cshtml" Line="176" Column="27" />
+      <File FileName="Web/AdoptMe.Web/Views/Shared/_LayoutMainPage.cshtml" Line="178" Column="35" />
+      <File FileName="Web/AdoptMe.Web/Views/Shared/_SearchForm.cshtml" />
+      <File FileName="Web/AdoptMe.Web.Infrastructure/EnumHelper.cs" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/SearchResults/PetListViewModel.cs" />
+      <File FileName="Web/AdoptMe.Web/Views/Home/Index.cshtml" Line="256" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Views/Shared/_LoginPartial.cshtml" />
+      <File FileName="Data/AdoptMe.Data.Models/ApplicationUser.cs" Line="24" Column="50" />
+      <File FileName="Data/AdoptMe.Data/ApplicationDbContext.cs" Line="23" Column="28" />
+      <File FileName="Services/AdoptMe.Services.Data/PetProfileService.cs" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/User/UserViewModel.cs" Line="8" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/Register.cshtml.cs" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/Login.cshtml.cs" />
+      <File FileName="Web/AdoptMe.Web/Controllers/LostFoundController.cs" />
+      <File FileName="Web/AdoptMe.Web/Views/User/UserProfile.cshtml" Line="207" Column="1" />
+      <File FileName="Data/AdoptMe.Data.Models/ApplicationRole.cs" />
+      <File FileName="Data/AdoptMe.Data.Models/PetPost.cs" Line="1" Column="1" />
+      <File FileName="Data/AdoptMe.Data.Models/Picture.cs" Line="5" Column="1" />
+      <File FileName="Services/AdoptMe.Services.Data/IPostService.cs" Line="23" Column="1" />
+      <File FileName="Services/AdoptMe.Services.Data/PostService.cs" Line="119" Column="1" />
+      <File FileName="Web/AdoptMe.Web.Infrastructure/ValidationAttributes/ImageValidationAttribute.cs" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/PostModels/EditAdoptPetInputModel.cs" Line="4" Column="49" />
+      <File FileName="Web/AdoptMe.Web/ViewComponents/LastPostsViewComponent.cs" />
+      <File FileName="Web/AdoptMe.Web/wwwroot/css/style.css" />
+      <File FileName="Services/AdoptMe.Services.Data/IUserService.cs" Line="39" Column="1" />
+      <File FileName="Services/AdoptMe.Services.Data/UserService.cs" Line="6" Column="34" />
+      <File FileName="Data/AdoptMe.Data.Models/Enums/PetStatus.cs" />
+      <File FileName="Web/AdoptMe.Web.Infrastructure/Enums/LostFoundCreateOptions.cs" />
+      <File FileName="Web/AdoptMe.Web/Views/LostFound/All.cshtml" Line="49" Column="15" />
+      <File FileName="Services/AdoptMe.Services.Data/ISearchService.cs" Line="16" Column="1" />
+      <File FileName="Services/AdoptMe.Services.Data/SearchService.cs" />
+      <File FileName="Web/AdoptMe.Web/wwwroot/js/pagesManipulation/searchList.js" />
+      <File FileName="AdoptMe.Common/GlobalConstants.cs" Line="7" Column="55" />
+      <File FileName="Data/AdoptMe.Data/IdentityOptionsProvider.cs" Line="29" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/ConfirmEmail.cshtml" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/ConfirmEmail.cshtml.cs" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/ExternalLogin.cshtml" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/ExternalLogin.cshtml.cs" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/ForgotPassword.cshtml" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/ForgotPassword.cshtml.cs" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/Manage/Email.cshtml" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml.cs" />
+      <File FileName="Web/AdoptMe.Web/Views/Shared/Components/LastPosts/Default.cshtml" />
+      <File FileName="Web/AdoptMe.Web.Infrastructure/EmailSender/EmailSender.cs" />
+      <File FileName="Web/AdoptMe.Web.Infrastructure/EmailSender/ViewRenderService.cs" />
+      <File FileName="Services/AdoptMe.Services.Data/GetCountService.cs" Line="101" Column="1" />
+      <File FileName="Web/AdoptMe.Web.Infrastructure/ImageBuilder.cs" Line="106" Column="1" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/Contact/SendUsEmailFormInputModel.cs" Line="19" Column="1" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/PostModels/CreateAdoptPetInputModel.cs" Line="4" Column="49" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/PostModels/CreateLostFoundPetInputModel.cs" Line="4" Column="49" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/PostModels/EditLostFoundPetInputModel.cs" Line="4" Column="49" />
+      <File FileName="Web/AdoptMe.Web/Controllers/UserController.cs" />
+      <File FileName="Web/AdoptMe.Web/Views/Adopt/Edit.cshtml" />
+      <File FileName="Web/AdoptMe.Web/Views/LostFound/Create.cshtml" />
+      <File FileName="Web/AdoptMe.Web/Views/LostFound/Edit.cshtml" />
+      <File FileName="Web/AdoptMe.Web/Properties/launchSettings.json" Line="23" Column="47" />
+      <File FileName="Web/AdoptMe.Web/Views/Home/StatusCodeError.cshtml" Line="55" Column="24" />
+      <File FileName="Data/AdoptMe.Data.Models/Enums/UserSex.cs" Line="8" Column="21" />
+      <File FileName="Data/AdoptMe.Data.Models/Reply.cs" Line="1" Column="1" />
+      <File FileName="Data/AdoptMe.Data.Models/Setting.cs" Line="1" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Controllers/ApiControllers/UserInfoController.cs" Line="51" Column="81" />
+      <File FileName="Services/AdoptMe.Services.Data/IGetCountService.cs" Line="15" Column="13" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/Home/HappyEndingsIndexViewModel.cs" Line="38" Column="1" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/Administration/Dashboard/IndexViewModel.cs" Line="8" Column="1" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/Home/IndexViewModel.cs" Line="27" Column="1" />
+      <File FileName="Web/AdoptMe.Web.ViewModels/Pet/LikeInputModel.cs" Line="12" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/Manage/Index.cshtml" Line="43" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/Manage/Index.cshtml.cs" Line="98" Column="60" />
+      <File FileName="Tests/Sandbox/Program.cs" Line="12" Column="44" />
+      <File FileName="Web/AdoptMe.Web.Infrastructure/EmailSender/EmailViewModels/EmailSendToUsModel.cs" Line="1" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Views/Contact/EmailMessageViews/EmailSendToUsView.cshtml" Line="16" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Views/Contact/SendEmailToUs.cshtml" Line="28" Column="44" />
+      <File FileName="Data/AdoptMe.Data.Models/UserPetPost.cs" Line="18" Column="6" />
+      <File FileName="Data/AdoptMe.Data.Models/SuccessStory.cs" Line="34" Column="6" />
+      <File FileName="Data/AdoptMe.Data.Models/UserSuccessStoryLikes.cs" Line="6" Column="1" />
+      <File FileName="Web/AdoptMe.Web/libman.json" Line="1" Column="1" />
+      <File FileName="Web/AdoptMe.Web/wwwroot/js/script.js" Line="92" Column="19" />
+      <File FileName="Web/AdoptMe.Web/appsettings.Development.json" Line="10" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/Manage/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Areas/Administration/Views/Dashboard/Index.cshtml" Line="2" Column="30" />
+      <File FileName="Web/AdoptMe.Web/Areas/Administration/Views/Donate/Create.cshtml" Line="1" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Areas/Administration/Views/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Areas/Administration/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Areas/Administration/Views/Donate/Edit.cshtml" Line="82" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Resources/Views/Shared/_LoginPartial.bg.resx" Line="138" Column="46" />
+      <File FileName="Web/AdoptMe.Web/Areas/Administration/Views/Donate/All.cshtml" Line="57" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml" Line="1" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml" Line="1" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/AccessDenied.cshtml" Line="1" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml" Line="1" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml.cs" Line="30" Column="1" />
+      <File FileName="Web/AdoptMe.Web/Views/Shared/Components/Notifications/Default.cshtml" Line="25" Column="1" />
+      <File FileName="../../../../../usr/local/share/dotnet/sdk/7.0.304/Microsoft.Common.CurrentVersion.targets" Line="4752" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,94 +124,98 @@
           <Node name="AdoptMe" expanded="True">
             <Node name="Data" expanded="True">
               <Node name="AdoptMe.Data" expanded="True">
-                <Node name="Dependencies" expanded="True">
-                  <Node name="FrameworkReferences" expanded="True" />
-                  <Node name="PackageDependencies" expanded="True" />
-                </Node>
-                <Node name="Configurations" expanded="True" />
-                <Node name="Repositories" expanded="True" />
-                <Node name="Seeding" expanded="True" />
-              </Node>
-              <Node name="AdoptMe.Data.Common" expanded="True">
-                <Node name="Dependencies" expanded="True">
-                  <Node name="FrameworkReferences" expanded="True" />
-                  <Node name="PackageDependencies" expanded="True" />
-                </Node>
-                <Node name="Models" expanded="True" />
-                <Node name="Repositories" expanded="True" />
+                <Node name="Migrations" expanded="True" />
               </Node>
               <Node name="AdoptMe.Data.Models" expanded="True">
-                <Node name="Dependencies" expanded="True">
-                  <Node name="FrameworkReferences" expanded="True" />
-                  <Node name="PackageDependencies" expanded="True" />
-                  <Node name="ProjectDependencies" expanded="True" />
-                </Node>
                 <Node name="Enums" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Services" expanded="True">
-              <Node name="AdoptMe.Services.Data" expanded="True">
-                <Node name="Dependencies" expanded="True">
-                  <Node name="FrameworkReferences" expanded="True" />
-                  <Node name="PackageDependencies" expanded="True" />
-                  <Node name="ProjectDependencies" expanded="True" />
-                </Node>
-                <Node name="GetCountService.cs" selected="True" />
-              </Node>
-              <Node name="AdoptMe.Services.Mapping" expanded="True">
-                <Node name="Dependencies" expanded="True">
-                  <Node name="FrameworkReferences" expanded="True" />
-                  <Node name="PackageDependencies" expanded="True" />
-                </Node>
-              </Node>
-              <Node name="AdoptMe.Services.Messaging" expanded="True">
-                <Node name="Dependencies" expanded="True">
-                  <Node name="FrameworkReferences" expanded="True" />
-                  <Node name="PackageDependencies" expanded="True" />
-                </Node>
               </Node>
             </Node>
             <Node name="Web" expanded="True">
               <Node name="AdoptMe.Web" expanded="True">
                 <Node name="Dependencies" expanded="True">
-                  <Node name="FrameworkReferences" expanded="True" />
-                  <Node name="PackageDependencies" expanded="True" />
                   <Node name="ProjectDependencies" expanded="True" />
                 </Node>
-                <Node name="Controllers" expanded="True" />
+                <Node name="Areas" expanded="True">
+                  <Node name="Administration" expanded="True">
+                    <Node name="Views" expanded="True">
+                      <Node name="Dashboard" expanded="True" />
+                      <Node name="Donate" expanded="True" />
+                    </Node>
+                  </Node>
+                  <Node name="Identity" expanded="True">
+                    <Node name="Pages" expanded="True">
+                      <Node name="Account" expanded="True">
+                        <Node name="Manage" expanded="True">
+                          <Node name="Index.cshtml" expanded="True" />
+                          <Node name="PersonalData.cshtml" expanded="True" />
+                        </Node>
+                        <Node name="ConfirmEmail.cshtml" expanded="True" />
+                        <Node name="ExternalLogin.cshtml" expanded="True" />
+                        <Node name="ForgotPassword.cshtml" expanded="True" />
+                        <Node name="Register.cshtml" expanded="True" />
+                        <Node name="RegisterConfirmation.cshtml" expanded="True" />
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+                <Node name="Controllers" expanded="True">
+                  <Node name="ApiControllers" expanded="True" />
+                </Node>
                 <Node name="Properties" expanded="True" />
                 <Node name="Resources" expanded="True">
                   <Node name="Views" expanded="True">
                     <Node name="Shared" expanded="True" />
                   </Node>
                 </Node>
+                <Node name="ViewComponents" expanded="True" />
                 <Node name="Views" expanded="True">
                   <Node name="Adopt" expanded="True" />
+                  <Node name="Contact" expanded="True">
+                    <Node name="EmailMessageViews" expanded="True" />
+                  </Node>
                   <Node name="Home" expanded="True" />
+                  <Node name="LostFound" expanded="True" />
                   <Node name="Pet" expanded="True" />
-                  <Node name="Shared" expanded="True" />
+                  <Node name="Search" expanded="True" />
+                  <Node name="Shared" expanded="True">
+                    <Node name="Components" expanded="True">
+                      <Node name="LastPosts" expanded="True" />
+                      <Node name="Notifications" expanded="True">
+                        <Node name="Default.cshtml" selected="True" />
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node name="User" expanded="True" />
                 </Node>
-                <Node name="wwwroot" expanded="True" />
+                <Node name="wwwroot" expanded="True">
+                  <Node name="js" expanded="True">
+                    <Node name="pagesManipulation" expanded="True" />
+                  </Node>
+                  <Node name="lib" expanded="True" />
+                </Node>
+                <Node name="appsettings.json" expanded="True" />
               </Node>
               <Node name="AdoptMe.Web.Infrastructure" expanded="True">
                 <Node name="Dependencies" expanded="True">
-                  <Node name="FrameworkReferences" expanded="True" />
-                  <Node name="PackageDependencies" expanded="True" />
-                </Node>
-                <Node name="ValidationAttributes" expanded="True" />
-              </Node>
-              <Node name="AdoptMe.Web.ViewModels" expanded="True">
-                <Node name="Dependencies" expanded="True">
-                  <Node name="FrameworkReferences" expanded="True" />
                   <Node name="PackageDependencies" expanded="True" />
                   <Node name="ProjectDependencies" expanded="True" />
                 </Node>
+                <Node name="EmailSender" expanded="True">
+                  <Node name="EmailViewModels" expanded="True" />
+                </Node>
+                <Node name="Enums" expanded="True" />
+                <Node name="ValidationAttributes" expanded="True" />
+              </Node>
+              <Node name="AdoptMe.Web.ViewModels" expanded="True">
                 <Node name="Administration" expanded="True">
                   <Node name="Dashboard" expanded="True" />
                 </Node>
-                <Node name="Adopt" expanded="True" />
+                <Node name="Contact" expanded="True" />
                 <Node name="Home" expanded="True" />
-                <Node name="Settings" expanded="True" />
+                <Node name="Pet" expanded="True" />
+                <Node name="PostModels" expanded="True" />
+                <Node name="SearchResults" expanded="True" />
+                <Node name="User" expanded="True" />
               </Node>
             </Node>
             <Node name="AdoptMe.Common" expanded="True">

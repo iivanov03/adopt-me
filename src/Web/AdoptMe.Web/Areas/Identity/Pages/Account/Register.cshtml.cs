@@ -9,11 +9,12 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using AdoptMe.Data.Models;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using AdoptMe.Web.Infrastructure.EmailSender;
+using AdoptMe.Services.Data;
 
 namespace AdoptMe.Web.Areas.Identity.Pages.Account
 {
@@ -24,17 +25,20 @@ namespace AdoptMe.Web.Areas.Identity.Pages.Account
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly IUserService userService;
 
         public RegisterModel(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            IUserService userService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            this.userService = userService;
         }
 
         [BindProperty]
@@ -46,11 +50,10 @@ namespace AdoptMe.Web.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required]
-            [DataType(DataType.Text)]
-            [Display(Name = "User Name")]
-            [MinLength(4, ErrorMessage = "The UserName must be at least 4 and at max 15 characters long.")]
-            [MaxLength(15, ErrorMessage = "The UserName must be at least 4 and at max 15 characters long.")]
+            [Required(ErrorMessage = "Името е задължително поле")]
+            [StringLength(20, MinimumLength = 2, ErrorMessage = "Името трябва да е от 2 до 20 символа")]
+            [Display(Name = "Username")]
+            [RegularExpression(@"^\S*$", ErrorMessage = "Името не трябва да съдържа празни полета")]
             public string NickName { get; set; }
 
             [Required]
@@ -80,9 +83,15 @@ namespace AdoptMe.Web.Areas.Identity.Pages.Account
         {
             returnUrl = returnUrl ?? Url.Content("~/");
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+
+            if (this.userService.IsUsernameTaken(Input.NickName))
+            {
+                this.ModelState.AddModelError("NickName", "Потребителското име вече е заето");
+            }
+
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = Input.Email, Nickname = Input.NickName, Email = Input.Email};
+                var user = new ApplicationUser { UserName = Input.Email, Nickname = Input.NickName, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

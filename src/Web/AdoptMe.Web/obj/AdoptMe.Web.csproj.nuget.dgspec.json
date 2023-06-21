@@ -316,6 +316,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "/Users/ivanov/Work/adopt-me/src/AdoptMe.Common/AdoptMe.Common.csproj": {
+                "projectPath": "/Users/ivanov/Work/adopt-me/src/AdoptMe.Common/AdoptMe.Common.csproj"
+              },
               "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/AdoptMe.Data.Common.csproj": {
                 "projectPath": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Common/AdoptMe.Data.Common.csproj"
               },
@@ -585,8 +588,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "/Users/ivanov/Work/adopt-me/src/AdoptMe.Common/AdoptMe.Common.csproj": {
+                "projectPath": "/Users/ivanov/Work/adopt-me/src/AdoptMe.Common/AdoptMe.Common.csproj"
+              },
               "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/AdoptMe.Data.Models.csproj": {
                 "projectPath": "/Users/ivanov/Work/adopt-me/src/Data/AdoptMe.Data.Models/AdoptMe.Data.Models.csproj"
+              },
+              "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/AdoptMe.Services.Mapping.csproj": {
+                "projectPath": "/Users/ivanov/Work/adopt-me/src/Services/AdoptMe.Services.Mapping/AdoptMe.Services.Mapping.csproj"
               }
             }
           }
@@ -604,6 +613,18 @@
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
               "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "SixLabors.ImageSharp": {
               "target": "Package",

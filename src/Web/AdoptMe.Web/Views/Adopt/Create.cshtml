@@ -1,26 +1,25 @@
 ﻿@{
     this.ViewData["Title"] = "Create";
 }
-@using AdoptMe.Web.ViewModels.Adopt
+@using AdoptMe.Web.ViewModels.PostModels
 @using AdoptMe.Data.Models.Enums
+@using AdoptMe.Common
 @model CreateAdoptPetInputModel
 <!-- Breadcrumbs & Page title-->
 <div class="page-title">
-    <div class="page-title-text">Create Post for Adoption</div>
+    <div class="page-title-text">Създай пост за осиновяване</div>
     <ul class="breadcrumbs-custom">
-        <li><a href="index.html">Home</a></li>
-        <li>Create</li>
+        <li><a href="index.html">Начало</a></li>
+        <li>Създай</li>
     </ul>
 </div>
-@if(true){
-}
 <!-- Your information-->
 <section class="section-md bg-white text-center">
     <div class="shell">
-        <h4>Animal information</h4>
+        <h4>Информация за животното</h4>
         <div class="range range-sm-center spacing-55">
             <div class="cell-md-10 cell-lg-8">
-                <form method="post" enctype="multipart/form-data">
+                <form method="post" id="uploadInfo" enctype="multipart/form-data">
                     <div asp-validation-summary="All" class="text-danger"></div>
                     <div class="range range-sm-bottom spacing-20">
                         <div class="cell-sm-6">
@@ -32,8 +31,9 @@
                         </div>
                         <div class="cell-sm-12">
                             <div class="form-group">
-                                <textarea class="form-control" asp-for="Description"></textarea>
+                                <textarea class="form-control" maxlength=@(GlobalConstants.MaxCharactersInPostDescription-2) asp-for="Description"></textarea>
                                 <label class="form-label" asp-for="Description"></label>
+                                <span id="charsLeft"></span>
                                 <span asp-validation-for="Description" class="text-danger"></span>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-tan-hide btn-block">Create</button>
+                            <button type="submit" class="btn btn-tan-hide btn-block" onclick="checkForErrors()">Създай</button>
                         </div>
                     </div>
                 </form>
@@ -73,4 +73,10 @@
         </div>
     </div>
 </section>
+
+@section Scripts{
+    <script src="~/js/pagesManipulation/descriptionCharactersCounter.js"></script>
+    <script src="~/js/pagesManipulation/uploadSpinner.js"></script>
+    <script src="~/js/pagesManipulation/disableSubmitButton.js"></script>
+}
 

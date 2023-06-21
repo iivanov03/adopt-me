@@ -19,3 +19,5 @@
 /Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.ViewModels/obj/Debug/net7.0/ref/AdoptMe.Web.ViewModels.dll
 /Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.ViewModels/bin/Debug/net7.0/AdoptMe.Web.Infrastructure.dll
 /Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.ViewModels/bin/Debug/net7.0/AdoptMe.Web.Infrastructure.pdb
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.ViewModels/bin/Debug/net7.0/AdoptMe.Common.dll
+/Users/ivanov/Work/adopt-me/src/Web/AdoptMe.Web.ViewModels/bin/Debug/net7.0/AdoptMe.Common.pdb

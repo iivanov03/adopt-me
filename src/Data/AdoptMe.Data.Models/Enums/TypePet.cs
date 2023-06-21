@@ -1,9 +1,14 @@
 ﻿namespace AdoptMe.Data.Models.Enums
 {
+    using System.ComponentModel.DataAnnotations;
+
     public enum TypePet
     {
-        Dog = 1,
-        Cat = 2,
-        Other = 3
+        [Display(Name = "Куче")]
+        Dog = 2,
+        [Display(Name = "Котка")]
+        Cat = 3,
+        [Display(Name = "Други")]
+        Other = 4,
     }
 }
